@@ -10,3 +10,6 @@ node_modules/
 
 # Ignore logs
 *.log
+
+#Ignore output
+./src/output.css
