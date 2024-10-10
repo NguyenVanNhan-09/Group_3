@@ -13,3 +13,4 @@ node_modules/
 
 #Ignore output
 ./src/output.css
+.vscode
