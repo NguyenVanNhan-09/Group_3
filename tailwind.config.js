@@ -2,10 +2,32 @@
 module.exports = {
    content: ["./src/**/*.{html,js}"],
    theme: {
-      extend: {},
+      extend: {
+         colors: {
+            primary: "#356C07",
+            secondary: "#68C114",
+            ctaColor: "#E10000",
+            headingColor: "#1A1A1A",
+            breadcrumColor: "#4F4F4F",
+            textColor: "#4F4F4F",
+            subTextColor: "#4F4F4F99",
+         },
+         screens: {
+            mb: { max: "375px" },
+         }
+      },
       fontFamily: {
          nunito: ["Nunito", "sans-serif"],
          dancing: ["Dancing Script", "cursive"],
+      },
+      colors: {
+         primary: "#356C07",
+         secondary: "#68C114",
+         ctaColor: "#E10000",
+         headingColor: "#1A1A1A",
+         breadcrumColor: "#4F4F4F",
+         textColor: "#4F4F4F",
+         subTextColor: "#4F4F4F99",
       },
    },
    plugins: [],
