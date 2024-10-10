@@ -12,6 +12,9 @@ module.exports = {
             textColor: "#4F4F4F",
             subTextColor: "#4F4F4F99",
          },
+         screens: {
+            mb: { max: "375px" }, // Breakpoint cho màn hình dưới 375px
+         },
       },
       fontFamily: {
          nunito: ["Nunito", "sans-serif"],
