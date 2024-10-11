@@ -2,279 +2,526 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="../output.css">
+    <link rel="stylesheet" href="../output.css" />
 </head>
 
 <body>
     <div class="container w-full max-w-full">
         <div class="warpper w-full">
             <header class="font-nunito bg-white shadow-md px-[12px]">
-                <div class='py-4 px-2 z-50 w-full max-w-[1174px] mx-auto '>
-                    <div class='flex flex-wrap items-center justify-between gap-5'>
-                        <a href="#"><img src="../assets/images/logo_header.png" alt="logo" class='w-36' /></a>
+                <div class="py-4 px-2 z-50 w-full max-w-[1174px] mx-auto">
+                    <div class="flex flex-wrap items-center justify-between gap-5">
+                        <a href="#"><img src="../assets/images/logo_header.png" alt="logo" class="w-36" /></a>
                         <div>
-                            <ul class='flex'>
-                                <li class='border-gray-300 px-3'>
-                                    <a href='#'
-                                        class='hover:text-[#356C07] text-[#356C07] block font-semibold text-base  uppercase'>Sản
+                            <ul class="flex">
+                                <li class="border-gray-300 px-3">
+                                    <a href="#"
+                                        class="hover:text-[#356C07] text-[#356C07] block font-semibold text-base uppercase">Sản
                                         phẩm
                                     </a>
                                 </li>
-                                <li class='border-gray-300 px-3'><a href='#'
-                                        class='hover:text-[#356C07] text-[#1A1A1A] block font-semibold text-base uppercase'>Về
-                                        nông
-                                        thảo
+                                <li class="border-gray-300 px-3">
+                                    <a href="#"
+                                        class="hover:text-[#356C07] text-[#1A1A1A] block font-semibold text-base uppercase">Về
+                                        nông thảo
                                     </a>
                                 </li>
-                                <li class='border-gray-300 px-3'><a href='#'
-                                        class='hover:text-[#356C07] text-[#1A1A1A] block font-semibold text-base uppercase'>Blog
+                                <li class="border-gray-300 px-3">
+                                    <a href="#"
+                                        class="hover:text-[#356C07] text-[#1A1A1A] block font-semibold text-base uppercase">Blog
                                     </a>
                                 </li>
-                                <li class='border-gray-300 px-3'><a href='#'
-                                        class='hover:text-[#356C07] text-[#1A1A1A] block font-semibold text-base uppercase'>Liên
+                                <li class="border-gray-300 px-3">
+                                    <a href="#"
+                                        class="hover:text-[#356C07] text-[#1A1A1A] block font-semibold text-base uppercase">Liên
                                         hệ
                                     </a>
                                 </li>
                             </ul>
                         </div>
 
-                        <div class='flex'>
-                            <button class='pr-[17px]'>
-                                <img src="../assets/icons/ti-search.svg" alt="ti-search"></button>
-                            <button class=''>
-                                <img src="../assets/icons/ti-cart.svg" alt="ti-cart"></button>
+                        <div class="flex">
+                            <button class="pr-[17px]">
+                                <img src="../assets/icons/ti-search.svg" alt="ti-search" />
+                            </button>
+                            <button class="">
+                                <img src="../assets/icons/ti-cart.svg" alt="ti-cart" />
+                            </button>
                         </div>
                     </div>
                 </div>
             </header>
 
-            <div class="content font-nunito max-w-[1174px] mx-auto">
-                <div class=" flex items-center pt-[19px] pb-[30px]">
-                    <img src="../assets/images/orderinfo/ti-arrow.svg" class="w-[24px] h-[24px] pr-3" alt="">
+            <div class="content font-nunito max-w-[1174px] mx-auto h-full">
+                <div class="flex items-center pt-[19px] pb-[30px]">
+                    <img src="../assets/images/orderinfo/ti-arrow.svg" class="w-[24px] h-[24px] pr-3" alt="" />
                     <p class="text-base font-normal text-primary">Trang trước</p>
                 </div>
 
-                <div class="h-screen py-8">
-                    <div class="container mx-auto">
-                        <div class="flex flex-col md:flex-row gap-[35px]">
-                            <div class="md:w-3/4 max-w-[770px]">
-                                <h1
-                                    class="text-2xl pt-[11px] pb-[9px] pl-[21px] font-bold mb-4 uppercase text-headingColor bg-[#EBF1E7]">
-                                    A. Thông
-                                    tin giỏ
-                                    hàng</h1>
-                                <div class="bg-white rounded-lg shadow-md mb-4">
-                                    <table class="w-full">
-                                        <thead class="bg-[#f2fff9]">
-                                            <tr>
-                                                <th class="text-left font-semibold py-[13px] pl-5">Sản phẩm</th>
-                                                <th class="font-semibold py-[13px] text-center">Số lượng
-                                                </th>
-                                                <th class="text-left font-semibold py-[13px]">Giá</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td class="py-5 w-[361px]">
-                                                    <div class="flex items-center">
-                                                        <img class="max-h-[120px] max-w-[120px] mr-4"
-                                                            src="../assets/images/footer_img-1.png" alt="Product image">
-                                                        <div class="max-w-[220px]">
-                                                            <span class="font-semibold text-sm text-[#000]">Mứt chanh
-                                                                tây sấy lạnh 100% hữu cơ (Sản phẩm cao cấp)</span>
-                                                            <div class="flex items-center mt-4">
-                                                                <span
-                                                                    class="text-base text-breadcrumColor pr-[13px]">Loại
-                                                                    (g):</span>
-                                                                <div class="flex">
-                                                                    <div
-                                                                        class="text-sm text-[#fff] py-[6px] px-1 bg-primary mr-[11px]">
-                                                                        150</div>
-                                                                    <div
-                                                                        class="text-sm text-[#fff] py-[6px] px-1 bg-primary mr-[11px]">
-                                                                        200</div>
-                                                                    <div
-                                                                        class="text-sm text-[#fff] py-[6px] px-1 bg-primary">
-                                                                        250</div>
+                <div class="h-full">
+                    <div class="flex flex-col md:flex-row gap-[35px]">
+                        <div class="md:w-3/4 max-w-[770px] h-full">
+                            <h1
+                                class="text-2xl pt-[11px] pb-[9px] pl-[21px] font-bold mb-4 uppercase text-headingColor bg-[#EBF1E7]">
+                                A. Thông tin giỏ hàng
+                            </h1>
+                            <div class="bg-white shadow-md mb-4">
+                                <table class="w-full">
+                                    <thead class="bg-[#f2fff9]">
+                                        <tr>
+                                            <th class="text-left font-semibold py-[13px] pl-5">
+                                                Sản phẩm
+                                            </th>
+                                            <th class="font-semibold py-[13px] text-left">
+                                                Số lượng
+                                            </th>
+                                            <th class="text-left font-semibold py-[13px]">
+                                                Giá
+                                            </th>
+                                            <th class="text-left font-semibold py-[13px]"></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="py-5 w-[361px]">
+                                                <div class="flex items-center">
+                                                    <img class="max-h-[120px] max-w-[120px] mr-4"
+                                                        src="../assets/images/footer_img-1.png" alt="Product image" />
+                                                    <div class="max-w-[220px]">
+                                                        <span class="font-semibold text-sm text-[#000]">Mứt chanh tây
+                                                            sấy lạnh 100% hữu
+                                                            cơ (Sản phẩm cao cấp)</span>
+                                                        <div class="flex items-center mt-4">
+                                                            <span class="text-base text-breadcrumColor pr-[13px]">Loại
+                                                                (g):</span>
+                                                            <div class="flex">
+                                                                <div
+                                                                    class="text-sm text-[#fff] py-[6px] px-1 bg-primary mr-[11px]">
+                                                                    150
+                                                                </div>
+                                                                <div
+                                                                    class="text-sm text-[#fff] py-[6px] px-1 bg-primary mr-[11px]">
+                                                                    200
+                                                                </div>
+                                                                <div
+                                                                    class="text-sm text-[#fff] py-[6px] px-1 bg-primary">
+                                                                    250
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                </td>
-                                                <td class="py-5 flex justify-center">
-                                                    <form class="max-w-xs mx-auto py-5">
-                                                        <div class="relative flex items-center max-w-[8rem]">
-                                                            <button type="button"
-                                                                class="bg-[#EBEBEB]  border border-[#EBEBEB] p-3 h-9">
-                                                                <svg class="w-3 h-3 text-breadcrumColor"
-                                                                    aria-hidden="true"
-                                                                    xmlns="http://www.w3.org/2000/svg" fill="none"
-                                                                    viewBox="0 0 18 2">
-                                                                    <path stroke="currentColor" stroke-linecap="round"
-                                                                        stroke-linejoin="round" stroke-width="2"
-                                                                        d="M1 1h16" />
-                                                                </svg>
-                                                            </button>
-                                                            <input type="text"
-                                                                class="bg-[#EBEBEB] border-x-0 w-16 h-9 border-[#EBEBEB] text-center text-breadcrumColor text-sm  block py-2.5"
-                                                                placeholder="999" value="1" />
-                                                            <button type="button"
-                                                                class="bg-[#EBEBEB]  border border-[#EBEBEB] p-3 h-9">
-                                                                <svg class="w-3 h-3 text-breadcrumColor"
-                                                                    aria-hidden="true"
-                                                                    xmlns="http://www.w3.org/2000/svg" fill="none"
-                                                                    viewBox="0 0 18 18">
-                                                                    <path stroke="currentColor" stroke-linecap="round"
-                                                                        stroke-linejoin="round" stroke-width="2"
-                                                                        d="M9 1v16M1 9h16" />
-                                                                </svg>
-                                                            </button>
-                                                        </div>
-                                                    </form>
-                                                </td>
-                                                <td class="py-5 text-ctaColor text-left">250.000 đ</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                            <div class="md:w-1/4 flex-grow">
-                                <div class="bg-[#FFFAFA] shadow-md p-6">
-                                    <h2 class="text-2xl font-bold mb-4 text-headingColor">Tóm tắt đơn hàng</h2>
-                                    <div class="flex justify-between mb-[15px]">
-                                        <span class="text-[#000000BD] text-lg">02 Sản phẩm</span>
-                                        <span class="text-ctaColor">600.000 đ</span>
-                                    </div>
-                                    <div class="flex justify-between mb-[15px]">
-                                        <span class="text-[#000000BD] text-lg">Phí ship</span>
-                                        <span class="text-ctaColor">35.000 đ</span>
-                                    </div>
-                                    <div class="flex justify-between mb-[15px]">
-                                        <span class="font-bold">TỔNG</span>
-                                        <span class="font-bold text-ctaColor">635.000 đ</span>
-                                    </div>
-                                    <button
-                                        class=" text-white bg-[#E10000] py-[13px] px-[84px] rounded-[3px] text-lg font-bold mt-4 w-full">ĐẶT
-                                        HÀNG
-                                        NGAY</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            <!-- <footer class="font-nunito">
-            <div class=" mx-auto flex flex-wrap">
-                <div class="w-full flex max-h-[240px]">
-                    <img src="../assets/images/footer_img-1.png" class="img-style" alt="img footer">
-                    <img src="../assets/images/footer_img-2.png" class="img-style" alt="img footer">
-                    <img src="../assets/images/footer_img-3.png" class="img-style" alt="img footer">
-                    <img src="../assets/images/footer_img-4.png" class="img-style" alt="img footer">
-                    <img src="../assets/images/footer_img-5.png" class="img-style" alt="img footer">
-                    <img src="../assets/images/footer_img-6.png" class="img-style" alt="img footer">
-                    <img src="../assets/images/footer_img-7.png" class="img-style" alt="img footer">
-                    <img src="../assets/images/footer_img-8.png" class="img-style" alt="img footer">
-                </div>
-            </div>
-            <div class="bg-[#356C07]">
-                <div class="max-w-[1174px] mx-auto flex justify-between gap-[71px] py-[37px]">
-                    <div class="max-w-[305px]">
-                        <div class="max-h-[44px] w-full">
-                            <img src="../assets/images/footer_logo.png" class="mix-blend-color-dodge" alt="logo footer">
-                        </div>
-                        <div class="font-nunito text-[14px] text-white mt-[46px] leading-6">
-                            MST: 012345678910 - Ngày cấp: 10/02/2022
-                            Nơi cấp: Sở Kế hoạch & Đầu tư TP Hà Nội
-                        </div>
-                        <div class="mt-[22px] flex items-center">
-                            <span class="text-white text-base pr-[15px]">Liên kết</span>
-                            <div class="flex gap-[10px]">
-                                <img src="../assets/icons/ti-shoppe.svg" alt="ti-social">
-                                <img src="../assets/icons/ti-tiki.svg" alt="ti-social">
-                                <img src="../assets/icons/tu-laza.svg" alt="ti-social">
-                                <img src="../assets/icons/ti-fa.svg" alt="ti-social">
-                                <img src="../assets/icons/ti-in.svg" alt="ti-social">
-                                <img src="../assets/icons/ti-tiktok.svg" alt="ti-social">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="w-[792px] h-[198px] flex gap-[61px]">
-                        <div class="max-w-[248px]">
-                            <h4 class="text-white text-sm uppercase">Liên hệ</h4>
-                            <ul class="mt-[15px]">
-                                <li class="flex gap-[12px]">
-                                    <img src="../assets/icons/ti-address.svg" class="self-start" alt="">
-                                    <p class="text-sm text-white">Tầng 4-5-6, Tòa nhà Capital Place, số 29 đường Liễu
-                                        Giai,
-                                        P.Ngọc Khánh, Q.Ba
-                                        Đình, Hà Nội</p>
-                                </li>
-                                <li class="flex gap-[12px] mt-[12px]">
-                                    <img src="../assets/icons/ti-phone.svg" alt="">
-                                    <p class="text-sm text-white">0969.71.6848</p>
-                                </li>
-                                <li class="flex gap-[12px] mt-[12px]">
-                                    <img src="../assets/icons/ti-email.svg" alt="">
-                                    <p class="text-sm text-white">hotro@nongthao.vn</p>
-                                </li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h4 class="text-white text-sm uppercase">Thông tin</h4>
-                            <ul class="mt-[15px] list-disc">
-                                <li class="text-white text-sm mb-[10px] leading-5">Giới thiệu Nông Thảo</li>
-                                <li class="text-white text-sm mb-[10px] leading-5">Điều khoản</li>
-                                <li class="text-white text-sm mb-[10px] leading-5">Chính sách bảo mật</li>
-                                <li class="text-white text-sm mb-[10px] leading-5">Hướng dẫn mua hàng</li>
-                                <li class="text-white text-sm mb-[10px] leading-5">Trả hàng & hoàn tiền</li>
-                                <li class="text-white text-sm mb-[10px] leading-5">Nông Thảo Blogs</li>
-                            </ul>
-                        </div>
-                        <div class="max-w-[248px]">
-                            <h4 class="text-white text-sm uppercase">Đăng ký nhận tin</h4>
-                            <ul class="mt-[15px]">
-                                <li class="flex gap-[12px] mt-[12px]">
-                                    <p class="text-sm text-white">Vui lòng nhập email để nhận thêm nhiều ưu đãi từ Nông
-                                        Thảo</p>
-                                </li>
-                                <li class="mt-[8px]">
-                                    <form action="">
-                                        <div class="w-full max-w-sm min-w-[200px]">
-                                            <div class="relative">
-                                                <input type="text"
-                                                    class="w-full max-h-[45px] pl-3 pr-10 py-[13px] bg-white placeholder:text-slate-400 text-slate-600 text-base border border-slate-200 shadow-sm"
-                                                    placeholder="Email của bạn..." />
-
-                                                <div
-                                                    class="absolute w-[47px] h-full bg-[#68C114] right-0 top-0 flex justify-center items-center">
-                                                    <img src="../assets/icons/ti-pp.svg" alt="">
                                                 </div>
+                                            </td>
+                                            <td class="py-5">
+                                                <div class="relative flex items-center max-w-[8rem]">
+                                                    <button type="button"
+                                                        class="bg-[#EBEBEB] border border-[#EBEBEB] p-3 h-9">
+                                                        <svg class="w-3 h-3 text-breadcrumColor" aria-hidden="true"
+                                                            xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                            viewBox="0 0 18 2">
+                                                            <path stroke="currentColor" stroke-linecap="round"
+                                                                stroke-linejoin="round" stroke-width="2" d="M1 1h16" />
+                                                        </svg>
+                                                    </button>
+                                                    <input type="text"
+                                                        class="bg-[#EBEBEB] border-x-0 w-16 h-9 border-[#EBEBEB] text-center text-breadcrumColor text-sm block py-2.5"
+                                                        placeholder="999" value="1" />
+                                                    <button type="button"
+                                                        class="bg-[#EBEBEB] border border-[#EBEBEB] p-3 h-9">
+                                                        <svg class="w-3 h-3 text-breadcrumColor" aria-hidden="true"
+                                                            xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                            viewBox="0 0 18 18">
+                                                            <path stroke="currentColor" stroke-linecap="round"
+                                                                stroke-linejoin="round" stroke-width="2"
+                                                                d="M9 1v16M1 9h16" />
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </td>
+                                            <td class="py-5 text-ctaColor">
+                                                250.000 đ
+                                            </td>
+                                            <td class="py-5 text-ctaColor">
+                                                <img src="../assets/images/orderinfo/delete.svg" alt="no img" />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="py-5">
+                                                <div class="flex items-center">
+                                                    <img class="max-h-[120px] max-w-[120px] mr-4"
+                                                        src="../assets/images/footer_img-1.png" alt="Product image" />
+                                                    <div class="max-w-[220px]">
+                                                        <span class="font-semibold text-sm text-[#000]">Mứt chanh tây
+                                                            sấy lạnh 100% hữu
+                                                            cơ (Sản phẩm cao cấp)</span>
+                                                        <div class="flex items-center mt-4">
+                                                            <span class="text-base text-breadcrumColor pr-[13px]">Loại
+                                                                (g):</span>
+                                                            <div class="flex">
+                                                                <div
+                                                                    class="text-sm text-[#fff] py-[6px] px-1 bg-primary mr-[11px]">
+                                                                    150
+                                                                </div>
+                                                                <div
+                                                                    class="text-sm text-[#fff] py-[6px] px-1 bg-primary mr-[11px]">
+                                                                    200
+                                                                </div>
+                                                                <div
+                                                                    class="text-sm text-[#fff] py-[6px] px-1 bg-primary">
+                                                                    250
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="py-5">
+                                                <div class="relative flex items-center max-w-[8rem]">
+                                                    <button type="button"
+                                                        class="bg-[#EBEBEB] border border-[#EBEBEB] p-3 h-9">
+                                                        <svg class="w-3 h-3 text-breadcrumColor" aria-hidden="true"
+                                                            xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                            viewBox="0 0 18 2">
+                                                            <path stroke="currentColor" stroke-linecap="round"
+                                                                stroke-linejoin="round" stroke-width="2" d="M1 1h16" />
+                                                        </svg>
+                                                    </button>
+                                                    <input type="text"
+                                                        class="bg-[#EBEBEB] border-x-0 w-16 h-9 border-[#EBEBEB] text-center text-breadcrumColor text-sm block py-2.5"
+                                                        placeholder="999" value="1" />
+                                                    <button type="button"
+                                                        class="bg-[#EBEBEB] border border-[#EBEBEB] p-3 h-9">
+                                                        <svg class="w-3 h-3 text-breadcrumColor" aria-hidden="true"
+                                                            xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                            viewBox="0 0 18 18">
+                                                            <path stroke="currentColor" stroke-linecap="round"
+                                                                stroke-linejoin="round" stroke-width="2"
+                                                                d="M9 1v16M1 9h16" />
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </td>
+                                            <td class="py-5 text-ctaColor text-left">
+                                                250.000 đ
+                                            </td>
+                                            <td class="py-5 text-ctaColor text-left">
+                                                <img src="../assets/images/orderinfo/delete.svg" alt="no img" />
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <button
+                                class="text-sm font-semibold text-primary px-[16px] py-[10px] border border-primary rounded"
+                                type="button">
+                                Mua thêm sản phẩm
+                            </button>
+                            <form>
+                                <!-- A -->
+                                <div>
+                                    <h1
+                                        class="text-2xl mt-[53px] pt-[11px] pb-[9px] pl-[21px] font-bold mb-4 uppercase text-headingColor bg-[#EBF1E7]">
+                                        B. Thông tin người mua hàng
+                                    </h1>
+                                    <div class="w-full">
+                                        <div class="flex flex-wrap -mx-3 mb-6">
+                                            <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                                                <div class="relative">
+                                                    <input type="text" id="name"
+                                                        class="block px-2.5 pb-4 pt-4 w-full text-sm text-gray-900 bg-transparent rounded-lg border border-gray-30" />
+                                                    <label for="name"
+                                                        class="absolute text-sm text-red duration-300 transform -translate-y-4 left-[10px] top-2 z-10 origin-[0] bg-white px-2">
+                                                        Họ và tên
+                                                    </label>
+                                                </div>
+                                                <p
+                                                    class="text-sm italic font-light leading-[1.19rem] text-ctaColor ml-7 mt-[10px]">
+                                                    Vui lòng nhập lại họ và tên
+                                                </p>
+                                            </div>
+                                            <div class="w-full md:w-1/2 px-3">
+                                                <div class="relative">
+                                                    <input type="text" id="phone"
+                                                        class="block px-2.5 pb-4 pt-4 w-full text-sm text-gray-900 bg-transparent rounded-lg border border-gray-300"
+                                                        placeholder=" " />
+                                                    <label for="phone"
+                                                        class="absolute text-sm text-red duration-300 transform -translate-y-4 left-[10px] top-2 z-10 origin-[0] bg-white px-2">Số
+                                                        điện thoại
+                                                    </label>
+                                                </div>
+                                                <p
+                                                    class="text-sm italic font-light leading-[1.19rem] text-ctaColor ml-7 mt-[10px]">
+                                                    Vui lòng nhập lại số điện thoại
+                                                </p>
+                                            </div>
+                                            <div class="w-full md:w-1/2 px-3 mt-8">
+                                                <div class="relative">
+                                                    <input type="text" id="email"
+                                                        class="block px-2.5 pb-4 pt-4 w-full text-sm text-gray-900 bg-transparent rounded-lg border border-gray-300"
+                                                        placeholder=" " />
+                                                    <label for="email"
+                                                        class="absolute text-sm text-red duration-300 transform -translate-y-4 left-[10px] top-2 z-10 origin-[0] bg-white px-2">Email</label>
+                                                </div>
+                                                <p
+                                                    class="text-sm italic font-light leading-[1.19rem] text-ctaColor ml-7 mt-[10px]">
+                                                    Vui lòng nhập lại địa chỉ email
+                                                </p>
                                             </div>
                                         </div>
-                                    </form>
-                                </li>
-                                <li class="flex gap-[12px] mt-[12px]">
-                                    <div class="max-h-[40px] flex justify-between w-full">
-                                        <img src="../assets/images/bocongthuong.png" alt="">
-                                        <img src="../assets/images/dmca.png" alt="">
+                                        <div class="flex gap-[10px]">
+                                            <input type="checkbox" class="bg-primary" />
+                                            <p class="text-base font-normal leading-5 text-[#343434]">
+                                                Gọi người khác nhận hộ (nếu có)
+                                            </p>
+                                        </div>
                                     </div>
-                                </li>
-                            </ul>
+                                </div>
+                                <!-- B-->
+                                <div>
+                                    <h1
+                                        class="text-2xl mt-[53px] pt-[11px] pb-[9px] pl-[21px] font-bold mb-4 uppercase text-headingColor bg-[#EBF1E7]">
+                                        B. Thông tin người mua hàng
+                                    </h1>
+                                    <div class="w-full">
+                                        <div class="flex flex-wrap -mx-3 mb-6">
+                                            <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                                                <div class="relative">
+                                                    <input type="text" id="name"
+                                                        class="block px-2.5 pb-4 pt-4 w-full text-sm text-gray-900 bg-transparent rounded-lg border border-gray-30" />
+                                                    <label for="name"
+                                                        class="absolute text-sm text-red duration-300 transform -translate-y-4 left-[10px] top-2 z-10 origin-[0] bg-white px-2">
+                                                        Họ và tên
+                                                    </label>
+                                                </div>
+                                                <p
+                                                    class="text-sm italic font-light leading-[1.19rem] text-ctaColor ml-7 mt-[10px]">
+                                                    Vui lòng nhập lại họ và tên
+                                                </p>
+                                            </div>
+                                            <div class="w-full md:w-1/2 px-3">
+                                                <div class="relative">
+                                                    <input type="text" id="phone"
+                                                        class="block px-2.5 pb-4 pt-4 w-full text-sm text-gray-900 bg-transparent rounded-lg border border-gray-300"
+                                                        placeholder=" " />
+                                                    <label for="phone"
+                                                        class="absolute text-sm text-red duration-300 transform -translate-y-4 left-[10px] top-2 z-10 origin-[0] bg-white px-2">Số
+                                                        điện thoại
+                                                    </label>
+                                                </div>
+                                                <p
+                                                    class="text-sm italic font-light leading-[1.19rem] text-ctaColor ml-7 mt-[10px]">
+                                                    Vui lòng nhập lại số điện thoại
+                                                </p>
+                                            </div>
+                                            <div class="w-full md:w-1/2 px-3 mt-8">
+                                                <div class="relative">
+                                                    <input type="text" id="email"
+                                                        class="block px-2.5 pb-4 pt-4 w-full text-sm text-gray-900 bg-transparent rounded-lg border border-gray-300"
+                                                        placeholder=" " />
+                                                    <label for="email"
+                                                        class="absolute text-sm text-red duration-300 transform -translate-y-4 left-[10px] top-2 z-10 origin-[0] bg-white px-2">Email</label>
+                                                </div>
+                                                <p
+                                                    class="text-sm italic font-light leading-[1.19rem] text-ctaColor ml-7 mt-[10px]">
+                                                    Vui lòng nhập lại địa chỉ email
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="flex gap-[10px]">
+                                            <input type="checkbox" class="bg-primary" />
+                                            <p class="text-base font-normal leading-5 text-[#343434]">
+                                                Gọi người khác nhận hộ (nếu có)
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- C -->
+                                <div>
+                                    <h1
+                                        class="text-2xl mt-[30px] pt-[11px] pb-[9px] pl-[21px] font-bold mb-4 uppercase text-headingColor bg-[#EBF1E7]">
+                                        d. PHƯƠNG THỨC THANH TOÁN
+                                    </h1>
+                                    <div class="flex gap-[10px]">
+                                        <input type="radio" class="bg-primary" />
+                                        <p class="text-base font-normal leading-5 text-[#343434]">
+                                            Thanh toán khi giao hàng (COD)
+                                        </p>
+                                    </div>
+                                    <div class="py-5 border-b border-dotted border-[#0000004D] tracking-wider">
+                                        <p class="text-base font-normal leading-5 text-[#343434]">
+                                            Không cần thanh toán trực tuyến. Bạn có thể
+                                            thanh toán sau khi các sản phẩm được giao!<br>
+                                            Thông tin chi tiết về tài khoản ngân hàng
+                                            của bạn sẽ chỉ được yêu cầu nếu bạn muốn trả
+                                            lại bất kỳ sản phẩm nào để được hoàn tiền.
+                                        </p>
+                                    </div>
+                                    <div class="flex gap-[10px] mt-[29px]">
+                                        <input type="checkbox" class="bg-primary" />
+                                        <p class="text-base font-normal leading-5 text-[#343434]">
+                                            Tôi đồng ý việc thu thập và sử dụng thông tin của tôi theo quy định tại
+                                            <span class="text-[#68c114] text-base font-bold leading-5">Chính sách Bảo
+                                                mật</span>
+                                        </p>
+                                    </div>
+                                    <div class="flex gap-[10px] mt-[20px]">
+                                        <input type="checkbox" class="bg-primary" />
+                                        <p class="text-base font-normal leading-5 text-[#343434]">
+                                            Tôi đã đọc, hiểu và chấp thuận <span
+                                                class="text-[#68c114] text-base font-bold leading-5">Chính sách Bảo
+                                                mật</span> và <span
+                                                class="text-[#68c114] text-base font-bold leading-5">Các Điều khoản &
+                                                Điều kiện.</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <button type="button"
+                                    class="font-openSans text-white uppercase py-[13px] px-[59px] bg-ctaColor mt-[31px] mb-[50px]">Đặt
+                                    hàng
+                                    ngay</button>
+                            </form>
+                        </div>
+                        <!-- modal right -->
+                        <div class="md:w-1/4 flex-grow">
+                            <div class="bg-[#FFFAFA] shadow-md p-6">
+                                <h2 class="text-2xl font-bold mb-4 text-headingColor">
+                                    Tóm tắt đơn hàng
+                                </h2>
+                                <div class="flex justify-between mb-[15px]">
+                                    <span class="text-[#000000BD] text-lg">02 Sản phẩm</span>
+                                    <span class="text-ctaColor">600.000 đ</span>
+                                </div>
+                                <div class="flex justify-between mb-[15px]">
+                                    <span class="text-[#000000BD] text-lg">Phí ship</span>
+                                    <span class="text-ctaColor">35.000 đ</span>
+                                </div>
+                                <div class="flex justify-between mb-[15px]">
+                                    <span class="font-bold">TỔNG</span>
+                                    <span class="font-bold text-ctaColor">635.000 đ</span>
+                                </div>
+                                <button
+                                    class="text-white bg-[#E10000] py-[13px] px-[84px] rounded-[3px] text-lg font-bold mt-4 w-full">
+                                    ĐẶT HÀNG NGAY
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div
-                class="bg-[#86A76A] min-h-[43px] w-full text-center flex justify-center items-center text-white text-sm">
-                © 2022 - Bản quyền thuộc về Công ty TNHH Nông Thảo
-            </div>
-        </footer> -->
+
+            <footer class="font-nunito">
+                <div class=" mx-auto flex flex-wrap">
+                    <div class="w-full flex max-h-[240px]">
+                        <img src="../assets/images/footer_img-1.png" class="img-style" alt="img footer">
+                        <img src="../assets/images/footer_img-2.png" class="img-style" alt="img footer">
+                        <img src="../assets/images/footer_img-3.png" class="img-style" alt="img footer">
+                        <img src="../assets/images/footer_img-4.png" class="img-style" alt="img footer">
+                        <img src="../assets/images/footer_img-5.png" class="img-style" alt="img footer">
+                        <img src="../assets/images/footer_img-6.png" class="img-style" alt="img footer">
+                        <img src="../assets/images/footer_img-7.png" class="img-style" alt="img footer">
+                        <img src="../assets/images/footer_img-8.png" class="img-style" alt="img footer">
+                    </div>
+                </div>
+                <div class="bg-[#356C07]">
+                    <div class="max-w-[1174px] mx-auto flex justify-between gap-[71px] py-[37px]">
+                        <div class="max-w-[305px]">
+                            <div class="max-h-[44px] w-full">
+                                <img src="../assets/images/footer_logo.png" class="mix-blend-color-dodge"
+                                    alt="logo footer">
+                            </div>
+                            <div class="font-nunito text-[14px] text-white mt-[46px] leading-6">
+                                MST: 012345678910 - Ngày cấp: 10/02/2022
+                                Nơi cấp: Sở Kế hoạch & Đầu tư TP Hà Nội
+                            </div>
+                            <div class="mt-[22px] flex items-center">
+                                <span class="text-white text-base pr-[15px]">Liên kết</span>
+                                <div class="flex gap-[10px]">
+                                    <img src="../assets/icons/ti-shoppe.svg" alt="ti-social">
+                                    <img src="../assets/icons/ti-tiki.svg" alt="ti-social">
+                                    <img src="../assets/icons/tu-laza.svg" alt="ti-social">
+                                    <img src="../assets/icons/ti-fa.svg" alt="ti-social">
+                                    <img src="../assets/icons/ti-in.svg" alt="ti-social">
+                                    <img src="../assets/icons/ti-tiktok.svg" alt="ti-social">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="w-[792px] h-[198px] flex gap-[61px]">
+                            <div class="max-w-[248px]">
+                                <h4 class="text-white text-sm uppercase">Liên hệ</h4>
+                                <ul class="mt-[15px]">
+                                    <li class="flex gap-[12px]">
+                                        <img src="../assets/icons/ti-address.svg" class="self-start" alt="">
+                                        <p class="text-sm text-white">Tầng 4-5-6, Tòa nhà Capital Place, số 29 đường
+                                            Liễu
+                                            Giai,
+                                            P.Ngọc Khánh, Q.Ba
+                                            Đình, Hà Nội</p>
+                                    </li>
+                                    <li class="flex gap-[12px] mt-[12px]">
+                                        <img src="../assets/icons/ti-phone.svg" alt="">
+                                        <p class="text-sm text-white">0969.71.6848</p>
+                                    </li>
+                                    <li class="flex gap-[12px] mt-[12px]">
+                                        <img src="../assets/icons/ti-email.svg" alt="">
+                                        <p class="text-sm text-white">hotro@nongthao.vn</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="text-white text-sm uppercase">Thông tin</h4>
+                                <ul class="mt-[15px] list-disc">
+                                    <li class="text-white text-sm mb-[10px] leading-5">Giới thiệu Nông Thảo</li>
+                                    <li class="text-white text-sm mb-[10px] leading-5">Điều khoản</li>
+                                    <li class="text-white text-sm mb-[10px] leading-5">Chính sách bảo mật</li>
+                                    <li class="text-white text-sm mb-[10px] leading-5">Hướng dẫn mua hàng</li>
+                                    <li class="text-white text-sm mb-[10px] leading-5">Trả hàng & hoàn tiền</li>
+                                    <li class="text-white text-sm mb-[10px] leading-5">Nông Thảo Blogs</li>
+                                </ul>
+                            </div>
+                            <div class="max-w-[248px]">
+                                <h4 class="text-white text-sm uppercase">Đăng ký nhận tin</h4>
+                                <ul class="mt-[15px]">
+                                    <li class="flex gap-[12px] mt-[12px]">
+                                        <p class="text-sm text-white">Vui lòng nhập email để nhận thêm nhiều ưu đãi từ
+                                            Nông
+                                            Thảo</p>
+                                    </li>
+                                    <li class="mt-[8px]">
+                                        <form action="">
+                                            <div class="w-full max-w-sm min-w-[200px]">
+                                                <div class="relative">
+                                                    <input type="text"
+                                                        class="w-full max-h-[45px] pl-3 pr-10 py-[13px] bg-white placeholder:text-slate-400 text-slate-600 text-base border border-slate-200 shadow-sm"
+                                                        placeholder="Email của bạn..." />
+
+                                                    <div
+                                                        class="absolute w-[47px] h-full bg-[#68C114] right-0 top-0 flex justify-center items-center">
+                                                        <img src="../assets/icons/ti-pp.svg" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </li>
+                                    <li class="flex gap-[12px] mt-[12px]">
+                                        <div class="max-h-[40px] flex justify-between w-full">
+                                            <img src="../assets/images/bocongthuong.png" alt="">
+                                            <img src="../assets/images/dmca.png" alt="">
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="bg-[#86A76A] min-h-[43px] w-full text-center flex justify-center items-center text-white text-sm">
+                    © 2022 - Bản quyền thuộc về Công ty TNHH Nông Thảo
+                </div>
+            </footer>
         </div>
     </div>
 </body>
