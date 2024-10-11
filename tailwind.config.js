@@ -14,6 +14,7 @@ module.exports = {
          },
          screens: {
             "max-mb": { max: "375px" },
+            "min-mb": { min: "375px" },
          },
       },
       fontFamily: {
