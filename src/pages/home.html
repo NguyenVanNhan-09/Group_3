@@ -8,40 +8,118 @@
 </head>
 <body>
     <div class="container mx-auto">
-        <header class="font-nunito">
-            <div class='flex shadow-md py-4 px-2 bg-white min-h-[80px] relative z-50'>
-                <div class='flex flex-wrap items-center justify-between gap-5 w-full max-w-[1174px] mx-auto'>
-                    <a href="#"><img src="../assets/images/logo_header.png" alt="logo" class='w-36' /></a>
+        <header class="font-nunito bg-white shadow-md px-[12px]">
+            <div class=" bg-[#ffff] sidebar fixed top-0 bottom-0 left-0 w-[288px] hidden sm:hidden   p-[20px]">
+                <div class="flex justify-between items-center  cursor-pointer">
+                    <img class="w-[138px] h-[26px] " src="../assets/images/logo_header.png" alt="">
+    
+                    <div onclick="openSidebar()">
+                        <img src="../assets/icons/ti-close.svg" alt="">
+                    </div>
+                </div>
+                <div class="flex flex-row my-[30px] relative ">
+                    <input class="bg-[#EBF0E6] pl-[10px]  w-[252px] h-[42px]  rounded-[30px]" type="text"
+                        placeholder="Bạn muốn tìm...">
+                    <button class="absolute right-[5px] top-[2px] text-[#fff] flex items-center justify-center">
+                        <img src="../assets/icons/ti-search.svg" alt="">
+                    </button>
+                </div>
+    
+                <div class="flex flex-col gap-[20px]">
                     <div>
+                        <div class="flex justify-between " onclick="dropdown()">
+                            <b class="text-primary text-[16px] font-[700] cursor-pointer">SẢN PHẨM</b>
+                            <img class="" src="../assets/icons/ti-arrow-down.svg" alt="">
+                        </div>
+    
+                        <div class="border-subTextColor border-b-[1px] my-[2px]"></div>
+                        <div class="ml-[20px] flex flex-col gap-[10px] mt-2 text-[16px] font-[400] text-[#000000] "
+                            id="submenu">
+                            <div>
+                                <p class=" cursor-pointer" >Thảo dược</p>
+                                <div class="border-subTextColor border-b-[1px] my-[2px]"></div>
+                            </div>
+                            <div>
+                                <p class=" cursor-pointer">Nông sản</p>
+                                <div class="border-subTextColor border-b-[1px] my-[2px]"></div>
+                            </div>
+                            <div>
+                                <p class=" cursor-pointer">Hoa quả</p>
+                                <div class="border-subTextColor border-b-[1px] my-[2px]"></div>
+                            </div>
+    
+                        </div>
+                    </div>
+                    <div>
+                        <b class="text-primary text-[16px] font-[700]  cursor-pointer">VỀ NÔNG THẢO</b>
+                        <div class="border-subTextColor border-b-[1px] my-[2px]"></div>
+                    </div>
+    
+                    <div>
+                        <div class="flex justify-between">
+                            <b class="text-primary text-[16px] font-[700]  cursor-pointer">BLOGS</b>
+                            <img src="../assets/icons/ti-arrow-down.svg" alt="">
+                        </div>
+    
+                        <div class="border-subTextColor border-b-[1px] my-[2px]"></div>
+    
+                    </div>
+                    <div>
+                        <b class="text-primary text-[16px] font-[700]  cursor-pointer">LIÊN HỆ</b>
+                        <div class="border-subTextColor border-b-[1px] my-[2px]"></div>
+                    </div>
+    
+                </div>
+                <button class="rounded-[5px] mt-[50px] w-[252px] h-[51px] bg-ctaColor">
+                    <span class="text-[#ffff] font-[700] text-[18px] text-center">0988.818.841</span>
+                </button>
+                <p class="text-[13px] font-[400] text-primary text-center mt-[20px]  cursor-pointer">Gọi hỗ trợ ngay!</p>
+            </div>
+    
+    
+            <div class='py-4 px-2 z-50 w-full max-w-[1174px] mx-auto '>
+                <div class='flex flex-wrap items-center sm:flex justify-between gap-5'>
+                    <div class="block sm:hidden  cursor-pointer" onclick="openSidebar()">
+                        <img src="../assets/icons/ti-menu.svg" alt="">
+                    </div>
+                    <a href="#"><img src="../assets/images/logo_header.png" alt="logo" class='w-36' /></a>
+                    <div class="hidden sm:block">
                         <ul class='flex'>
                             <li class='border-gray-300 px-3'>
                                 <div class="group relative group-hover:visible">
                                     <a href='#'
-                                    class='group-hover:visible hover:text-[#356C07] text-[#1A1A1A] block font-semibold text-base uppercase'>Sản
-                                    phẩm
-                                </a>
-                                    <div class="group-hover:visible invisible hover-product w-[197px] h-[143px] absolute bg-[#FFFFFF] -ml-[9px] mt-[0px]" style="box-shadow: 1px 1px 1px 1px #867979;">
+                                        class='group-hover:visible hover:text-[#356C07] text-[#1A1A1A] block font-semibold text-base uppercase'>Sản
+                                        phẩm
+                                    </a>
+                                    <div class="group-hover:visible invisible hover-product w-[197px] h-[143px] absolute bg-[#FFFFFF] -ml-[9px] mt-[0px]"
+                                        style="box-shadow: 1px 1px 1px 1px #867979;">
                                         <div class="ground w-[180px] h-[118px] mx-3 my-2.5">
                                             <ul class="flex-col">
                                                 <li class="mt-[15px]">
-                                                    <a href="" class="uppercase text-sm font-semibold leading-[1.31rem] text-left text-[#356C07]">Thảo dược</a>
+                                                    <a href=""
+                                                        class="uppercase text-sm font-semibold leading-[1.31rem] text-left text-[#356C07]">Thảo
+                                                        dược</a>
                                                 </li>
                                                 <div class="border mt-[10px] border-[#0000004D]"></div>
                                                 <li class="mt-[10px]">
-                                                    <a href="" class="uppercase text-sm font-semibold leading-[1.31rem] text-left text-[##1A1A1A]">Nông sản</a>
+                                                    <a href=""
+                                                        class="uppercase text-sm font-semibold leading-[1.31rem] text-left text-[##1A1A1A]">Nông
+                                                        sản</a>
                                                 </li class="mt-[10px] ">
                                                 <div class="border mt-[10px] border-[#0000004D]"></div>
                                                 <li class="mt-[10px]">
-                                                    <a href="" class="uppercase text-sm font-semibold leading-[1.31rem] text-left text-[##1A1A1A]">Hoa quả hữu cơ</a>
+                                                    <a href=""
+                                                        class="uppercase text-sm font-semibold leading-[1.31rem] text-left text-[##1A1A1A]">Hoa
+                                                        quả hữu cơ</a>
                                                 </li>
                                             </ul>
                                         </div>
-            
+    
                                     </div>
                                 </div>
                             </li>
                             <li class='border-gray-300 px-3'><a href='#'
-                                    class='hover:text-[#356C07] text-[#356C07] block font-semibold text-base uppercase'>Về
+                                    class='hover:text-[#356C07] text-[#1A1A1A] block font-semibold text-base uppercase'>Về
                                     nông
                                     thảo
                                 </a>
@@ -59,30 +137,41 @@
                     </div>
     
                     <div class='flex'>
-                        <button class='pr-[17px]'>
+                        <button class='pr-[17px] hidden sm:block'>
                             <img src="../assets/icons/ti-search.svg" alt="ti-search"></button>
-                        <div class='group'>
-                            <div class="img-object-base relative">
-                                <img onclick="toggleCart()" id="clickButton" src="../assets/icons/ti-cart.svg" alt="ti-cart" role="button" >
-                                <div id="cart" class="hidden open-cart w-[300px] h-[144px] bg-[#FFFFFF] absolute -right-[140px] top-[59px]" style="box-shadow: 1px 1px 1px 1px grey">
-                                    <div class=" flex-col my-3 mx-3 justify-center items-center">
-                                        <div class="layer flex mt-[20px]">
-                                            <div class="img w-[31px] h-[27px]">
-                                                <img class="img-object-base" src="../assets/images/page_home-img/lemon.jfif" alt="">
-                                            </div>
-                                            <p class="text text-xs font-normal leading-[1.02rem] text-[#000000] mt-1.5 ml-2">Mứt chanh tây sấy lạnh 100% hữu cơ...</p>
-                                            <p class="count text-[0.81rem] font-normal leading-[1.11rem] text-[#000000BD] mt-1 ml-1.5">x 1</p>
+    
+    
+                        <div class="img-object-base relative">
+                            <img onclick="toggleCart()" id="clickButton" src="../assets/icons/ti-cart.svg" alt="ti-cart"
+                                role="button">
+    
+                            <div id="cart"
+                                class="hidden open-cart w-[300px] h-[144px] bg-[#FFFFFF] absolute -right-[10px] sm:-right-[140px] top-[59px]"
+                                style="box-shadow: 1px 1px 1px 1px grey">
+                                <div class=" flex-col my-3 mx-3 justify-center items-center">
+                                    <div class="layer flex mt-[20px]">
+                                        <div class="img w-[31px] h-[27px] object-cover">
+                                            <img class="img-object-base" src="../assets/images/lemon.jfif" alt="">
                                         </div>
-                                            <div class="layer flex mt-[20px]">
-                                                <div class="img w-[31px] h-[27px]">
-                                                    <img class="img-object-base" src="../assets/images/page_home-img/lemon.jfif" alt="">
-                                                </div>
-                                                <p class="text text-xs font-normal leading-[1.02rem] text-[#000000] mt-1.5 ml-2">Mứt chanh tây sấy lạnh 100% hữu cơ...</p>
-                                                <p class="count text-[0.81rem] font-normal leading-[1.11rem] text-[#000000BD] mt-1 ml-1.5">x 1</p>
-                                            </div>
-                                            <button class=" mt-[9px] text-center mx-auto w-72 h-8 bg-[#E10000] text-xs font-normal leading-[1.02rem] text-[#FFFFFF] -ml-1.5">ĐẶT HÀNG NGAY</button>
-                                        </div>
+                                        <p class="text text-xs font-normal leading-[1.02rem] text-[#000000] mt-1.5 ml-2">Mứt
+                                            chanh tây sấy lạnh 100% hữu cơ...</p>
+                                        <p
+                                            class="count text-[0.81rem] font-normal leading-[1.11rem] text-[#000000BD] mt-1 ml-1.5">
+                                            x 1</p>
                                     </div>
+                                    <div class="layer flex mt-[20px]">
+                                        <div class="img w-[31px] h-[27px] object-cover ">
+                                            <img class="img-object-base" src="../assets/images/lemon.jfif" alt="">
+                                        </div>
+                                        <p class="text text-xs font-normal leading-[1.02rem] text-[#000000] mt-1.5 ml-2">Mứt
+                                            chanh tây sấy lạnh 100% hữu cơ...</p>
+                                        <p
+                                            class="count text-[0.81rem] font-normal leading-[1.11rem] text-[#000000BD] mt-1 ml-1.5">
+                                            x 1</p>
+                                    </div>
+                                    <button
+                                        class=" mt-[9px] text-center mx-auto w-72 h-8 bg-[#E10000] text-xs font-normal leading-[1.02rem] text-[#FFFFFF] -ml-1.5">ĐẶT
+                                        HÀNG NGAY</button>
                                 </div>
                             </div>
                         </div>
@@ -90,52 +179,55 @@
                 </div>
             </div>
         </header>
+            </div>
         <section class="container mx-auto mt-[20px]">
             <div class="img-vegetable max-w-[1920px] h-[490px] max-h-full">
                 <img class="img-object-base" src="./../assets/images/page_home-img/imageVegetable.jfif" alt="">
             </div>
         </section>
-        <section class="container mx-auto bg-slate-50 max-w-[1920px] h-[153px] justify-around items-center flex">
-            <div class="flex">
-                <div class="flex mx-5">
-                    <div class="img-truck max-w-[70px] h-[70px]">
-                        <img class="img-object-base" src="../assets/icons/page_home-svg/truck.svg" alt="">
+        <section class="bg-slate-50 h-[153px] ">
+            <div class="justify-around items-center flex container mx-auto max-w-[1920px] h-[153px]">
+                <div class="flex mx-auto gap-[60px]">
+                    <div class="flex mx-5">
+                        <div class="img-truck max-w-[70px] h-[70px]">
+                            <img class="img-object-base" src="../assets/icons/page_home-svg/truck.svg" alt="">
+                        </div>
+                        <div class="text mt-[11px] ml-[11px]">
+                            <p class="font-[Nunito] text-[16px] font-bold leading-[24.03px] text-[#68C114]">Ship toàn quốc</p>
+                            <p class="font-[Nunito] text-[13px] font-normal leading-[19.52px] text-left text-[#424242]">Miễn phí đơn hàng từ 500K</p>
+                        </div>
                     </div>
-                    <div class="text">
-                        <p class="font-[Nunito] text-[16px] font-bold leading-[24.03px] text-[#68C114]">Ship toàn quốc</p>
-                        <p class="font-[Nunito] text-[13px] font-normal leading-[19.52px] text-left text-[#424242]">Miễn phí đơn hàng từ 500K</p>
+                    <div class="flex mx-5">
+                        <div class="img-truck max-w-[70px] h-[70px]">
+                            <img class="img-object-base" src="../assets/icons/page_home-svg/certificate.svg" alt="">
+                        </div>
+                        <div class="text mt-[11px] ml-[11px]">
+                            <p class="font-[Nunito] text-[16px] font-bold leading-[24.03px] text-left text-[#356C07]">CHẤT LƯỢNG </p>
+                            <p class="font-[Nunito] text-[13px] font-normal leading-[19.52px] text-left text-[#424242]">Sản phẩm tốt nhất</p>
+                        </div>
                     </div>
-                </div>
-                <div class="flex mx-5">
-                    <div class="img-truck max-w-[70px] h-[70px]">
-                        <img class="img-object-base" src="../assets/icons/page_home-svg/certificate.svg" alt="">
+                    <div class="flex mx-5">
+                        <div class="img-truck max-w-[70px] h-[70px]">
+                            <img class="img-object-base" src="../assets/icons/page_home-svg/refund.svg" alt="">
+                        </div>
+                        <div class="text mt-[11px] ml-[11px]">
+                            <p class="font-[Nunito] text-[16px] font-bold leading-[24.03px] text-left text-[#356C07]">7 ngày đổi trả</p>
+                            <p class="font-[Nunito] text-[13px] font-normal leading-[19.52px] text-left text-[#424242]"">Áp dụng cho tất cả đơn hàng</p>
+                        </div>
                     </div>
-                    <div class="text">
-                        <p class="font-[Nunito] text-[16px] font-bold leading-[24.03px] text-left">CHẤT LƯỢNG </p>
-                        <p class="font-[Nunito] text-[13px] font-normal leading-[19.52px] text-left text-[#424242]">Sản phẩm tốt nhất</p>
-                    </div>
-                </div>
-                <div class="flex mx-5">
-                    <div class="img-truck max-w-[70px] h-[70px]">
-                        <img class="img-object-base" src="../assets/icons/page_home-svg/refund.svg" alt="">
-                    </div>
-                    <div class="text">
-                        <p>7 ngày đổi trả</p>
-                        <p>Áp dụng cho tất cả đơn hàng</p>
-                    </div>
-                </div>
-                <div class="flex mx-5">
-                    <div class="img-truck max-w-[70px] h-[70px]">
-                        <img class="img-object-base" src="../assets/icons/page_home-svg/headphone.svg" alt="">
-                    </div>
-                    <div class="text">
-                        <p>TƯ VẤN ONLINE</p>
-                        <p>Hỗ trợ 24/7</p>
+                    <div class="flex mx-5">
+                        <div class="img-truck max-w-[70px] h-[70px]">
+                            <img class="img-object-base" src="../assets/icons/page_home-svg/headphone.svg" alt="">
+                        </div>
+                        <div class="text mt-[11px] ml-[11px]">
+                            <p class="font-[Nunito] text-[16px] font-bold leading-[24.03px] text-left text-[#356C07]">TƯ VẤN ONLINE</p>
+                            <p class="font-[Nunito] text-[13px] font-normal leading-[19.52px] text-left text-[#424242]"">Hỗ trợ 24/7</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="hot-product container">
+        <section class="hot-product container mx-auto">
             <div class="mt-10 flex justify-center items-center">
                 <div class="max-w-[135.46px] h-[26.03px]">
                     <img class="img-object-base" src="../assets/icons/page_home-svg/leaf.svg" alt="" class="object-fill">
@@ -143,13 +235,13 @@
                 <p class="ml-[12px] text-center font-bold w-[306px] h-[38px] bg-white text-[28px] leading-[33.2px]">Sản phẩm bán chạy</p>
             </div>
             <div class="slide-product">
-                <div class="flex gap-[46px] mt-[20px] ml-[139px] mr-[178px] relative">
+                <div class="flex gap-[46px] mt-[20px] ml-[171px] mr-[178px] relative w-[74.19rem] max-w-full">
                     <div class="direction-left absolute left-0 w-9 h-24 bg-[#34343480] z-10 top-[95px]">
                         <div class="img-direction-left w-3 h-5 ml-3 mt-8">
                             <img class="img-object-base" src="../assets/icons/page_home-svg/arrow-left.svg" alt="">
                         </div>
                     </div>
-                    <div class="direction-right absolute right-0 w-9 h-24 bg-[#34343480] z-10 top-[95px]">
+                    <div class="direction-right absolute -right-[30px] w-9 h-24 bg-[#34343480] z-10 top-[95px]">
                         <div class="img-direction-right w-3 h-5 ml-3 mt-8">
                             <img class="img-object-base" src="../assets/icons/page_home-svg/arrow-right.svg" alt="">
                         </div>
@@ -162,7 +254,7 @@
                             <img class="img-object-base" src="../assets/icons/page_home-svg/sale.svg" alt="">
                             <p class="-mt-[46px] ml-[8px] text-white text-[21px]">50%</p>
                         </div>
-                         <div class="buy-now bg-[#E10000] w-[270px] h-[40px] absolute bottom-[99px] text-center pt-[5px] text-[16px] text-[#FFFFFF] uppercase">Mua ngay</div>
+                         <div class="buy-now bg-[#E10000] w-[270px] h-[40px] absolute bottom-[99px] text-center pt-[5px] text-[16px] text-white uppercase">Mua ngay</div>
                         <div class="layer-bot  w-[270px] h-[117px] shadow">
                             <div class="mx-2 my-2">
                                 <p class="mx-2 text-[16px] leading[22.5px] text-[#356C07]">Thảo dược Cao cà gai leo Yên Thủy - 250g</p>
@@ -185,7 +277,7 @@
                             <img class="img-object-base" src="../assets/icons/page_home-svg/sale.svg" alt="">
                             <p class="-mt-[46px] ml-[8px] text-white text-[21px]">50%</p>
                         </div>
-                        <div class="buy-now bg-[#E10000] w-[270px] h-[40px] absolute bottom-[99px] text-center pt-[5px] text-[16px] text-[#FFFFFF] uppercase">Mua ngay</div>
+                        <div class="buy-now bg-[#E10000] w-[270px] h-[40px] absolute bottom-[99px] text-center pt-[5px] text-[16px] text-white uppercase">Mua ngay</div>
                         <div class="layer-bot  w-[270px] h-[117px] shadow">
                             <div class="mx-2 my-2">
                                 <p class="mx-2 text-[16px] leading[22.5px] text-[#356C07]">Thảo dược Cao cà gai leo Yên Thủy - 250g</p>
@@ -208,7 +300,7 @@
                             <img class="img-object-base" src="../assets/icons/page_home-svg/sale.svg" alt="">
                             <p class="-mt-[46px] ml-[8px] text-white text-[21px]">50%</p>
                         </div>
-                          <div class="buy-now bg-[#E10000] w-[270px] h-[40px] absolute bottom-[99px] text-center pt-[5px] text-[16px] text-[#FFFFFF] uppercase">Mua ngay</div>
+                          <div class="buy-now bg-[#E10000] w-[270px] h-[40px] absolute bottom-[99px] text-center pt-[5px] text-[16px] text-white uppercase">Mua ngay</div>
                         <div class="layer-bot  w-[270px] h-[117px] shadow">
                             <div class="mx-2 my-2">
                                 <p class="mx-2 text-[16px] leading[22.5px] text-[#356C07]">Thảo dược Cao cà gai leo Yên Thủy - 250g</p>
@@ -231,7 +323,7 @@
                             <img class="img-object-base" src="../assets/icons/page_home-svg/sale.svg" alt="">
                             <p class="-mt-[46px] ml-[8px] text-white text-[21px]">50%</p>
                         </div>
-                          <div class="buy-now bg-[#E10000] w-[270px] h-[40px] absolute bottom-[99px] text-center pt-[5px] text-[16px] text-[#FFFFFF] uppercase">Mua ngay</div>
+                          <div class="buy-now bg-[#E10000] w-[270px] h-[40px] absolute bottom-[99px] text-center pt-[5px] text-[16px] text-white uppercase">Mua ngay</div>
                         <div class="layer-bot  w-[270px] h-[117px] shadow">
                             <div class="mx-2 my-2">
                                 <p class="mx-2 text-[16px] leading[22.5px] text-[#356C07]">Thảo dược Cao cà gai leo Yên Thủy - 250g</p>
@@ -262,7 +354,7 @@
                 <div class="w-40 h-0 border border-[#356c07] mx-auto mt-3"></div>
             </div>
         </section>
-        <section class="container sale w-[120.00rem] h-[44.44rem] bg-[#FAFAFA] relative">
+        <section class="container mx-auto sale w-[120.00rem] h-[44.44rem] bg-[#FAFAFA] relative">
             <div class="img-left w-80 h-[71.81rem] opacity-[15%] absolute left-0">
                 <img class="img-object-base" src="../assets/images/page_home-img/leaf-left.png" alt="">
             </div>
@@ -299,13 +391,13 @@
                 </div>
             </div>
             <div class="slide-product">
-                <div class="flex gap-[46px] mt-[20px] ml-[139px] mr-[178px] flex- relative">
+                <div class="flex gap-[46px] mt-[20px] ml-[171px] mr-[178px] flex- relative w-[74.19rem] max-w-full">
                     <div class="direction-left absolute left-0 w-9 h-24 bg-[#34343480] z-10 top-[95px]">
                         <div class="img-direction-left w-3 h-5 ml-3 mt-8">
                             <img class="img-object-base" src="../assets/icons/page_home-svg/arrow-left.svg" alt="">
                         </div>
                     </div>
-                    <div class="direction-right absolute right-0 w-9 h-24 bg-[#34343480] z-10 top-[95px]">
+                    <div class="direction-right absolute -right-[30px] w-9 h-24 bg-[#34343480] z-10 top-[95px]">
                         <div class="img-direction-right w-3 h-5 ml-3 mt-8">
                             <img class="img-object-base" src="../assets/icons/page_home-svg/arrow-right.svg" alt="">
                         </div>
@@ -318,7 +410,7 @@
                             <img class="img-object-base" src="../assets/icons/page_home-svg/sale.svg" alt="">
                             <p class="-mt-[46px] ml-[8px] text-white text-[21px]">50%</p>
                         </div>
-                          <div class="buy-now bg-[#E10000] w-[270px] h-[40px] absolute bottom-[99px] text-center pt-[5px] text-[16px] text-[#FFFFFF] uppercase">Mua ngay</div>
+                          <div class="buy-now bg-[#E10000] w-[270px] h-[40px] absolute bottom-[99px] text-center pt-[5px] text-[16px] text-white uppercase">Mua ngay</div>
                         <div class="layer-bot  w-[270px] h-[117px] shadow">
                             <div class="mx-2 my-2">
                                 <p class="mx-2 text-[16px] leading[22.5px] text-[#356C07]">Thảo dược Cao cà gai leo Yên Thủy - 250g</p>
@@ -341,7 +433,7 @@
                             <img class="img-object-base" src="../assets/icons/page_home-svg/sale.svg" alt="">
                             <p class="-mt-[46px] ml-[8px] text-white text-[21px]">50%</p>
                         </div>
-                          <div class="buy-now bg-[#E10000] w-[270px] h-[40px] absolute bottom-[99px] text-center pt-[5px] text-[16px] text-[#FFFFFF] uppercase">Mua ngay</div>
+                          <div class="buy-now bg-[#E10000] w-[270px] h-[40px] absolute bottom-[99px] text-center pt-[5px] text-[16px] text-white uppercase">Mua ngay</div>
                         <div class="layer-bot  w-[270px] h-[117px] shadow">
                             <div class="mx-2 my-2">
                                 <p class="mx-2 text-[16px] leading[22.5px] text-[#356C07]">Thảo dược Cao cà gai leo Yên Thủy - 250g</p>
@@ -364,7 +456,7 @@
                             <img class="img-object-base" src="../assets/icons/page_home-svg/sale.svg" alt="">
                             <p class="-mt-[46px] ml-[8px] text-white text-[21px]">50%</p>
                         </div>
-                          <div class="buy-now bg-[#E10000] w-[270px] h-[40px] absolute bottom-[99px] text-center pt-[5px] text-[16px] text-[#FFFFFF] uppercase">Mua ngay</div>
+                          <div class="buy-now bg-[#E10000] w-[270px] h-[40px] absolute bottom-[99px] text-center pt-[5px] text-[16px] text-white uppercase">Mua ngay</div>
                         <div class="layer-bot  w-[270px] h-[117px] shadow">
                             <div class="mx-2 my-2">
                                 <p class="mx-2 text-[16px] leading[22.5px] text-[#356C07]">Thảo dược Cao cà gai leo Yên Thủy - 250g</p>
@@ -387,7 +479,7 @@
                             <img class="img-object-base" src="../assets/icons/page_home-svg/sale.svg" alt="">
                             <p class="-mt-[46px] ml-[8px] text-white text-[21px]">50%</p>
                         </div>
-                          <div class="buy-now bg-[#E10000] w-[270px] h-[40px] absolute bottom-[99px] text-center pt-[5px] text-[16px] text-[#FFFFFF] uppercase">Mua ngay</div>
+                          <div class="buy-now bg-[#E10000] w-[270px] h-[40px] absolute bottom-[99px] text-center pt-[5px] text-[16px] text-white uppercase">Mua ngay</div>
                         <div class="layer-bot  w-[270px] h-[117px] shadow">
                             <div class="mx-2 my-2">
                                 <p class="mx-2 text-[16px] leading[22.5px] text-[#356C07]">Thảo dược Cao cà gai leo Yên Thủy - 250g</p>
@@ -413,7 +505,7 @@
                 </div>
             </div>
         </section>
-        <section class="list-product">
+        <section class="list-product container mx-auto">
             <div class="link-product flex items-center ml-[147px]">
                 <div class="mt-10 flex">
                     <div class="max-w-[135.46px] h-[26.03px]">
@@ -421,7 +513,7 @@
                     </div>
                     <p class="text-[1.75rem] font-bold leading-[2.39rem] ml-[3px] uppercase">Sản phẩm</p>
                 </div>
-                <div class="products mt-[54px] ml-[139px]">
+                <div class="products mt-[54px] ml-[171px]">
                     <ul class="flex">
                         <li class="text-lg font-normal leading-[1.53rem] pr-[49px] text-[#424242]">Thảo dược</li>
                         <li class="text-lg font-normal leading-[1.53rem] pr-[49px] text-[#68C114]">Nông sản</li>
@@ -436,12 +528,12 @@
                 </div>
             </div>
             <div class="detail-product flex ml-[139px] mt-3">
-                <div class="sale-off h-[52.69rem] w-64 rounded opacity-[0.03rem] relative">
+                <div class="sale-off h-[52.69rem] max-w-64 rounded opacity-[0.03rem] relative">
                     <img class="img-object-base" src="../assets/images/page_home-img/summerOff.jfif" alt="">
                     <div class="text-and-border absolute top-1/2 left-[2.13rem]">
-                        <p class="text-lg font-bold leading-[1.53rem] text-center text-[#FFFFFF]">Summer Sale</p>
+                        <p class="text-lg font-bold leading-[1.53rem] text-center text-white">Summer Sale</p>
                         <p class="text-4xl font-bold leading-[3.06rem] text-center text-[#FFC700]">15% Off</p>
-                        <p class="text-lg font-normal leading-[1.53rem] text-center text-[#FFFFFF]">Các sản phẩm dạng trà</p>
+                        <p class="text-lg font-normal leading-[1.53rem] text-center text-white">Các sản phẩm dạng trà</p>
                         <div class="border-2 border-white m-auto w-28 my-3"></div>
                         <p class="text-lg font-bold leading-[1.53rem] text-center text-[#FFC700]">Mua ngay</p>
                     </div>
@@ -456,7 +548,7 @@
                                 <img class="img-object-base" src="../assets/icons/page_home-svg/sale.svg" alt="">
                                 <p class="-mt-[46px] ml-[8px] text-white text-[21px]">50%</p>
                             </div>
-                              <div class="buy-now bg-[#E10000] w-[270px] h-[40px] absolute bottom-[99px] text-center pt-[5px] text-[16px] text-[#FFFFFF] uppercase">Mua ngay</div>
+                              <div class="buy-now bg-[#E10000] w-[270px] h-[40px] absolute bottom-[99px] text-center pt-[5px] text-[16px] text-white uppercase">Mua ngay</div>
                             <div class="layer-bot  w-[270px] h-[117px] shadow">
                                 <div class="mx-2 my-2">
                                     <p class="mx-2 text-[16px] leading[22.5px] text-[#356C07]">Thảo dược Cao cà gai leo Yên Thủy - 250g</p>
@@ -481,7 +573,7 @@
                                 <img class="img-object-base" src="../assets/icons/page_home-svg/sale.svg" alt="">
                                 <p class="-mt-[46px] ml-[8px] text-white text-[21px]">50%</p>
                             </div>
-                              <div class="buy-now bg-[#E10000] w-[270px] h-[40px] absolute bottom-[99px] text-center pt-[5px] text-[16px] text-[#FFFFFF] uppercase">Mua ngay</div>
+                              <div class="buy-now bg-[#E10000] w-[270px] h-[40px] absolute bottom-[99px] text-center pt-[5px] text-[16px] text-white uppercase">Mua ngay</div>
                             <div class="layer-bot  w-[270px] h-[117px] shadow">
                                 <div class="mx-2 my-2">
                                     <p class="mx-2 text-[16px] leading[22.5px] text-[#356C07]">Thảo dược Cao cà gai leo Yên Thủy - 250g</p>
@@ -506,7 +598,7 @@
                                 <img class="img-object-base" src="../assets/icons/page_home-svg/sale.svg" alt="">
                                 <p class="-mt-[46px] ml-[8px] text-white text-[21px]">50%</p>
                             </div>
-                              <div class="buy-now bg-[#E10000] w-[270px] h-[40px] absolute bottom-[99px] text-center pt-[5px] text-[16px] text-[#FFFFFF] uppercase">Mua ngay</div>
+                              <div class="buy-now bg-[#E10000] w-[270px] h-[40px] absolute bottom-[99px] text-center pt-[5px] text-[16px] text-white uppercase">Mua ngay</div>
                             <div class="layer-bot  w-[270px] h-[117px] shadow">
                                 <div class="mx-2 my-2">
                                     <p class="mx-2 text-[16px] leading[22.5px] text-[#356C07]">Thảo dược Cao cà gai leo Yên Thủy - 250g</p>
@@ -531,7 +623,7 @@
                                 <img class="img-object-base" src="../assets/icons/page_home-svg/sale.svg" alt="">
                                 <p class="-mt-[46px] ml-[8px] text-white text-[21px]">50%</p>
                             </div>
-                              <div class="buy-now bg-[#E10000] w-[270px] h-[40px] absolute bottom-[99px] text-center pt-[5px] text-[16px] text-[#FFFFFF] uppercase">Mua ngay</div>
+                              <div class="buy-now bg-[#E10000] w-[270px] h-[40px] absolute bottom-[99px] text-center pt-[5px] text-[16px] text-white uppercase">Mua ngay</div>
                             <div class="layer-bot  w-[270px] h-[117px] shadow">
                                 <div class="mx-2 my-2">
                                     <p class="mx-2 text-[16px] leading[22.5px] text-[#356C07]">Thảo dược Cao cà gai leo Yên Thủy - 250g</p>
@@ -556,7 +648,7 @@
                                 <img class="img-object-base" src="../assets/icons/page_home-svg/sale.svg" alt="">
                                 <p class="-mt-[46px] ml-[8px] text-white text-[21px]">50%</p>
                             </div>
-                              <div class="buy-now bg-[#E10000] w-[270px] h-[40px] absolute bottom-[99px] text-center pt-[5px] text-[16px] text-[#FFFFFF] uppercase">Mua ngay</div>
+                              <div class="buy-now bg-[#E10000] w-[270px] h-[40px] absolute bottom-[99px] text-center pt-[5px] text-[16px] text-white uppercase">Mua ngay</div>
                             <div class="layer-bot  w-[270px] h-[117px] shadow">
                                 <div class="mx-2 my-2">
                                     <p class="mx-2 text-[16px] leading[22.5px] text-[#356C07]">Thảo dược Cao cà gai leo Yên Thủy - 250g</p>
@@ -581,7 +673,7 @@
                                 <img class="img-object-base" src="../assets/icons/page_home-svg/sale.svg" alt="">
                                 <p class="-mt-[46px] ml-[8px] text-white text-[21px]">50%</p>
                             </div>
-                              <div class="buy-now bg-[#E10000] w-[270px] h-[40px] absolute bottom-[99px] text-center pt-[5px] text-[16px] text-[#FFFFFF] uppercase">Mua ngay</div>
+                              <div class="buy-now bg-[#E10000] w-[270px] h-[40px] absolute bottom-[99px] text-center pt-[5px] text-[16px] text-white uppercase">Mua ngay</div>
                             <div class="layer-bot  w-[270px] h-[117px] shadow">
                                 <div class="mx-2 my-2">
                                     <p class="mx-2 text-[16px] leading[22.5px] text-[#356C07]">Thảo dược Cao cà gai leo Yên Thủy - 250g</p>
@@ -600,7 +692,7 @@
                 </div>
             </div>
         </section>
-        <section class="reason-choose">
+        <section class="container mx-auto reason-choose">
             <div class="bg-[#FAFAFA] max-w-[1920px] flex justify-center gap-[100px] p-[50px] mt-[50px]">
                 <div class="img-plant w-[531px] h-[527px]">
                     <img class="img-object-base" src="../assets/images/page_home-img/plants.png" alt="">
@@ -621,7 +713,7 @@
                                     <img class="bg-[#356C07] rounded-full img-object-base"
                                         src="../assets/icons/page_home-svg/circle-user.svg" alt="">
                                     <span
-                                        class="absolute top-[12%] right-[25%] text-[#FFFFFF] font-[700] text-[32px] ">01</span>
+                                        class="absolute top-[12%] right-[25%] text-white font-[700] text-[32px] ">01</span>
                                 </div>
                                 <div class="line">
                                     <img class="img-object-base" src="../assets/icons/page_home-svg/line.svg" alt="">
@@ -640,7 +732,7 @@
                                     <img class="bg-[#356C07] rounded-full img-object-base"
                                         src="../assets/icons/page_home-svg/circle-user.svg" alt="">
                                     <span
-                                        class="absolute top-[12%] right-[25%] text-[#FFFFFF] font-[700] text-[32px] ">02</span>
+                                        class="absolute top-[12%] right-[25%] text-white font-[700] text-[32px] ">02</span>
                                 </div>
                                 <div class="line">
                                     <img class="img-object-base" src="../assets/icons/page_home-svg/line.svg" alt="">
@@ -659,7 +751,7 @@
                                         <img class="bg-[#356C07] rounded-full img-object-base"
                                             src="../assets/icons/page_home-svg/icon_product_details/circle1.svg" alt="">
                                         <span
-                                            class="absolute top-[12%] right-[25%] text-[#FFFFFF] font-[700] text-[32px] ">03</span>
+                                            class="absolute top-[12%] right-[25%] text-white font-[700] text-[32px] ">03</span>
                                     </div>
                                 </div>
                                 <div>
@@ -674,7 +766,7 @@
 
                 </div>
         </section>
-        <section class="knowledge-and-news mt-[20px]">
+        <section class="container mx-auto knowledge-and-news mt-[20px]">
             <div class="flex gap-3 items-center justify-center">
                 <div class="icon-leaf ">
                     <img class="img-object-base" src="../assets/icons/page_home-svg/leaf.svg" alt="" class="object-fill">
@@ -769,6 +861,19 @@
                 <p class="text-center pt-2 text-base font-normal leading-[1.36rem] text-[#356C07] ">Xem tất cả</p>
             </div>
             <div class="w-40 h-0 border border-[#356c07] mx-auto mt-3"></div>
+        </section>
+        <section class="container">
+            <div class="img-group">
+                <div class="max-w-[48px] h-[48px]">
+                    <img class="img-object-base" src="../assets/icons/page_home-svg/phone-absolute.svg" alt="">
+                </div>
+                <div class="max-w-[48px] h-[48px]">
+                    <img class="img-object-base" src="../assets/icons/page_home-svg/messenger.svg" alt="">
+                </div>
+                <div class="bg-[#68C114] max-w-[3.00rem] h-12">
+                    <img class="max-w-[12px] h-[20px] img-object-base" src="../assets//icons/page_home-svg/direction--up.svg" alt="">
+                </div>
+            </div>
         </section>
         <footer class="font-nunito mt-12">
             <div class=" mx-auto flex flex-wrap">
