@@ -13,13 +13,13 @@ module.exports = {
             subTextColor: "#4F4F4F99",
          },
          screens: {
-            mb: { max: "375px" }, // Breakpoint cho màn hình dưới 375px
+            "max-mb": { max: "375px" },
+            "min-mb": { min: "375px" },
          },
       },
       fontFamily: {
          nunito: ["Nunito", "sans-serif"],
          dancing: ["Dancing Script", "cursive"],
-         openSans: ["Open Sans", "sans-serif"],
       },
    },
    plugins: [],
