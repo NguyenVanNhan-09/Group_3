@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Normal page</title>
     <link rel="stylesheet" href="../output.css">
 </head>
 
@@ -12,90 +12,249 @@
     <div class="container w-full h-full max-w-full">
         <div class="warpper bg-[#F6F6F6]">
             <header class="font-nunito bg-white shadow-md px-[12px]">
-                <div class="py-4 px-2 z-50 w-full max-w-[1174px] mx-auto">
-                    <div class="flex flex-wrap items-center justify-between gap-5">
-                        <a href="#"><img src="../assets/images/logo_header.png" alt="logo" class="w-36" /></a>
+                <div class=" bg-[#ffff] sidebar fixed top-0 bottom-0 left-0 w-[288px] hidden min-mb:hidden p-[20px]">
+                    <div class="flex justify-between items-center  cursor-pointer">
+                        <img class="w-[138px] h-[26px] " src="../assets/images/logo_header.png" alt="">
+
+                        <div onclick="openSidebar()">
+                            <img src="../assets/icons/ti-close.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="flex flex-row my-[30px] relative ">
+                        <input class="bg-[#EBF0E6] pl-[10px]  w-[252px] h-[42px]  rounded-[30px]" type="text"
+                            placeholder="Bạn muốn tìm...">
+                        <button class="absolute right-[5px] top-[2px] text-[#fff] flex items-center justify-center">
+                            <img src="../assets/icons/ti-search.svg" alt="">
+                        </button>
+                    </div>
+
+                    <div class="flex flex-col gap-[20px]">
                         <div>
-                            <ul class="flex">
-                                <li class="border-gray-300 px-3">
-                                    <a href="#"
-                                        class="hover:text-[#356C07] text-[#356C07] block font-semibold text-base uppercase">Sản
-                                        phẩm
+                            <div class="flex justify-between " onclick="dropdown()">
+                                <b class="text-primary text-[16px] font-[700] cursor-pointer">SẢN PHẨM</b>
+                                <img class="" src="../assets/icons/ti-arrow-down.svg" alt="">
+                            </div>
+
+                            <div class="border-subTextColor border-b-[1px] my-[2px]"></div>
+                            <div class="ml-[20px] flex flex-col gap-[10px] mt-2 text-[16px] font-[400] text-[#000000] "
+                                id="submenu">
+                                <div>
+                                    <p class=" cursor-pointer">Thảo dược</p>
+                                    <div class="border-subTextColor border-b-[1px] my-[2px]"></div>
+                                </div>
+                                <div>
+                                    <p class=" cursor-pointer">Nông sản</p>
+                                    <div class="border-subTextColor border-b-[1px] my-[2px]"></div>
+                                </div>
+                                <div>
+                                    <p class=" cursor-pointer">Hoa quả</p>
+                                    <div class="border-subTextColor border-b-[1px] my-[2px]"></div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div>
+                            <b class="text-primary text-[16px] font-[700]  cursor-pointer">VỀ NÔNG THẢO</b>
+                            <div class="border-subTextColor border-b-[1px] my-[2px]"></div>
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between">
+                                <b class="text-primary text-[16px] font-[700]  cursor-pointer">BLOGS</b>
+                                <img src="../assets/icons/ti-arrow-down.svg" alt="">
+                            </div>
+
+                            <div class="border-subTextColor border-b-[1px] my-[2px]"></div>
+
+                        </div>
+                        <div>
+                            <b class="text-primary text-[16px] font-[700]  cursor-pointer">LIÊN HỆ</b>
+                            <div class="border-subTextColor border-b-[1px] my-[2px]"></div>
+                        </div>
+
+                    </div>
+                    <button class="rounded-[5px] mt-[50px] w-[252px] h-[51px] bg-ctaColor">
+                        <span class="text-[#ffff] font-[700] text-[18px] text-center">0988.818.841</span>
+                    </button>
+                    <p class="text-[13px] font-[400] text-primary text-center mt-[20px]  cursor-pointer">Gọi hỗ trợ
+                        ngay!</p>
+                </div>
+
+
+                <div class='py-4 px-2 z-50 w-full max-w-[1174px] mx-auto '>
+                    <div class='flex flex-wrap items-center min-mb:flex justify-between gap-5'>
+                        <div class="block min-mb:hidden  cursor-pointer" onclick="openSidebar()">
+                            <img src="../assets/icons/ti-menu.svg" alt="">
+                        </div>
+                        <a href="#"><img src="../assets/images/logo_header.png" alt="logo" class='w-36' /></a>
+                        <div class="hidden min-mb:block">
+                            <ul class='flex'>
+                                <li class='border-gray-300 px-3'>
+                                    <div class="group relative group-hover:visible">
+                                        <a href='#'
+                                            class='group-hover:visible hover:text-[#356C07] text-[#1A1A1A] block font-semibold text-base uppercase'>Sản
+                                            phẩm
+                                        </a>
+                                        <div class="group-hover:visible invisible hover-product w-[197px] h-[143px] absolute bg-[#FFFFFF] -ml-[9px] mt-[0px]"
+                                            style="box-shadow: 1px 1px 1px 1px #867979;">
+                                            <div class="ground w-[180px] h-[118px] mx-3 my-2.5">
+                                                <ul class="flex-col">
+                                                    <li class="mt-[15px]">
+                                                        <a href=""
+                                                            class="uppercase text-sm font-semibold leading-[1.31rem] text-left text-[#356C07]">Thảo
+                                                            dược</a>
+                                                    </li>
+                                                    <div class="border mt-[10px] border-[#0000004D]"></div>
+                                                    <li class="mt-[10px]">
+                                                        <a href=""
+                                                            class="uppercase text-sm font-semibold leading-[1.31rem] text-left text-[##1A1A1A]">Nông
+                                                            sản</a>
+                                                    </li class="mt-[10px] ">
+                                                    <div class="border mt-[10px] border-[#0000004D]"></div>
+                                                    <li class="mt-[10px]">
+                                                        <a href=""
+                                                            class="uppercase text-sm font-semibold leading-[1.31rem] text-left text-[##1A1A1A]">Hoa
+                                                            quả hữu cơ</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class='border-gray-300 px-3'><a href='#'
+                                        class='hover:text-[#356C07] text-[#1A1A1A] block font-semibold text-base uppercase'>Về
+                                        nông
+                                        thảo
                                     </a>
                                 </li>
-                                <li class="border-gray-300 px-3">
-                                    <a href="#"
-                                        class="hover:text-[#356C07] text-[#1A1A1A] block font-semibold text-base uppercase">Về
-                                        nông thảo
+                                <li class='border-gray-300 px-3'><a href='#'
+                                        class='hover:text-[#356C07] text-[#1A1A1A] block font-semibold text-base uppercase'>Blog
                                     </a>
                                 </li>
-                                <li class="border-gray-300 px-3">
-                                    <a href="#"
-                                        class="hover:text-[#356C07] text-[#1A1A1A] block font-semibold text-base uppercase">Blog
-                                    </a>
-                                </li>
-                                <li class="border-gray-300 px-3">
-                                    <a href="#"
-                                        class="hover:text-[#356C07] text-[#1A1A1A] block font-semibold text-base uppercase">Liên
+                                <li class='border-gray-300 px-3'><a href='#'
+                                        class='hover:text-[#356C07] text-[#1A1A1A] block font-semibold text-base uppercase'>Liên
                                         hệ
                                     </a>
                                 </li>
                             </ul>
                         </div>
+                        <div class='flex'>
+                            <button class='pr-[17px] hidden min-mb:block'>
+                                <img src="../assets/icons/ti-search.svg" alt="ti-search"></button>
 
-                        <div class="flex">
-                            <button class="pr-[17px]">
-                                <img src="../assets/icons/ti-search.svg" alt="ti-search" />
-                            </button>
-                            <button class="">
-                                <img src="../assets/icons/ti-cart.svg" alt="ti-cart" />
-                            </button>
+
+                            <div class="img-object-base relative">
+                                <img onclick="toggleCart()" id="clickButton" src="../assets/icons/ti-cart.svg"
+                                    alt="ti-cart" role="button">
+
+                                <div id="cart"
+                                    class="hidden open-cart w-[300px] h-[144px] bg-[#FFFFFF] absolute -right-[10px] min-mb:-right-[140px] top-[59px]"
+                                    style="box-shadow: 1px 1px 1px 1px grey">
+                                    <div class=" flex-col my-3 mx-3 justify-center items-center">
+                                        <div class="layer flex mt-[20px]">
+                                            <div class="img w-[31px] h-[27px] object-cover">
+                                                <img class="img-object-base" src="../assets/images/lemon.jfif" alt="">
+                                            </div>
+                                            <p
+                                                class="text text-xs font-normal leading-[1.02rem] text-[#000000] mt-1.5 ml-2">
+                                                Mứt
+                                                chanh tây sấy lạnh 100% hữu cơ...</p>
+                                            <p
+                                                class="count text-[0.81rem] font-normal leading-[1.11rem] text-[#000000BD] mt-1 ml-1.5">
+                                                x 1</p>
+                                        </div>
+                                        <div class="layer flex mt-[20px]">
+                                            <div class="img w-[31px] h-[27px] object-cover ">
+                                                <img class="img-object-base" src="../assets/images/lemon.jfif" alt="">
+                                            </div>
+                                            <p
+                                                class="text text-xs font-normal leading-[1.02rem] text-[#000000] mt-1.5 ml-2">
+                                                Mứt
+                                                chanh tây sấy lạnh 100% hữu cơ...</p>
+                                            <p
+                                                class="count text-[0.81rem] font-normal leading-[1.11rem] text-[#000000BD] mt-1 ml-1.5">
+                                                x 1</p>
+                                        </div>
+                                        <button
+                                            class=" mt-[9px] text-center mx-auto w-72 h-8 bg-[#E10000] text-xs font-normal leading-[1.02rem] text-[#FFFFFF] -ml-1.5">ĐẶT
+                                            HÀNG NGAY</button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </header>
-            <div>
-                <div class="">
+            <div class="content">
+                <div class="w-full max-mb:hidden">
                     <img src="../assets/images/normal_page/banner.png" alt="">
                 </div>
-            </div>
-            <div class="content font-nunito max-w-[1170px] pb-[189px] mx-auto h-full bg-white">
-                <div class="flex items-center pt-[19px] pl-[30px] pb-[25px]">
-                    <p class="text-sm font-normal leading-[1.31rem] text-breadcrumColor pr-3">Trang chủ</p>
-                    <img src="../assets/icons/info_page/ti-arrow-r.svg" class="w-2.5 h-2" alt="" />
-                    <p class="text-sm font-normal leading-[1.31rem] text-[#C4C4C4] pl-3">Đây là một trang bình
-                        thường</p>
-                </div>
-                <p class="text-base font-semibold leading-5 text-textColor max-w-[800px] mx-auto mt-[50px]">
-                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered
-                    alteration in some form, by injected humour, or randomised words which don't look even slightly
-                    believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't
-                    anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet
-                    tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.
-                    It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures,
-                    to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free
-                    from repetition, injected humour, or non-characteristic words etc.
-                </p>
-                <div class="px-[185px] mt-[50px]">
-                    <h4 class="text-2xl font-bold leading-6">Đây là một trang bình thường</h4>
-                    <p class="mt-[18px]">
-                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered
-                        alteration in some form, by injected humour, or randomised words which don't look even slightly
-                        believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't
-                        anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the
-                        Internet tend to repeat predefined chunks as necessary, making this the first true generator on
-                        the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model
-                        sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum
-                        is therefore always free from repetition, injected humour, or non-characteristic words etc.
-                    </p>
-                    <p class="mt-[25px]">
-                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered
-                        alteration in some form, by injected humour, or randomised words which don't look even slightly
-                        believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't
-                        anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the
-                        Internet tend to repeat predefined chunks as necessary, making this the first true generator on
-                        the Internet.
-                    </p>
+                <div class="content font-nunito max-w-[1170px] pb-[189px] mx-auto h-full bg-white">
+                    <div class="flex items-center pt-[19px] pl-[30px] pb-[25px]">
+                        <p class="text-sm font-normal leading-[1.31rem] text-breadcrumColor pr-3">Trang chủ</p>
+                        <img src="../assets/icons/info_page/ti-arrow-r.svg" class="w-2.5 h-2" alt="" />
+                        <p class="text-sm font-normal leading-[1.31rem] text-[#C4C4C4] pl-3">Đây là một trang bình
+                            thường</p>
+                    </div>
+                    <div class="max-w-[800px] mx-auto max-mb:px-[18px] mt-[50px]">
+                        <h4 class="text-2xl font-bold leading-6 max-mb:text-[22px] hidden max-mb:block">Đây là một
+                            trang bình
+                            thường</h4>
+                        <p
+                            class="text-base font-semibold leading-5 text-textColor max-w-[800px] max-mb:text-sm mx-auto mt-[50px]">
+                            There are many variations of passages of Lorem Ipsum available, but the majority have
+                            suffered
+                            alteration in some form, by injected humour, or randomised words which don't look even
+                            slightly
+                            believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there
+                            isn't
+                            anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the
+                            Internet
+                            tend to repeat predefined chunks as necessary, making this the first true generator on the
+                            Internet.
+                            It uses a dictionary of over 200 Latin words, combined with a handful of model sentence
+                            structures,
+                            to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore
+                            always
+                            free
+                            from repetition, injected humour, or non-characteristic words etc.
+                        </p>
+                    </div>
+
+                    <div class="max-w-[800px] mx-auto max-mb:px-[18px] mt-[50px]">
+                        <h4 class="text-2xl font-bold leading-6 max-mb:text-[22px]">Đây là một trang bình thường
+                        </h4>
+                        <p
+                            class="mt-[18px] max-mb:text-sm text-textColor text-base max-mb:font-semibold max-mb:leading-5">
+                            There are many variations of passages of Lorem Ipsum available, but the majority have
+                            suffered
+                            alteration in some form, by injected humour, or randomised words which don't look even
+                            slightly
+                            believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there
+                            isn't
+                            anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the
+                            Internet tend to repeat predefined chunks as necessary, making this the first true generator
+                            on
+                            the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model
+                            sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem
+                            Ipsum
+                            is therefore always free from repetition, injected humour, or non-characteristic words etc.
+                        </p>
+                        <p
+                            class="mt-[25px] max-mb:text-sm text-textColor text-base max-mb:font-semibold max-mb:leading-5">
+                            There are many variations of passages of Lorem Ipsum available, but the majority have
+                            suffered
+                            alteration in some form, by injected humour, or randomised words which don't look even
+                            slightly
+                            believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there
+                            isn't
+                            anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the
+                            Internet tend to repeat predefined chunks as necessary, making this the first true generator
+                            on
+                            the Internet.
+                        </p>
+                    </div>
                 </div>
             </div>
             <footer class="font-nunito">
@@ -104,15 +263,22 @@
                         <img src="../assets/images/footer_img-1.png" class="img-style" alt="img footer">
                         <img src="../assets/images/footer_img-2.png" class="img-style" alt="img footer">
                         <img src="../assets/images/footer_img-3.png" class="img-style" alt="img footer">
-                        <img src="../assets/images/footer_img-4.png" class="img-style" alt="img footer">
-                        <img src="../assets/images/footer_img-5.png" class="img-style" alt="img footer">
-                        <img src="../assets/images/footer_img-6.png" class="img-style" alt="img footer">
-                        <img src="../assets/images/footer_img-7.png" class="img-style" alt="img footer">
-                        <img src="../assets/images/footer_img-8.png" class="img-style" alt="img footer">
+                        <img src="../assets/images/footer_img-4.png" class="img-style hidden min-mb:block"
+                            alt="img footer">
+                        <img src="../assets/images/footer_img-5.png" class="img-style hidden min-mb:block"
+                            alt="img footer">
+                        <img src="../assets/images/footer_img-6.png" class="img-style hidden min-mb:block"
+                            alt="img footer">
+                        <img src="../assets/images/footer_img-7.png" class="img-style hidden min-mb:block"
+                            alt="img footer">
+                        <img src="../assets/images/footer_img-8.png" class="img-style hidden min-mb:block"
+                            alt="img footer">
                     </div>
                 </div>
-                <div class="bg-[#356C07]">
-                    <div class="max-w-[1174px] mx-auto flex justify-between gap-[71px] py-[37px]">
+
+                <div class="bg-[#356C07] p-5">
+                    <div
+                        class="max-w-[1174px] mx-auto flex flex-col min-mb:flex-row justify-between gap-[20px] min-mb:py-[37px]">
                         <div class="max-w-[305px]">
                             <div class="max-h-[44px] w-full">
                                 <img src="../assets/images/footer_logo.png" class="mix-blend-color-dodge"
@@ -134,9 +300,40 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="flex flex-col gap-[20px] text-[#fff] text-[14px] font-[600] min-mb:hidden">
+                            <div class="border-[#EBF0FFB2] border-b-[0.5px]"></div>
+                            <a href="">LIÊN HỆ</a>
+                            <div class="border-[#EBF0FFB2] border-b-[0.5px]"></div>
+                            <a href="">THÔNG TIN</a>
+                            <div class="border-[#EBF0FFB2] border-b-[0.5px]"></div>
 
-                        <div class="w-[792px] h-[198px] flex gap-[61px]">
-                            <div class="max-w-[248px]">
+                            <div class="flex flex-col gap-[10px] text-[14px] font-[400]">
+                                <p>ĐĂNG KÝ NHẬN TIN</p>
+                                <p style="line-height: 23.06px;">Vui lòng nhập email của bạn để được hỗ trợ nhanh nhất!
+                                </p>
+                                <div class="flex">
+                                    <input type="text"
+                                        class="w-full max-h-[45px] pl-3 pr-10 py-[13px] bg-white placeholder:text-[#68C114] text-base border border-slate-200 shadow-sm"
+                                        placeholder="Email của bạn..." />
+                                    <button class="w-[50px] h-[45px] bg-[#68C114] flex justify-center items-center">
+                                        <img src="../assets/icons/ti-sumbit.svg" alt="">
+                                    </button>
+                                </div>
+                                <div class="h-[40px] flex justify-between w-full mt-[30px]">
+                                    <img class="w-[130px] " src="../assets/images/bocongthuong.png" alt="">
+                                    <img class="w-[83px]" src="../assets/images/dmca.png" alt="">
+                                </div>
+                                <div>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="w-[792px] h-[198px] min-mb:flex gap-[61px] hidden ">
+
+
+                            <div class="max-w-[248px] ">
                                 <h4 class="text-white text-sm uppercase">Liên hệ</h4>
                                 <ul class="mt-[15px]">
                                     <li class="flex gap-[12px]">
@@ -157,7 +354,7 @@
                                     </li>
                                 </ul>
                             </div>
-                            <div>
+                            <div class="">
                                 <h4 class="text-white text-sm uppercase">Thông tin</h4>
                                 <ul class="mt-[15px] list-disc">
                                     <li class="text-white text-sm mb-[10px] leading-5">Giới thiệu Nông Thảo</li>
@@ -168,8 +365,8 @@
                                     <li class="text-white text-sm mb-[10px] leading-5">Nông Thảo Blogs</li>
                                 </ul>
                             </div>
-                            <div class="max-w-[248px]">
-                                <h4 class="text-white text-sm uppercase">Đăng ký nhận tin</h4>
+                            <div class="max-w-[248px] ">
+               <h4 class="text-white text-sm uppercase">Đăng ký nhận tin</h4>
                                 <ul class="mt-[15px]">
                                     <li class="flex gap-[12px] mt-[12px]">
                                         <p class="text-sm text-white">Vui lòng nhập email để nhận thêm nhiều ưu đãi từ
@@ -183,7 +380,6 @@
                                                     <input type="text"
                                                         class="w-full max-h-[45px] pl-3 pr-10 py-[13px] bg-white placeholder:text-slate-400 text-slate-600 text-base border border-slate-200 shadow-sm"
                                                         placeholder="Email của bạn..." />
-
                                                     <div
                                                         class="absolute w-[47px] h-full bg-[#68C114] right-0 top-0 flex justify-center items-center">
                                                         <img src="../assets/icons/ti-pp.svg" alt="">
@@ -205,14 +401,20 @@
                 </div>
                 <div
                     class="bg-[#86A76A] min-h-[43px] w-full text-center flex justify-center items-center text-white text-sm">
-                    © 2022 - Bản quyền thuộc về Công ty TNHH Nông Thảo
+                    <span> © 2022 - Bản quyền thuộc về Công ty TNHH Nông Thảo</span>
+                </div>
+
+                <div class="flex flex-col min-mb:hidden fixed bottom-[30px] right-[10px]">
+                    <img class="w-[48px] h-[48px]" src="../assets/icons/ti-phone-red.svg" alt="">
+                    <img class="w-[48px] h-[48px]" src="../assets/icons/ti-mess.svg" alt="">
+                    <button
+                        class="h-[32px] mt-[100px] w-[32px] bg-[#356C07] flex justify-center items-center text-[#fff]">
+                        <img src="../assets/icons/ti-arrow-up.svg" alt="">
+                    </button>
                 </div>
             </footer>
         </div>
-    </div>
-
-
-
+        <script src="../controllers/index.js"></script>
 </body>
 
 </html>
