@@ -14,3 +14,6 @@ src/output.css
 # Ignore logs
 *.log
 .gitignore
+
+#Ignore output
+./src/output.css
