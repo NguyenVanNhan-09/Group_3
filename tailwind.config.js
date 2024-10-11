@@ -12,11 +12,14 @@ module.exports = {
             textColor: "#4F4F4F",
             subTextColor: "#4F4F4F99",
          },
+         screens: {
+            "max-mb": { max: "375px" },
+            "min-mb": { min: "375px" },
+         },
       },
       fontFamily: {
          nunito: ["Nunito", "sans-serif"],
          dancing: ["Dancing Script", "cursive"],
-         openSans: ["Open Sans", "sans-serif"],
       },
    },
    plugins: [],
