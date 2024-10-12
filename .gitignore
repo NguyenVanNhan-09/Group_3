@@ -5,12 +5,8 @@ node_modules/
 /dist
 /build
 
-# Ignore output.css file
-src/output.css
-
 # Ignore environment variables file
 .env
 
 # Ignore logs
 *.log
-.gitignore
