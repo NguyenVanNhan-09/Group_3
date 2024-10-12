@@ -1,15 +1,13 @@
-<!doctype html>
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../output.css" rel="stylesheet">
 </head>
-
 <body>
     <header class="font-nunito bg-white shadow-md px-[12px]">
-        <div class=" bg-[#ffff] sidebar fixed top-0 bottom-0 left-0 w-[288px] hidden sm:hidden   p-[20px]">
+        <div class=" bg-[#ffff] sidebar fixed top-0 bottom-0 left-0 w-[288px] hidden min-mb:hidden   p-[20px]">
             <div class="flex justify-between items-center  cursor-pointer">
                 <img class="w-[138px] h-[26px] " src="../assets/images/logo_header.png" alt="">
 
@@ -78,12 +76,12 @@
 
 
         <div class='py-4 px-2 z-50 w-full max-w-[1174px] mx-auto '>
-            <div class='flex flex-wrap items-center sm:flex justify-between gap-5'>
-                <div class="block sm:hidden  cursor-pointer" onclick="openSidebar()">
+            <div class='flex flex-wrap items-center min-mb:flex justify-between gap-5'>
+                <div class="block min-mb:hidden  cursor-pointer" onclick="openSidebar()">
                     <img src="../assets/icons/ti-menu.svg" alt="">
                 </div>
                 <a href="#"><img src="../assets/images/logo_header.png" alt="logo" class='w-36' /></a>
-                <div class="hidden sm:block">
+                <div class="hidden min-mb:block">
                     <ul class='flex'>
                         <li class='border-gray-300 px-3'>
                             <div class="group relative group-hover:visible">
@@ -137,7 +135,7 @@
                 </div>
 
                 <div class='flex'>
-                    <button class='pr-[17px] hidden sm:block'>
+                    <button class='pr-[17px] hidden min-mb:block'>
                         <img src="../assets/icons/ti-search.svg" alt="ti-search"></button>
 
 
@@ -146,7 +144,7 @@
                             role="button">
 
                         <div id="cart"
-                            class="hidden open-cart w-[300px] h-[144px] bg-[#FFFFFF] absolute -right-[10px] sm:-right-[140px] top-[59px]"
+                            class="hidden open-cart w-[300px] h-[144px] bg-[#FFFFFF] absolute -right-[10px] min-mb:-right-[140px] top-[59px]"
                             style="box-shadow: 1px 1px 1px 1px grey">
                             <div class=" flex-col my-3 mx-3 justify-center items-center">
                                 <div class="layer flex mt-[20px]">
@@ -180,85 +178,88 @@
         </div>
     </header>
 
-    <section class="w-fit max-w-[1174px] mx-auto font-nunito">
-        <div class="flex">
-            <a href="" class="m-2">Trang chủ</a>
-            <img src="../assets/images/Detail_Infor_img/right-arrow.svg" alt="right-arrow" class="m-2">
-            <a href="" class="m-2">Tin tức</a>
-            <img src="../assets/images/Detail_Infor_img/right-arrow.svg" alt="right-arrow" class="m-2">
-            <a href="" class="m-2">Nông nghiệp sạch</a>
+    <section class="font-nunito text-[#4F4F4F] px-4 max-w-[1174px] mx-auto">
+        <!-- navigation bar  -->
+        <div class="flex justify-between text-base m-w-[285px] w-fit py-4 gap-3">
+            <p>Trang chủ</p>
+            <img src="../assets/images/Detail_Infor_img/right-arrow.svg" alt="right arrow">
+            <p>Tin tức</p>
+            <img src="../assets/images/Detail_Infor_img/right-arrow.svg" alt="right arrow">
+            <p class="text-[#C4C4C4]">Nông nghiệp sạch</p>
         </div>
 
-        <div class=" flex gap-[30px] w-full h-full">
-            <div class="w-fit max-w-[700px]">
-                <p class="text-[36px] font-[700] text-primary">Nông Thảo đã trồng và thu hoạch vườn cà chua như thế nào?</p>
-                
-                <div class="flex justify-between font-[12] gap-[10px]">
-                    <!-- left part -->
-                    <div class=" flex flex-col gap-[10px]">
+        <div class="flex flex-col min-mb:flex-row min-mb:gap-12 ">
+            <div class="flex flex-col gap-8">
+                <p class="text-primary font-bold text-4xl">Nông Thảo đã trồng và thu hoạch vườn cà chua như thế nào?</p>
+                <div class="flex">
+                    <!-- left content  -->
+                    <div class="hidden min-mb:flex flex-col gap-[10px]">
                         <img src="../assets/images/Detail_Infor_img/avatar.png" alt="avatar" class="w-[60px] h-[60px]">
                         <div class="flex items-center">
                             <img src="../assets/images/Detail_Infor_img/account.svg" alt="account icons" class="mr-2">
-                            <div class="text-[12px] font-[400] text-[#000000BD] text-wrap">Vi Khánh</div>
-                          </div>
+                            <div class="text-[11px] font-[400] text-[#000000BD] w-fit">Vi Khánh</div>
+                        </div>
                         <div class="flex items-center">
                             <img src="../assets/images/Detail_Infor_img/eye-ic.svg" alt="eye icons" class="mr-2">
                             <div class="text-[12px] font-[400] text-[#000000BD]">2.648</div>
                         </div>
-                        <button class="w-[68px] h-[22px] bg-[#1877F2] flex items-center justify-center rounded text-[#FFFFFF] text-[12px]">
+                        <button class="py-1  w-full bg-[#1877F2] flex items-center justify-center rounded text-[#FFFFFF] text-[12px]">
                             <img src="../assets/images/Detail_Infor_img/like-ic.svg" alt="like icons" class="mr-2">
-                            <span>Like 41</span>
-                          </button>
-                        <button class="w-[68px] h-[22px] bg-[#1877F2] rounded text-[#FFFFFF] text-[12px]">Share</button>
+                            Like 41
+                        </button>
+                        <button class="py-1 px-5 w-full bg-[#1877F2] rounded text-[#FFFFFF] text-[12px]">Share</button>
                     </div>
 
-                    <!-- middle part -->
-                    <div class=" text-[#4F4F4F] flex flex-col justify-between gap-[18px] text-[17px] font-[400]">
-                        <p class="text-[16px] font-[400] text-[#356C07] italic ">Để hiểu rõ hơn chất lượng sản phẩm Cà chua hữu cơ của Nông Thảo mời bạn đọc tìm hiểu thêm về quy trình trồng và thu hoạch theo tiêu chuẩn VietGap của chúng tôi.</p>
-                        <div class="flex flex-col gap-y-2 pl-3 pt-3 pb-3">
-                            <div class="flex justify-between">
-                                <div class="font-[700] text-[18px]">Mục lục bài viết</div>
-                                <img src="../assets/images/Detail_Infor_img/down-arrow.svg" alt="down arrow icons" class="w-2">
+                    <!-- center content -->
+                    <div class="mx-auto flex flex-col justify-between gap-4 min-mb:mx-12">
+                        
+                        <p class="text-[#356C07] text-lg italic font-normal">Để hiểu rõ hơn chất lượng sản phẩm Cà chua hữu cơ của Nông Thảo mời bạn đọc tìm hiểu thêm về quy trình trồng và thu hoạch theo tiêu chuẩn VietGap của chúng tôi.</p>
+                    
+                        <div>
+                        <div class="flex flex-col p-4 gap-3 pb-9">
+                            <div class="flex justify-between items-center">
+                                <p class="text-lg font-bold">Mục lục bài viết</p>
+                                <img src="../assets/images/Detail_Infor_img/down-arrow.svg" alt="down arrow">
                             </div>
-                            <hr class="bg-[#356C071A]">
-                            <div class="font-[700] text-[16px]">1. Quy trình làm đất</div>
-                            <div class="font-[400] text-[16px]">1.1. 5 Bước xử lý đất đơn giản</div>
-                            <div class="font-[700] text-[16px]">2. Quy trình trồng</div>
+                            <hr>
+                            <p class="text-base font-bold">1. Quy trình làm đất</p>
+                            <p class="text-base font-normal pl-5">1.1. 5 Bước xử lý đất đơn giản</p>
+                            <p class="text-base font-bold ">2. Quy trình trồng</p>
                         </div>
 
-                        <image src="../assets/images/Detail_Infor_img/women.png" alt="2 women farming" class="w-full object-cover">
-
-                        <p>Để hiểu rõ hơn chất lượng sản phẩm Cà chua hữu cơ của Nông Thảo mời bạn đọc tìm hiểu thêm về quy trình trồng và thu hoạch theo tiêu chuẩn VietGap của chúng tôi.</p>
-                        <p>Để hiểu rõ hơn chất lượng sản phẩm Cà chua hữu cơ của Nông Thảo mời bạn đọc tìm hiểu thêm về quy trình trồng và thu hoạch theo tiêu chuẩn VietGap của chúng tôi.</p>
+                        <img class="w-full" src="../assets/images/Detail_Infor_img/women.png" alt="2 women farming">
+                        </div>
                         
-                        <p class="text-[30px] font-[700]">1. Quy trình làm đất</p>
-                        <p>Để hiểu rõ hơn chất lượng sản phẩm Cà chua hữu cơ của Nông Thảo mời bạn đọc tìm hiểu thêm về quy trình trồng và thu hoạch theo tiêu chuẩn VietGap của chúng tôi.</p>
-                        <p>Để hiểu rõ hơn chất lượng sản phẩm <span class="text-[#356C07]">Cà chua hữu cơ của Nông Thảo</span> mời bạn đọc tìm hiểu thêm về quy trình trồng và thu hoạch theo tiêu chuẩn VietGap của chúng tôi.</p>
-                        
-                        <p class="text-[30px] font-[700]">1.1. 5 Bước xử lý đất đơn giản</p>
-
+                        <p class="text-[17px] font-normal">Để hiểu rõ hơn chất lượng sản phẩm Cà chua hữu cơ của Nông Thảo mời bạn đọc tìm hiểu thêm về quy trình trồng và thu hoạch theo tiêu chuẩn VietGap của chúng tôi.</p>
+                        <p class="text-[17px] font-normal">Để hiểu rõ hơn chất lượng sản phẩm Cà chua hữu cơ của Nông Thảo mời bạn đọc tìm hiểu thêm về quy trình trồng và thu hoạch theo tiêu chuẩn VietGap của chúng tôi.</p>
+                        <p class="text-2xl font-bold">1. Quy trình làm đất</p>
+                        <p class="text-[17px] font-normal">Để hiểu rõ hơn chất lượng sản phẩm Cà chua hữu cơ của Nông Thảo mời bạn đọc tìm hiểu thêm về quy trình trồng và thu hoạch theo tiêu chuẩn VietGap của chúng tôi.</p>
+                        <p class="text-[17px] font-normal">Để hiểu rõ hơn chất lượng sản phẩm Cà chua hữu cơ của Nông Thảo mời bạn đọc tìm hiểu thêm về quy trình trồng và thu hoạch theo tiêu chuẩn VietGap của chúng tôi.</p>
+                        <p class="text-2xl font-bold">1.1. 5 Bước xử lý đất đơn giản</p>
                         <li>Bước 1</li>
                         <li>Bước 2</li>
                         <li>Bước 3</li>
                         <li>Bước 4</li>
                         <li>Bước 5</li>
+                        <p class="text-2xl font-bold">2. Quy trình trồng</p>
+                        <p class="text-[17px] font-normal">Để hiểu rõ hơn chất lượng sản phẩm Cà chua hữu cơ của Nông Thảo mời bạn đọc tìm hiểu thêm về quy trình trồng và thu hoạch theo tiêu chuẩn VietGap của chúng tôi.</p>
+                        <p class="text-[17px] font-normal">Để hiểu rõ hơn chất lượng sản phẩm Cà chua hữu cơ của Nông Thảo mời bạn đọc tìm hiểu thêm về quy trình trồng và thu hoạch theo tiêu chuẩn VietGap của chúng tôi.</p>
+                        <p class="text-[17px] font-normal">Để hiểu rõ hơn chất lượng sản phẩm Cà chua hữu cơ của Nông Thảo mời bạn đọc tìm hiểu thêm về quy trình trồng và thu hoạch theo tiêu chuẩn VietGap của chúng tôi.</p>
 
-                        <p class="text-[30px] font-[700]">2. Quy trình trồng</p>
-                        <p>Để hiểu rõ hơn chất lượng sản phẩm Cà chua hữu cơ của Nông Thảo mời bạn đọc tìm hiểu thêm về quy trình trồng và thu hoạch theo tiêu chuẩn VietGap của chúng tôi.</p>
-                        <p>Để hiểu rõ hơn chất lượng sản phẩm Cà chua hữu cơ của Nông Thảo mời bạn đọc tìm hiểu thêm về quy trình trồng và thu hoạch theo tiêu chuẩn VietGap của chúng tôi.</p>
                         <hr>
-
-                        <!-- comment part -->
-                        <div class="flex justify-between py-2">
-                            <p>06 bình luận</p>
-                            <div class="flex justify-around gap-[5px]">
-                                <p>Chia sẻ ngay:</p>
-                                <img src="../assets/images/Detail_Infor_img/fb-ic.svg" alt="fb icon">
-                                <img src="../assets/images/Detail_Infor_img/in-ic.svg" alt="in icon">
-                                <img src="../assets/images/Detail_Infor_img/x-ic.svg" alt="x icon">
+                        <div class="flex flex-col gap-4 text-base font-medium">
+                            <div class="flex gap-4">
+                                <p>Chia sẻ ngay: </p>
+                                <div class="flex justify-between gap-4">
+                                    <img class="w-4 h-7" src="../assets/images/Detail_Infor_img/fb-ic.svg" alt="fb icon">
+                                    <img class="w-4 h-7" src="../assets/images/Detail_Infor_img/in-ic.svg" alt="insta icon">
+                                    <img class="w-4 h-7" src="../assets/images/Detail_Infor_img/x-ic.svg" alt="x icon">
+                                </div>
                             </div>
+                            <p>06 Bình luận</p>
                         </div>
                         <hr>
+
                         <div>
                             <div class="py-5">
                                 <div class="flex gap-[15px]">
@@ -271,8 +272,8 @@
                                     <p>Trả lời</p>
                                 </div>
                             </div>
-                            <div class="py-4 flex gap-1">
-                                <div class="w-[1px] border-l border-secondary gap-[20px]"></div>
+                            <div class="py-4 flex gap-5">
+                                <div class="w-[1px] border-l border-secondary "></div>
                                 <div>
                                     <div class="flex gap-[15px]">
                                         <img src="../assets/images/Detail_Infor_img/account.png" alt="accont" class="w-[38px] h-[38px]">
@@ -287,7 +288,7 @@
                             </div>
                         </div>
                         <div>
-                            <div class="py-4">
+                            <div class="py-5">
                                 <div class="flex gap-[15px]">
                                     <img src="../assets/images/Detail_Infor_img/account.png" alt="accont" class="w-[38px] h-[38px]">
                                     <p class="text-[16px] font-[700] text-primary py-26">Vi Khánh</p>
@@ -298,9 +299,8 @@
                                     <p>Trả lời</p>
                                 </div>
                             </div>
-                            <div class="py-4 flex gap-1">
-                                <!-- <hr class="w-full rotate-90  border-primary"></hr> -->
-                                <div class="w-[1px] border-l border-secondary gap-[20px]"></div>
+                            <div class="py-4 flex gap-5">
+                                <div class="w-[1px] border-l border-secondary "></div>
                                 <div>
                                     <div class="flex gap-[15px]">
                                         <img src="../assets/images/Detail_Infor_img/account.png" alt="accont" class="w-[38px] h-[38px]">
@@ -314,42 +314,45 @@
                                 </div>
                             </div>
                         </div>
-
-                        <div class="flex flex-col justify-between p-[27px] bg-[#356C070D] h-[407px] ">
-                            <p class="font-[700] text-[21px]">Để lại bình luận của bạn</p>
-                            <p class="font-[400] text-[16px]">Địa chỉ email của bạn sẽ không được công bố. Các trường bắt buộc được đánh dấu *</p>
-                            <textarea placeholder="Bình luận" class="w-full h-[130px] py-2 px-2"></textarea>
-                            <div class="flex w-full gap-[15px]">
-                                <input class="w-full py-2 px-2" type="text" placeholder="Họ và tên *">
-                                <input class="w-full p-2 px-2" type="text" placeholder="E-mail *">
+                        
+                        <div class="bg-[#356C070D] flex flex-col gap-4 px-4 mb-4">
+                            <p class="text-lg font-bold">Để lại bình luận của bạn</p>
+                            <p>Địa chỉ email của bạn sẽ không được công bố. Các trường bắt buộc được đánh dấu *</p>
+                            <textarea placeholder="Bình luận" class="rounded-sm w-full h-[130px] py-2 px-2"></textarea>
+                            <div class="flex flex-col w-full gap-[15px]">
+                                <input class="rounded-sm w-full py-2 px-2" type="text" placeholder="Họ và tên *">
+                                <input class="rounded-sm w-full p-2 px-2" type="text" placeholder="E-mail *">
                             </div>
-                            <button class="w-full bg-secondary text-[#FFFFFF] py-2">Gửi bình luận</button>
+                            <button class="rounded-sm w-full bg-secondary text-[#FFFFFF] my-4 py-2">Gửi bình luận</button>
                         </div>
-
                     </div>
-
                 </div>
             </div>
 
-            <!-- right part -->
             <div>
-                <div class="w-fit  max-w-[300px] space-y-2 text-textColor font-semibold text-[17px] ">
-                    <div class="flex gap-[5px]">
-                        <div class="w-full border  border-3 border-secondary"></div>
-                        <div class="w-full border border-[#356C071A]"></div>
+                <!-- button  -->
+                <div class="pb-6 flex flex-col gap-5">
+                    <div class="grid grid-cols-4 gap-4">
+                        <hr class="col-span-1 rounded-full border-[3px] border-[#356C07]">
+                        <hr class="col-span-3 bg-[#0000004D]">
                     </div>
-                    <button class="min-w-[300px] py-3 border-2 border-[#356C071A]">Nông nghiệp sạch</button>
-                    <button class="min-w-[300px] py-3 border-2 border-[#356C071A]">thảo dược</button>
-                    <button class="min-w-[300px] py-3 border-2 border-[#356C071A]">mẹo vặt</button>
-                    <button class="min-w-[300px] py-3 border-2 border-[#356C071A]">con tự học</button>
-                    <div class="flex gap-[5px]">
-                        <div class="w-full border border-3 border-secondary"></div>
-                        <div class="w-full border border-[#356C071A]"></div>
+    
+                    <button class="w-full h-14 py-3 border-2 border-[#356C071A] text-base font-medium hover:bg-[#356C071A]">Nông nghiệp sạch</button>
+                    <button class="w-full h-14 py-3 border-2 border-[#356C071A] text-base font-medium hover:bg-[#356C071A]">thảo dược</button>
+                    <button class="w-full h-14 py-3 border-2 border-[#356C071A] text-base font-medium hover:bg-[#356C071A]">mẹo vặt</button>
+                    <button class="w-full h-14 py-3 border-2 border-[#356C071A] text-base font-medium hover:bg-[#356C071A]">con tự học</button>
+    
+                    <div class="grid grid-cols-4 gap-4">
+                        <hr class="col-span-1 rounded-full border-[3px] border-[#356C07]">
+                        <hr class="col-span-3 bg-[#0000004D]">
                     </div>
+                </div>
 
-                    <!-- bài viết hay -->
+                <!-- right content  -->
+                <div class="hidden sm:flex flex-col gap-5">
+                        <!-- bài viết hay -->
                     <div>
-                        <div class="flex">
+                        <div class="flex gap-2">
                             <img src="../assets/images/Detail_Infor_img/mini-logo.png" alt="mini logo">
                             <p class="text-[21px] font-[700] text-[#343434]">bài viết hay</p>
                         </div>
@@ -376,15 +379,15 @@
                             </div>
                         </div>
                     </div>
-
-                    <div class="flex gap-[5px]">
-                        <div class="w-full border border-secondary"></div>
-                        <div class="w-full border border-[#356C071A]"></div>
+                    
+                    <div class="grid grid-cols-4 gap-4">
+                        <hr class="col-span-1 rounded-full border-[3px] border-[#356C07]">
+                        <hr class="col-span-3 bg-[#0000004D]">
                     </div>
 
                     <!-- bài viết liên quan -->
                     <div>
-                        <div class="flex">
+                        <div class="flex gap-2">
                             <img src="../assets/images/Detail_Infor_img/mini-logo.png" alt="mini logo" class="">
                             <p class="text-[21px] font-[700] text-[#343434]">bài viết liên quan</p>
                         </div>
@@ -420,7 +423,7 @@
             </div>
         </div>
     </section>
-
+    <script src="../controllers/index.js"></script>
     <footer class="font-nunito">
         <div class=" mx-auto flex flex-wrap">
             <div class="w-full flex max-h-[240px]">
@@ -428,15 +431,15 @@
                 <img src="../assets/images/footer_img-2.png" class="img-style" alt="img footer">
                 <img src="../assets/images/footer_img-3.png" class="img-style" alt="img footer">
 
-                <img src="../assets/images/footer_img-4.png" class="img-style hidden sm:block" alt="img footer">
-                <img src="../assets/images/footer_img-5.png" class="img-style hidden sm:block" alt="img footer">
-                <img src="../assets/images/footer_img-6.png" class="img-style hidden sm:block" alt="img footer">
-                <img src="../assets/images/footer_img-7.png" class="img-style hidden sm:block" alt="img footer">
-                <img src="../assets/images/footer_img-8.png" class="img-style hidden sm:block" alt="img footer">
+                <img src="../assets/images/footer_img-4.png" class="img-style hidden min-mb:block" alt="img footer">
+                <img src="../assets/images/footer_img-5.png" class="img-style hidden min-mb:block" alt="img footer">
+                <img src="../assets/images/footer_img-6.png" class="img-style hidden min-mb:block" alt="img footer">
+                <img src="../assets/images/footer_img-7.png" class="img-style hidden min-mb:block" alt="img footer">
+                <img src="../assets/images/footer_img-8.png" class="img-style hidden min-mb:block" alt="img footer">
             </div>
         </div>
         <div class="bg-[#356C07]  p-[20px]">
-            <div class="max-w-[1174px] mx-auto flex flex-col sm:flex-row justify-between gap-[20px] sm:py-[37px]">
+            <div class="max-w-[1174px] mx-auto flex flex-col min-mb:flex-row justify-between gap-[20px] min-mb:py-[37px]">
                 <div class="max-w-[305px]">
                     <div class="max-h-[44px] w-full">
                         <img src="../assets/images/footer_logo.png" class="mix-blend-color-dodge" alt="logo footer">
@@ -458,7 +461,7 @@
                     </div>
                 </div>
 
-                <div class="flex flex-col gap-[20px] text-[#fff] text-[14px] font-[600] sm:hidden">
+                <div class="flex flex-col gap-[20px] text-[#fff] text-[14px] font-[600] min-mb:hidden">
                     <div class="border-[#EBF0FFB2] border-b-[0.5px]"></div>
                     <a href="">LIÊN HỆ</a>
                     <div class="border-[#EBF0FFB2] border-b-[0.5px]"></div>
@@ -487,7 +490,7 @@
                     </div>
                 </div>
 
-                <div class="w-[792px] h-[198px] sm:flex gap-[61px] hidden ">
+                <div class="w-[792px] h-[198px] min-mb:flex gap-[61px] hidden ">
 
 
                     <div class="max-w-[248px] ">
@@ -565,7 +568,7 @@
         <div class="bg-[#86A76A] min-h-[43px] w-full text-center flex justify-center items-center text-[#ffff] text-sm">
             <span> © 2022 - Bản quyền thuộc về Công ty TNHH Nông Thảo</span>
         </div>
-        <div class="flex flex-col sm:hidden fixed bottom-[30px] right-[10px]">
+        <div class="flex flex-col min-mb:hidden fixed bottom-[30px] right-[10px]">
             <img class="w-[48px] h-[48px]" src="../assets/icons/ti-phone-red.svg" alt="">
             <img class="w-[48px] h-[48px]" src="../assets/icons/ti-mess.svg" alt="">
             <button class="h-[32px] mt-[100px] w-[32px] bg-[#356C07] flex justify-center items-center text-[#fff]">
@@ -574,5 +577,4 @@
         </div>
     </footer>
 </body>
-
 </html>
