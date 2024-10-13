@@ -6,11 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Header</title>
     <link rel="stylesheet" href="../output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-    <header class="font-nunito bg-white shadow-md px-[12px]">
-        <div class=" bg-[#ffff] sidebar fixed top-0 bottom-0 left-0 w-[288px] hidden sm:hidden   p-[20px]">
+    <header class="relative z-10 font-nunito bg-white shadow-md px-[12px]">
+        <div class="bg-[#ffff] sidebar fixed top-0 bottom-0 left-0 w-[288px] hidden p-[20px]">
             <div class="flex justify-between items-center  cursor-pointer">
                 <img class="w-[138px] h-[26px] " src="../assets/images/logo_header.png" alt="">
 
@@ -179,10 +183,10 @@
                 </div>
             </div>
         </div>
-    </header>      
+    </header>
     </div>
-    <section class="container mx-auto mt-[20px] relative max-sm:w-[600px]">
-        <div class="img-vegetable max-w-full h-[300px] sm:h-[400px] md:h-[490px]">
+    <section class="container mx-auto mt-[20px] relative max-md:w-[600px]">
+        <div class="img-vegetable max-w-full h-[300px] sm:h-[400px] max-md:h-[490px]">
             <img class="object-cover w-full h-full" src="./../assets/images/page_home-img/mountain.png" alt="">
         </div>
         <div class="text uppercase text-2xl sm:text-3xl md:text-4xl font-bold leading-[2.5rem] sm:leading-[3rem] md:leading-[3.07rem] absolute w-full top-1/2 transform -translate-y-1/2 text-center text-[#FFFFFF] flex justify-center items-center">
@@ -196,7 +200,7 @@
     </section>
     <section class="container mx-auto">
         <div class="flex justify-around">
-            <div class="news flex justify-center gap-[60px] mt-[20px] ml-[59px] flex-wrap w-[830px]">
+            <div class="news flex justify-center gap-[60px] mt-[20px] ml-[59px] flex-wrap w-[830px] max-md:ml-0">
                 <div class="layer w-[370px] h-[465px]" style="box-shadow: 0px 0px 34px 0px #0000001A;">
                     <div class="img-new">
                         <img src="../assets/images/page_home-img/doing-garden.png" alt="" class="img-object-base w-96 h-64">
@@ -577,25 +581,26 @@
                 <img src="../assets/images/footer_img-1.png" class="img-style" alt="img footer">
                 <img src="../assets/images/footer_img-2.png" class="img-style" alt="img footer">
                 <img src="../assets/images/footer_img-3.png" class="img-style" alt="img footer">
-                <img src="../assets/images/footer_img-4.png" class="img-style" alt="img footer">
-                <img src="../assets/images/footer_img-5.png" class="img-style" alt="img footer">
-                <img src="../assets/images/footer_img-6.png" class="img-style" alt="img footer">
-                <img src="../assets/images/footer_img-7.png" class="img-style" alt="img footer">
-                <img src="../assets/images/footer_img-8.png" class="img-style" alt="img footer">
+
+                <img src="../assets/images/footer_img-4.png" class="img-style hidden sm:block" alt="img footer">
+                <img src="../assets/images/footer_img-5.png" class="img-style hidden sm:block" alt="img footer">
+                <img src="../assets/images/footer_img-6.png" class="img-style hidden sm:block" alt="img footer">
+                <img src="../assets/images/footer_img-7.png" class="img-style hidden sm:block" alt="img footer">
+                <img src="../assets/images/footer_img-8.png" class="img-style hidden sm:block" alt="img footer">
             </div>
         </div>
-        <div class="bg-[#356C07]">
-            <div class="max-w-[1174px] mx-auto flex justify-between gap-[71px] py-[37px]">
+        <div class="bg-[#356C07]  p-[20px]">
+            <div class="max-w-[1174px] mx-auto flex flex-col sm:flex-row justify-between gap-[20px] sm:py-[37px]">
                 <div class="max-w-[305px]">
                     <div class="max-h-[44px] w-full">
                         <img src="../assets/images/footer_logo.png" class="mix-blend-color-dodge" alt="logo footer">
                     </div>
-                    <div class="font-nunito text-[14px] text-white mt-[46px] leading-6">
+                    <div class="font-nunito text-[14px] text-[#ffff] mt-[46px] leading-6">
                         MST: 012345678910 - Ngày cấp: 10/02/2022
                         Nơi cấp: Sở Kế hoạch & Đầu tư TP Hà Nội
                     </div>
                     <div class="mt-[22px] flex items-center">
-                        <span class="text-white text-base pr-[15px]">Liên kết</span>
+                        <span class="text-[#ffff] text-base pr-[15px]">Liên kết</span>
                         <div class="flex gap-[10px]">
                             <img src="../assets/icons/ti-shoppe.svg" alt="ti-social">
                             <img src="../assets/icons/ti-tiki.svg" alt="ti-social">
@@ -607,43 +612,78 @@
                     </div>
                 </div>
 
-                <div class="w-[792px] h-[198px] flex gap-[61px]">
-                    <div class="max-w-[248px]">
-                        <h4 class="text-white text-sm uppercase">Liên hệ</h4>
+                <div class="flex flex-col gap-[20px] text-[#fff] text-[14px] font-[600] sm:hidden">
+                    <div class="border-[#EBF0FFB2] border-b-[0.5px]"></div>
+                    <a href="">LIÊN HỆ</a>
+                    <div class="border-[#EBF0FFB2] border-b-[0.5px]"></div>
+                    <a href="">THÔNG TIN</a>
+                    <div class="border-[#EBF0FFB2] border-b-[0.5px]"></div>
+
+                    <div class="flex flex-col gap-[10px] text-[14px] font-[400]">
+                        <p>ĐĂNG KÝ NHẬN TIN</p>
+                        <p style="line-height: 23.06px;">Vui lòng nhập email của bạn để được hỗ trợ nhanh nhất!</p>
+                        <div class="flex">
+                            <input type="text"
+                                class="w-full max-h-[45px] pl-3 pr-10 py-[13px] bg-[#ffff] placeholder:text-[#68C114] text-base border border-slate-200 shadow-sm"
+                                placeholder="Email của bạn..." />
+                            <button class="w-[50px] h-[45px] bg-[#68C114] flex justify-center items-center">
+                                <img src="../assets/icons/ti-sumbit.svg" alt="">
+                            </button>
+                        </div>
+                        <div class="h-[40px] flex justify-between w-full mt-[30px]">
+                            <img class="w-[130px] " src="../assets/images/bocongthuong.png" alt="">
+                            <img class="w-[83px]" src="../assets/images/dmca.png" alt="">
+                        </div>
+                        <div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="w-[792px] h-[198px] sm:flex gap-[61px] hidden ">
+
+
+                    <div class="max-w-[248px] ">
+                        <h4 class="text-[#ffff] text-sm uppercase">Liên hệ</h4>
                         <ul class="mt-[15px]">
                             <li class="flex gap-[12px]">
                                 <img src="../assets/icons/ti-address.svg" class="self-start" alt="">
-                                <p class="text-sm text-white">Tầng 4-5-6, Tòa nhà Capital Place, số 29 đường Liễu
+                                <p class="text-sm text-[#ffff]">Tầng 4-5-6, Tòa nhà Capital Place, số 29 đường Liễu
                                     Giai,
                                     P.Ngọc Khánh, Q.Ba
                                     Đình, Hà Nội</p>
                             </li>
                             <li class="flex gap-[12px] mt-[12px]">
                                 <img src="../assets/icons/ti-phone.svg" alt="">
-                                <p class="text-sm text-white">0969.71.6848</p>
+                                <p class="text-sm text-[#ffff]">0969.71.6848</p>
                             </li>
                             <li class="flex gap-[12px] mt-[12px]">
                                 <img src="../assets/icons/ti-email.svg" alt="">
-                                <p class="text-sm text-white">hotro@nongthao.vn</p>
+                                <p class="text-sm text-[#ffff]">hotro@nongthao.vn</p>
                             </li>
                         </ul>
                     </div>
-                    <div>
-                        <h4 class="text-white text-sm uppercase">Thông tin</h4>
+
+
+                    <div class="">
+                        <h4 class="text-[#ffff] text-sm uppercase">Thông tin</h4>
                         <ul class="mt-[15px] list-disc">
-                            <li class="text-white text-sm mb-[10px] leading-5">Giới thiệu Nông Thảo</li>
-                            <li class="text-white text-sm mb-[10px] leading-5">Điều khoản</li>
-                            <li class="text-white text-sm mb-[10px] leading-5">Chính sách bảo mật</li>
-                            <li class="text-white text-sm mb-[10px] leading-5">Hướng dẫn mua hàng</li>
-                            <li class="text-white text-sm mb-[10px] leading-5">Trả hàng & hoàn tiền</li>
-                            <li class="text-white text-sm mb-[10px] leading-5">Nông Thảo Blogs</li>
+                            <li class="text-[#ffff] text-sm mb-[10px] leading-5">Giới thiệu Nông Thảo</li>
+                            <li class="text-[#ffff] text-sm mb-[10px] leading-5">Điều khoản</li>
+                            <li class="text-[#ffff] text-sm mb-[10px] leading-5">Chính sách bảo mật</li>
+                            <li class="text-[#ffff] text-sm mb-[10px] leading-5">Hướng dẫn mua hàng</li>
+                            <li class="text-[#ffff] text-sm mb-[10px] leading-5">Trả hàng & hoàn tiền</li>
+                            <li class="text-[#ffff] text-sm mb-[10px] leading-5">Nông Thảo Blogs</li>
                         </ul>
                     </div>
-                    <div class="max-w-[248px]">
-                        <h4 class="text-white text-sm uppercase">Đăng ký nhận tin</h4>
+
+
+                    <div class="max-w-[248px] ">
+                        <h4 class="text-[#ffff] text-sm uppercase">Đăng ký nhận tin</h4>
                         <ul class="mt-[15px]">
                             <li class="flex gap-[12px] mt-[12px]">
-                                <p class="text-sm text-white">Vui lòng nhập email để nhận thêm nhiều ưu đãi từ Nông
+                                <p class="text-sm text-[#ffff]">Vui lòng nhập email để nhận thêm nhiều ưu đãi từ Nông
                                     Thảo</p>
                             </li>
                             <li class="mt-[8px]">
@@ -651,7 +691,7 @@
                                     <div class="w-full max-w-sm min-w-[200px]">
                                         <div class="relative">
                                             <input type="text"
-                                                class="w-full max-h-[45px] pl-3 pr-10 py-[13px] bg-white placeholder:text-slate-400 text-slate-600 text-base border border-slate-200 shadow-sm"
+                                                class="w-full max-h-[45px] pl-3 pr-10 py-[13px] bg-[#ffff] placeholder:text-slate-400 text-slate-600 text-base border border-slate-200 shadow-sm"
                                                 placeholder="Email của bạn..." />
 
                                             <div
@@ -671,11 +711,22 @@
                         </ul>
                     </div>
                 </div>
+                </div>
             </div>
+            
         </div>
-        <div class="bg-[#86A76A] min-h-[43px] w-full text-center flex justify-center items-center text-white text-sm">
-            © 2022 - Bản quyền thuộc về Công ty TNHH Nông Thảo
+
+        <div class="bg-[#86A76A] min-h-[43px] w-full text-center flex justify-center items-center text-[#ffff] text-sm">
+            <span> © 2022 - Bản quyền thuộc về Công ty TNHH Nông Thảo</span>
+        </div>
+        <div class="flex flex-col sm:hidden fixed bottom-[30px] right-[10px]">
+            <img class="w-[48px] h-[48px]" src="../assets/icons/ti-phone-red.svg" alt="">
+            <img class="w-[48px] h-[48px]" src="../assets/icons/ti-mess.svg" alt="">
+            <button class="h-[32px] mt-[100px] w-[32px] bg-[#356C07] flex justify-center items-center text-[#fff]">
+                <img src="../assets/icons/ti-arrow-up.svg" alt="">
+            </button>
         </div>
     </footer>
+    <script src="../controllers/index.js"></script>
 </body>
 </html>
