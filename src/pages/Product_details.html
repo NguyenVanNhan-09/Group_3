@@ -12,19 +12,118 @@
     <title>Product details</title>
 </head>
 
-<body>
-    <div class="container mx-auto">
-        <header class="font-nunito bg-white shadow-md px-[12px]">
-            <div class='py-4 px-2 z-50 w-full max-w-[1174px] mx-auto '>
-                <div class='flex flex-wrap items-center justify-between gap-5'>
-                    <a href="#"><img src="../assets/images/logo_header.png" alt="logo" class='w-36' /></a>
+<body class="w-full ">
+    <div class="max-w-[1920px] mx-auto">
+        <header class="relative z-10 font-nunito bg-white shadow-md px-[12px]">
+            <div class=" bg-[#ffff] sidebar fixed top-0 bottom-0 left-0 w-[288px] hidden    p-[20px]">
+                <div class="flex justify-between items-center  cursor-pointer">
+                    <img class="w-[138px] h-[26px] " src="../assets/images/logo_header.png" alt="">
+
+                    <div onclick="openSidebar()">
+                        <img src="../assets/icons/ti-close.svg" alt="">
+                    </div>
+                </div>
+                <div class="flex flex-row my-[30px] relative ">
+                    <input class="bg-[#EBF0E6] pl-[10px]  w-[252px] h-[42px]  rounded-[30px]" type="text"
+                        placeholder="Bạn muốn tìm...">
+                    <button class="absolute right-[5px] top-[2px] text-[#fff] flex items-center justify-center">
+                        <img src="../assets/icons/ti-search.svg" alt="">
+                    </button>
+                </div>
+
+                <div class="flex flex-col gap-[20px]">
                     <div>
+                        <div class="flex justify-between " onclick="dropdown()">
+                            <b class="text-primary text-[16px] font-[700] cursor-pointer">SẢN PHẨM</b>
+                            <img class="" src="../assets/icons/ti-arrow-down.svg" alt="">
+                        </div>
+
+                        <div class="border-subTextColor border-b-[1px] my-[2px]"></div>
+                        <div class="ml-[20px] flex flex-col gap-[10px] mt-2 text-[16px] font-[400] text-[#000000] "
+                            id="submenu">
+                            <div>
+                                <p class=" cursor-pointer">Thảo dược</p>
+                                <div class="border-subTextColor border-b-[1px] my-[2px]"></div>
+                            </div>
+                            <div>
+                                <p class=" cursor-pointer">Nông sản</p>
+                                <div class="border-subTextColor border-b-[1px] my-[2px]"></div>
+                            </div>
+                            <div>
+                                <p class=" cursor-pointer">Hoa quả</p>
+                                <div class="border-subTextColor border-b-[1px] my-[2px]"></div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div>
+                        <b class="text-primary text-[16px] font-[700]  cursor-pointer">VỀ NÔNG THẢO</b>
+                        <div class="border-subTextColor border-b-[1px] my-[2px]"></div>
+                    </div>
+
+                    <div>
+                        <div class="flex justify-between">
+                            <b class="text-primary text-[16px] font-[700]  cursor-pointer">BLOGS</b>
+                            <img src="../assets/icons/ti-arrow-down.svg" alt="">
+                        </div>
+
+                        <div class="border-subTextColor border-b-[1px] my-[2px]"></div>
+
+                    </div>
+                    <div>
+                        <b class="text-primary text-[16px] font-[700]  cursor-pointer">LIÊN HỆ</b>
+                        <div class="border-subTextColor border-b-[1px] my-[2px]"></div>
+                    </div>
+
+                </div>
+                <button class="rounded-[5px] mt-[50px] w-[252px] h-[51px] bg-ctaColor">
+                    <span class="text-[#ffff] font-[700] text-[18px] text-center">0988.818.841</span>
+                </button>
+                <p class="text-[13px] font-[400] text-primary text-center mt-[20px]  cursor-pointer">Gọi hỗ trợ ngay!
+                </p>
+            </div>
+
+
+            <div class='py-4 px-2 z-50 w-full max-w-[1174px] mx-auto '>
+                <div class='flex flex-wrap items-center max-mb:flex justify-between gap-5'>
+                    <div class="hidden max-mb:block  cursor-pointer" onclick="openSidebar()">
+                        <img src="../assets/icons/ti-menu.svg" alt="">
+                    </div>
+                    <a href="#"><img src="../assets/images/logo_header.png" alt="logo" class='w-36' /></a>
+                    <div class="block max-mb:hidden">
                         <ul class='flex'>
                             <li class='border-gray-300 px-3'>
-                                <a href='#'
-                                    class='hover:text-[#356C07] text-[#356C07] block font-semibold text-base  uppercase'>Sản
-                                    phẩm
-                                </a>
+                                <div class="group relative group-hover:visible">
+                                    <a href='#'
+                                        class='group-hover:visible hover:text-[#356C07] text-[#1A1A1A] block font-semibold text-base uppercase'>Sản
+                                        phẩm
+                                    </a>
+                                    <div class="group-hover:visible invisible hover-product w-[197px] h-[143px] absolute bg-[#FFFFFF] -ml-[9px] mt-[0px]"
+                                        style="box-shadow: 1px 1px 1px 1px #867979;">
+                                        <div class="ground w-[180px] h-[118px] mx-3 my-2.5">
+                                            <ul class="flex-col">
+                                                <li class="mt-[15px]">
+                                                    <a href=""
+                                                        class="uppercase text-sm font-semibold leading-[1.31rem] text-left text-[#356C07]">Thảo
+                                                        dược</a>
+                                                </li>
+                                                <div class="border mt-[10px] border-[#0000004D]"></div>
+                                                <li class="mt-[10px]">
+                                                    <a href=""
+                                                        class="uppercase text-sm font-semibold leading-[1.31rem] text-left text-[##1A1A1A]">Nông
+                                                        sản</a>
+                                                </li class="mt-[10px] ">
+                                                <div class="border mt-[10px] border-[#0000004D]"></div>
+                                                <li class="mt-[10px]">
+                                                    <a href=""
+                                                        class="uppercase text-sm font-semibold leading-[1.31rem] text-left text-[##1A1A1A]">Hoa
+                                                        quả hữu cơ</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                </div>
                             </li>
                             <li class='border-gray-300 px-3'><a href='#'
                                     class='hover:text-[#356C07] text-[#1A1A1A] block font-semibold text-base uppercase'>Về
@@ -45,52 +144,94 @@
                     </div>
 
                     <div class='flex'>
-                        <button class='pr-[17px]'>
+                        <button class='pr-[17px] block max-mb:hidden'>
                             <img src="../assets/icons/ti-search.svg" alt="ti-search"></button>
-                        <button class=''>
-                            <img src="../assets/icons/ti-cart.svg" alt="ti-cart"></button>
+
+
+                        <div class="img-object-base relative">
+                            <img onclick="toggleCart()" id="clickButton" src="../assets/icons/ti-cart.svg" alt="ti-cart"
+                                role="button">
+
+                            <div id="cart"
+                                class="hidden open-cart w-[300px] h-[144px] bg-[#FFFFFF] absolute max-mb:-right-[10px] -right-[140px] top-[59px]"
+                                style="box-shadow: 1px 1px 1px 1px grey">
+                                <div class=" flex-col my-3 mx-3 justify-center items-center">
+                                    <div class="layer flex mt-[20px]">
+                                        <div class="img w-[31px] h-[27px] object-cover">
+                                            <img class="img-object-base" src="../assets/images/lemon.jfif" alt="">
+                                        </div>
+                                        <p
+                                            class="text text-xs font-normal leading-[1.02rem] text-[#000000] mt-1.5 ml-2">
+                                            Mứt
+                                            chanh tây sấy lạnh 100% hữu cơ...</p>
+                                        <p
+                                            class="count text-[0.81rem] font-normal leading-[1.11rem] text-[#000000BD] mt-1 ml-1.5">
+                                            x 1</p>
+                                    </div>
+                                    <div class="layer flex mt-[20px]">
+                                        <div class="img w-[31px] h-[27px] object-cover ">
+                                            <img class="img-object-base" src="../assets/images/lemon.jfif" alt="">
+                                        </div>
+                                        <p
+                                            class="text text-xs font-normal leading-[1.02rem] text-[#000000] mt-1.5 ml-2">
+                                            Mứt
+                                            chanh tây sấy lạnh 100% hữu cơ...</p>
+                                        <p
+                                            class="count text-[0.81rem] font-normal leading-[1.11rem] text-[#000000BD] mt-1 ml-1.5">
+                                            x 1</p>
+                                    </div>
+                                    <button
+                                        class=" mt-[9px] text-center mx-auto w-72 h-8 bg-[#E10000] text-xs font-normal leading-[1.02rem] text-[#FFFFFF] -ml-1.5">ĐẶT
+                                        HÀNG NGAY</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </header>
-        <main class="max-w-[1920px] bg-[rgba(255, 255, 255, 1)] font-nunito flex flex-col justify-center items-center ">
+        <main
+            class=" max-w-[1920px] bg-[rgba(255, 255, 255, 1)] font-nunito flex flex-col max-mb:px-[20px] justify-center items-center ">
 
-            <div class="flex flex-col mb-[50px]">
+            <div class="flex flex-col mb-[50px]  ">
                 <span class="text-[#C4C4C4] text-[14px] my-[20px] ">
-                    <b class="text-[#4F4F4F] ">Trang chủ</b> > Thảo dược</span>
-                <div class="flex justify-center gap-[100px] ">
+                    <b class="text-[#4F4F4F] ">
+                        Trang chủ</b> > Thảo dược
+                </span>
+                <div class="flex max-mb:flex-col gap-[100px] max-mb:gap-[20px] ">
                     <div class="max-w-[470px] ">
-                        <div class="relative w-[100%] h-[470px] mb-4">
-                            <img class=" object-cover rounded-sm h-[470px] "
+                        <div class="relative max-h-[470px] mb-4">
+                            <img class=" object-cover rounded-sm max-mb:w-[340px] h-[470px] max-mb:h-[340px]"
                                 src="../assets/images/product_detals/lemon.jfif" alt="">
                             <img class=" object-cover absolute bottom-[40%] right-[45%] "
                                 src="../assets/icons/icon_product_details/play.svg " alt="">
                         </div>
 
                         <div class="flex flex-row justify-between  ">
-
-                            <div class="relative w-[79px] h-[79px] ">
-                                <img class="object-cover w-[79px] h-[79px]  rounded-sm  "
+                            <div class="relative w-[79px] max-mb:w-[55.81px] h-[79px] max-mb:h-[55.81px] ">
+                                <img class="object-cover w-[79px] max-mb:w-[55.81px] h-[79px] max-mb:h-[55.81px]  rounded-sm  "
                                     src="../assets/images/product_detals/lemon.jfif" alt="">
                                 <img class="w-[21.4px] h-[21.4] object-cover absolute bottom-[40%] right-[40%] "
                                     src="../assets/icons/icon_product_details/play.svg " alt="">
                             </div>
-                            <img class="w-[79px] h-[79px]  rounded-sm object-cover"
+                            <img class="w-[79px] max-mb:w-[55.81px] h-[79px] max-mb:h-[55.81px]  rounded-sm object-cover"
                                 src="../assets/images/product_detals/lemon.jfif" alt="">
-                            <img class="w-[79px] h-[79px]  rounded-sm object-cover"
+                            <img class="w-[79px] max-mb:w-[55.81px] h-[79px] max-mb:h-[55.81px]  rounded-sm object-cover"
                                 src="../assets/images/product_detals/lemon.jfif" alt="">
-                            <img class="w-[79px] h-[79px]  rounded-sm object-cover"
+                            <img class="w-[79px] max-mb:w-[55.81px] h-[79px] max-mb:h-[55.81px]  rounded-sm object-cover"
                                 src="../assets/images/product_detals/lemon.jfif" alt="">
-                            <img class="w-[79px] h-[79px]  rounded-sm object-cover"
+                            <img class="w-[79px] max-mb:w-[55.81px] h-[79px] max-mb:h-[55.81px]  rounded-sm object-cover"
                                 src="../assets/images/product_detals/lemon.jfif" alt="">
                         </div>
                     </div>
-                    <div class="max-w-[654px] flex flex-col gap-8">
-                        <h2 class="text-[#1A1A1A] text-[28px]  font-[500]">Mứt chanh tây sấy lạnh 100% hữu cơ</h2>
+                    <div class="max-w-[654px] max-mb:w-[339px] flex flex-col gap-8">
+                        <h2 class="text-[#1A1A1A] text-[28px] max-mb:text-[18px]  font-[500]">Mứt chanh tây sấy lạnh
+                            100% hữu cơ</h2>
                         <div class="bg-[#FAFAFA] p-[10px]  flex flex-col gap-2 ">
-                            <p class="text-[14px] font-[400] line-through text-[#C4C4C4]">300.000d</p>
-                            <span class="text-[#E10000] font-[700] text-[24px]">250.000d <span
-                                    class='bg-[#E10000] w-[84px] h-[23px] text-white text-[14px] rounded-[5px] ml-5'>GIẢM
+                            <p class="text-[14px] max-mb:text-[12px] font-[400] line-through text-[#C4C4C4]">300.000d
+                            </p>
+                            <span class="text-[#E10000] font-[700] max-mb:text-[18px] text-[24px]">250.000d <span
+                                    class='bg-[#E10000] w-[84px] h-[23px] text-[#fff] text-[14px] rounded-[5px] ml-5'>GIẢM
                                     20%</span></span>
                             <p class="text-[#4F4F4F] font-[400] text-[14px]">Giá cả, chất lượng tốt nhất trên thị trường
                             </p>
@@ -100,40 +241,46 @@
                                 chanh tây được sấy lạnh được sản xuất từ nông trại Nông Thảo,
                                 100%
                                 hữu cơ, đóng túi Zip dễ bảo quản.</span>
-                            <div class="font-[400] flex flex-row gap-4  items-center ">
+                            <div class="font-[400] flex flex-row gap-4  max-mb:justify-between items-center ">
                                 <span>Loại (g:)</span>
-                                <span
-                                    class="w-[45px] h-[42px] flex justify-center text-white  items-center bg-[#356C07]">150</span>
-                                <span
-                                    class="w-[45px] h-[42px] flex justify-center items-center  bg-[#F6F6F6]">250</span>
-                                <span
-                                    class="w-[45px] h-[42px] flex justify-center items-center  bg-[#F6F6F6]">500</span>
-                            </div>
-                            <div class="flex flex-row gap-5 ">
-                                <span class="text-[#5A5A5A]">Số lượng:</span>
-                                <div
-                                    class="w-[144.49px] h-[35.04px] text-[20px] flex justify-between border-[#b1afaf] border-[2px] ">
+                                <div class="flex gap-[10px]">
                                     <span
-                                        class="w-[40.33px] text-center items-center border-[#b1afaf] border-r-[2px]  ">-</span>
-                                    <span>1</span>
+                                        class="w-[45px] h-[42px] flex justify-center text-[#fff]  items-center bg-[#356C07]">150</span>
                                     <span
-                                        class="w-[40.33px] text-center items-center border-[#b1afaf] border-l-[2px]  ">+</span>
+                                        class="w-[45px] h-[42px] flex justify-center items-center  bg-[#F6F6F6]">250</span>
+                                    <span
+                                        class="w-[45px] h-[42px] flex justify-center items-center  bg-[#F6F6F6]">500</span>
                                 </div>
-                                <span>4352 sản phẩm có sẵn</span>
+
+                            </div>
+                            <div class="flex flex-row max-mb:flex-col gap-5 ">
+                                <div class="flex  gap-[20px] max-mb:justify-between">
+                                    <span class="text-[#5A5A5A]">Số lượng:</span>
+                                    <div
+                                        class="w-[144.49px] h-[35.04px] text-[20px] flex justify-between  border-[#b1afaf] border-[2px] ">
+                                        <span
+                                            class="w-[40.33px] text-center items-center border-[#b1afaf] border-r-[2px]  ">-</span>
+                                        <span>1</span>
+                                        <span
+                                            class="w-[40.33px] text-center items-center border-[#b1afaf] border-l-[2px]  ">+</span>
+                                    </div>
+                                </div>
+
+                                <span class="max-mb:text-right">4352 sản phẩm có sẵn</span>
                             </div>
                             <div class="flex gap-5">
                                 <button
-                                    class="flex gap-2 font-[700] border-[#356C07] text-[#356C07] justify-center items-center border-[2px] w-[142px] h-[46px] rounded-[1px]">
+                                    class="max-mb:hidden flex gap-2 font-[700] border-[#356C07] text-[#356C07] justify-center items-center border-[2px] w-[142px] h-[46px] rounded-[1px]">
                                     <img src="../assets/icons/icon_product_details/chat.svg" alt="">
                                     <span> CHAT NGAY</span>
                                 </button>
                                 <button
-                                    class="flex gap-2 font-[700] border-[#E10000] text-[#E10000] justify-center items-center border-[2px] bg-[#FFF2F2] w-[204px] h-[46px] rounded-[1px]">
+                                    class="flex gap-2 font-[700] max-mb:text-[14px] border-[#E10000] text-[#E10000] justify-center items-center border-[2px] bg-[#FFF2F2] w-[204px] h-[46px] rounded-[1px]">
                                     <img src="../assets/icons/icon_product_details/cart.svg" alt="">
                                     <span>Thêm vào giỏ hàng</span>
                                 </button>
                                 <button
-                                    class="bg-[#E10000] w-[204px] h-[46px] text-[#FFFFFF] justify-center items-center rounded-[1px]">Thanh
+                                    class="bg-[#E10000] max-mb:text-[14px]0 w-[204px] h-[46px] text-[#FFFFFF] justify-center items-center rounded-[1px]">Thanh
                                     Toán</button>
                             </div>
                             <div class="border-[#F0F0F0] border-b-[1px]"></div>
@@ -147,12 +294,11 @@
                         </div>
 
                     </div>
-
                 </div>
 
             </div>
             <div class="max-w-[650px]  ">
-                <h3 class="text-center text-[#333333] font-[700] text-[18px]">CHI TIẾT SẢN PHẨM</h3>
+                <h3 class="text-center text-[#333333] font-[700] text-[18px] max-mb:text-[16px]">CHI TIẾT SẢN PHẨM</h3>
                 <div class="mt-[10px] ">
                     <div class="max-w-[650px]  border-[#356C07] border-b-[2px]"></div>
                     <div class="mx-auto max-w-[176px] border-[#356C07] border-b-[5px]"></div>
@@ -191,35 +337,40 @@
 
                 <div class="max-w-[650px] my-[50px]  border-[#356C07] border-b-[2px]"></div>
             </div>
-            <div class="mb-[50px]">
+            <div class="mb-[50px]   ">
                 <div class="flex gap-5 my-[10px]">
                     <img src="../assets/icons/icon_product_details/leaf.svg" alt="">
-                    <span class="text-[#1A1A1A] text-[30px] font-[700] " style="line-height: 40.92px;">SẢN PHẨM LIÊN
+                    <span class="text-[#1A1A1A] text-[30px] font-[700] max-mb:text-[16px] "
+                        style="line-height: 40.92px;">SẢN PHẨM LIÊN
                         QUAN</span>
                 </div>
-                <div class="flex gap-8">
-                    <div class=" w-[270px]  " style="box-shadow: 0px 0px 23px 0px #0000001A;">
-                        <div class="relative h-[268px]">
+                <div class="flex gap-10 max-mb:gap-[5px] flex-wrap">
+                    <div class=" max-w-[270px] max-mb:max-w-[164.17px]" style="box-shadow: 0px 0px 23px 0px #0000001A;">
+                        <div class="relative h-[268px] max-mb:h-[162.96px]">
                             <img class="w-[100%] h-[100%] object-cover" src="../assets/images/product_detals/lemon.jfif"
                                 alt="">
                             <div class="absolute max-w-[42.5] max-h-[41px] top-0 right-0">
                                 <img src="../assets/icons/icon_product_details/red_box.svg" alt="">
                             </div>
-                            <p class="absolute p-[5px] text-[#FFFFFF] text-[14px] font-roboto font-[900] top-0 right-0">
-                                -20%</p>
+                            <p
+                                class="absolute p-[5px] text-[#FFFFFF] text-[14px]  font-roboto font-[900] top-0 right-0">
+                                -50%</p>
                             <button
-                                class="absolute bottom-0 w-full h-[40px] opacity-[90%] bg-[#E10000] text-[#FFFFFF] text-[16px] font-[400] text-center ">
+                                class="absolute bottom-0 max-mb:hidden w-full h-[40px] opacity-[90%] bg-[#E10000] text-[#FFFFFF] text-[16px] font-[400] text-center ">
                                 MUA NGAY</button>
                         </div>
                         <div class="p-[15px]">
-                            <span class="text-[#356C07] font-[500] text-[16px] " style="line-height: 25.67px;">Thảo dược
+                            <span class="text-[#356C07] font-[500] text-[16px] max-mb:text-[13px] "
+                                style="line-height: 25.67px;">Thảo dược
                                 Cao cà gai leo Yên Thủy -
                                 250g</span>
                             <div class="border-[#F0F0F0] my-[10px] border-b-[1px]"></div>
                             <div class="flex items-center justify-between">
-                                <div>
-                                    <span class="text-[#E10000] font-[700] text-[18px] ">220.000 đ</span>
-                                    <span class="line-through text-[#A1A1A1] font-[400] text-[14px] ml-4 ">250.000
+                                <div class="max-mb:flex max-mb:flex-col">
+                                    <span class="text-[#E10000] font-[700] text-[18px] max-mb:text-[14px] ">220.000
+                                        đ</span>
+                                    <span
+                                        class="line-through max-mb:text-[10px] text-[#A1A1A1] font-[400] text-[14px] ml-4 max-mb:ml-0 ">250.000
                                         đ</span>
                                 </div>
                                 <img class="text-[#68C114]" src="../assets/icons/icon_product_details/cart_green.svg"
@@ -227,21 +378,24 @@
                             </div>
                         </div>
                     </div>
-                    <div class=" w-[270px]  " style="box-shadow: 0px 0px 23px 0px #0000001A;">
-                        <div class="relative h-[268px]">
-                            <img class="w-[100%] h-[100%] object-cover" src="../assets/images/product_detals/lemon.jfif"
-                                alt="">
+                    <div class=" max-w-[270px] max-mb:max-w-[164.17px]" style="box-shadow: 0px 0px 23px 0px #0000001A;">
+                        <div>
+                            <img class=" h-[268px] max-mb:h-[162.96px] object-cover"
+                                src="../assets/images/product_detals/lemon.jfif" alt="">
 
                         </div>
                         <div class="p-[15px]">
-                            <span class="text-[#4F4F4F] font-[500] text-[16px] " style="line-height: 25.67px;">Thảo dược
+                            <span class="text-[#356C07] font-[500] text-[16px] max-mb:text-[13px] "
+                                style="line-height: 25.67px;">Thảo dược
                                 Cao cà gai leo Yên Thủy -
                                 250g</span>
                             <div class="border-[#F0F0F0] my-[10px] border-b-[1px]"></div>
                             <div class="flex items-center justify-between">
-                                <div>
-                                    <span class="text-[#E10000] font-[700] text-[18px] ">220.000 đ</span>
-                                    <span class="line-through text-[#A1A1A1] font-[400] text-[14px] ml-4 ">250.000
+                                <div class="max-mb:flex max-mb:flex-col">
+                                    <span class="text-[#E10000] font-[700] text-[18px] max-mb:text-[14px] ">220.000
+                                        đ</span>
+                                    <span
+                                        class="line-through max-mb:text-[10px] text-[#A1A1A1] font-[400] text-[14px] ml-4 max-mb:ml-0 ">250.000
                                         đ</span>
                                 </div>
                                 <img class="text-[#68C114]" src="../assets/icons/icon_product_details/cart_green.svg"
@@ -249,21 +403,24 @@
                             </div>
                         </div>
                     </div>
-                    <div class=" w-[270px]  " style="box-shadow: 0px 0px 23px 0px #0000001A;">
-                        <div class="relative h-[268px]">
-                            <img class="w-[100%] h-[100%] object-cover" src="../assets/images/product_detals/lemon.jfif"
-                                alt="">
+                    <div class=" max-w-[270px] max-mb:max-w-[164.17px]" style="box-shadow: 0px 0px 23px 0px #0000001A;">
+                        <div>
+                            <img class=" h-[268px] max-mb:h-[162.96px] object-cover"
+                                src="../assets/images/product_detals/lemon.jfif" alt="">
 
                         </div>
                         <div class="p-[15px]">
-                            <span class="text-[#4F4F4F] font-[500] text-[16px] " style="line-height: 25.67px;">Thảo dược
+                            <span class="text-[#356C07] font-[500] text-[16px] max-mb:text-[13px] "
+                                style="line-height: 25.67px;">Thảo dược
                                 Cao cà gai leo Yên Thủy -
                                 250g</span>
                             <div class="border-[#F0F0F0] my-[10px] border-b-[1px]"></div>
                             <div class="flex items-center justify-between">
-                                <div>
-                                    <span class="text-[#E10000] font-[700] text-[18px] ">220.000 đ</span>
-                                    <span class="line-through text-[#A1A1A1] font-[400] text-[14px] ml-4 ">250.000
+                                <div class="max-mb:flex max-mb:flex-col">
+                                    <span class="text-[#E10000] font-[700] text-[18px] max-mb:text-[14px] ">220.000
+                                        đ</span>
+                                    <span
+                                        class="line-through max-mb:text-[10px] text-[#A1A1A1] font-[400] text-[14px] ml-4 max-mb:ml-0 ">250.000
                                         đ</span>
                                 </div>
                                 <img class="text-[#68C114]" src="../assets/icons/icon_product_details/cart_green.svg"
@@ -271,21 +428,24 @@
                             </div>
                         </div>
                     </div>
-                    <div class=" w-[270px]  " style="box-shadow: 0px 0px 23px 0px #0000001A;">
-                        <div class="relative h-[268px]">
-                            <img class="w-[100%] h-[100%] object-cover" src="../assets/images/product_detals/lemon.jfif"
-                                alt="">
+                    <div class=" max-w-[270px] max-mb:max-w-[164.17px]" style="box-shadow: 0px 0px 23px 0px #0000001A;">
+                        <div>
+                            <img class=" h-[268px] max-mb:h-[162.96px] object-cover"
+                                src="../assets/images/product_detals/lemon.jfif" alt="">
 
                         </div>
                         <div class="p-[15px]">
-                            <span class="text-[#4F4F4F] font-[500] text-[16px] " style="line-height: 25.67px;">Thảo dược
+                            <span class="text-[#356C07] font-[500] text-[16px] max-mb:text-[13px] "
+                                style="line-height: 25.67px;">Thảo dược
                                 Cao cà gai leo Yên Thủy -
                                 250g</span>
                             <div class="border-[#F0F0F0] my-[10px] border-b-[1px]"></div>
                             <div class="flex items-center justify-between">
-                                <div>
-                                    <span class="text-[#E10000] font-[700] text-[18px] ">220.000 đ</span>
-                                    <span class="line-through text-[#A1A1A1] font-[400] text-[14px] ml-4 ">250.000
+                                <div class="max-mb:flex max-mb:flex-col">
+                                    <span class="text-[#E10000] font-[700] text-[18px] max-mb:text-[14px] ">220.000
+                                        đ</span>
+                                    <span
+                                        class="line-through max-mb:text-[10px] text-[#A1A1A1] font-[400] text-[14px] ml-4 max-mb:ml-0 ">250.000
                                         đ</span>
                                 </div>
                                 <img class="text-[#68C114]" src="../assets/icons/icon_product_details/cart_green.svg"
@@ -293,18 +453,21 @@
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div>
-
-            <div class="bg-[#FAFAFA] w-[1920px] flex justify-center gap-[100px] ">
-
-                <img class="w-[531px] h-[527px] object-cover " src="../assets/images/product_detals/hand.png" alt="">
+            <div
+                class="bg-[#FAFAFA] max-w-[1920px] flex max-mb:flex-col justify-center gap-[100px] mb-[100px] py-[50px] ">
+                <img class="w-[531px] h-[527px] object-cover max-mb:hidden "
+                    src="../assets/images/product_detals/hand.png" alt="">
                 <div class="max-w-[541px]">
                     <div class="flex gap-3 items-center">
                         <img src="../assets/icons/icon_product_details/leaf.svg" alt="">
-                        <b class="text-[#1A1A1A] text-[30px] font-[700]">TẠI SAO LỰA CHỌN NÔNG THẢO?</b>
+                        <b class="text-[#1A1A1A] text-[30px] max-mb:text-[16px]  font-[700]">TẠI SAO LỰA CHỌN NÔNG
+                            THẢO?</b>
                     </div>
-                    <p class="text-[#4F4F4F] font-[400] text-[18px] my-[10px]">Chúng tôi mang đến cho bạn các sản phẩm
+                    <p class="text-[#4F4F4F] font-[400] text-[18px] max-mb:text-[14px] max-mb:text-center my-[10px]">
+                        Chúng tôi mang đến cho bạn các sản phẩm
                         thảo dược tự nhiên, bền vững và không có hóa chất.</p>
                     <div class="flex flex-col gap-2">
                         <div class="flex gap-5">
@@ -319,9 +482,11 @@
                                 <img src="../assets/icons/icon_product_details/line_right.svg" alt="">
                             </div>
                             <div>
-                                <b class="text-[#356C07] text-[21px] font-[700] leading-[48px] tracking-[-0.03em]">100%
+                                <b
+                                    class="text-[#356C07] text-[21px] max-mb:text-[16px] font-[700] leading-[48px] tracking-[-0.03em]">100%
                                     hữu cơ</b>
-                                <p class="text-[#1E1E1E] font-[400] text-[16px] ">Tuân thủ theo tiêu chuẩn GACP-WHO để
+                                <p class="text-[#1E1E1E] font-[400] text-[16px] max-mb:text-[14px] ">Tuân thủ theo tiêu
+                                    chuẩn GACP-WHO để
                                     nguyên liệu an toàn cho sức khỏe của bạn</p>
                             </div>
                         </div>
@@ -337,9 +502,11 @@
                                 <img src="../assets/icons/icon_product_details/line_right.svg" alt="">
                             </div>
                             <div>
-                                <b class="text-[#4F4F4F] text-[21px] font-[700] leading-[48px] tracking-[-0.03em]">Công
+                                <b
+                                    class="text-[#4F4F4F] text-[21px] max-mb:text-[16px] font-[700] leading-[48px] tracking-[-0.03em]">Công
                                     nghệ</b>
-                                <p class="text-[#1E1E1E] font-[400] text-[16px] ">Sản xuất và đóng gói tại nhà máy đạt
+                                <p class="text-[#1E1E1E] font-[400] max-mb:text-[14px] text-[16px] ">Sản xuất và đóng
+                                    gói tại nhà máy đạt
                                     chuẩn GMP</p>
                             </div>
                         </div>
@@ -352,12 +519,13 @@
                                         class="absolute top-[12%] right-[25%] text-[#FFFFFF] font-[700] text-[32px] ">03</span>
                                 </div>
 
-                                <img src="../assets/icons/icon_product_details/line_right.svg" alt="">
                             </div>
                             <div>
-                                <b class="text-[#4F4F4F] text-[21px] font-[700] leading-[48px] tracking-[-0.03em]">Trách
+                                <b
+                                    class="text-[#4F4F4F] text-[21px] font-[700] leading-[48px] max-mb:text-[16px] tracking-[-0.03em]">Trách
                                     nhiệm</b>
-                                <p class="text-[#1E1E1E] font-[400] text-[16px] ">Hỗ trợ tối đa bất kỳ khi nào bạn cần.
+                                <p class="text-[#1E1E1E] font-[400] max-mb:text-[14px] text-[16px] ">Hỗ trợ tối đa bất
+                                    kỳ khi nào bạn cần.
                                 </p>
                             </div>
                         </div>
@@ -366,8 +534,6 @@
                 </div>
 
             </div>
-
-
         </main>
         <footer class="font-nunito">
             <div class=" mx-auto flex flex-wrap">
@@ -375,25 +541,27 @@
                     <img src="../assets/images/footer_img-1.png" class="img-style" alt="img footer">
                     <img src="../assets/images/footer_img-2.png" class="img-style" alt="img footer">
                     <img src="../assets/images/footer_img-3.png" class="img-style" alt="img footer">
-                    <img src="../assets/images/footer_img-4.png" class="img-style" alt="img footer">
-                    <img src="../assets/images/footer_img-5.png" class="img-style" alt="img footer">
-                    <img src="../assets/images/footer_img-6.png" class="img-style" alt="img footer">
-                    <img src="../assets/images/footer_img-7.png" class="img-style" alt="img footer">
-                    <img src="../assets/images/footer_img-8.png" class="img-style" alt="img footer">
+
+                    <img src="../assets/images/footer_img-4.png" class="img-style block max-mb:hidden" alt="img footer">
+                    <img src="../assets/images/footer_img-5.png" class="img-style block max-mb:hidden" alt="img footer">
+                    <img src="../assets/images/footer_img-6.png" class="img-style block max-mb:hidden" alt="img footer">
+                    <img src="../assets/images/footer_img-7.png" class="img-style block max-mb:hidden" alt="img footer">
+                    <img src="../assets/images/footer_img-8.png" class="img-style block max-mb:hidden" alt="img footer">
                 </div>
             </div>
-            <div class="bg-[#356C07]">
-                <div class="max-w-[1174px] mx-auto flex justify-between gap-[71px] py-[37px]">
+            <div class="bg-[#356C07]  p-[20px]">
+                <div
+                    class="max-w-[1174px] mx-auto flex flex-row max-mb:flex-col justify-between gap-[20px] py-[37px] max-mb:py-0">
                     <div class="max-w-[305px]">
                         <div class="max-h-[44px] w-full">
                             <img src="../assets/images/footer_logo.png" class="mix-blend-color-dodge" alt="logo footer">
                         </div>
-                        <div class="font-nunito text-[14px] text-white mt-[46px] leading-6">
+                        <div class="font-nunito text-[14px] text-[#ffff] mt-[46px] leading-6">
                             MST: 012345678910 - Ngày cấp: 10/02/2022
                             Nơi cấp: Sở Kế hoạch & Đầu tư TP Hà Nội
                         </div>
                         <div class="mt-[22px] flex items-center">
-                            <span class="text-white text-base pr-[15px]">Liên kết</span>
+                            <span class="text-[#ffff] text-base pr-[15px]">Liên kết</span>
                             <div class="flex gap-[10px]">
                                 <img src="../assets/icons/ti-shoppe.svg" alt="ti-social">
                                 <img src="../assets/icons/ti-tiki.svg" alt="ti-social">
@@ -405,43 +573,79 @@
                         </div>
                     </div>
 
-                    <div class="w-[792px] h-[198px] flex gap-[61px]">
-                        <div class="max-w-[248px]">
-                            <h4 class="text-white text-sm uppercase">Liên hệ</h4>
+                    <div class="max-mb:flex flex-col gap-[20px] text-[#fff] text-[14px] font-[600] hidden">
+                        <div class="border-[#EBF0FFB2] border-b-[0.5px]"></div>
+                        <a href="">LIÊN HỆ</a>
+                        <div class="border-[#EBF0FFB2] border-b-[0.5px]"></div>
+                        <a href="">THÔNG TIN</a>
+                        <div class="border-[#EBF0FFB2] border-b-[0.5px]"></div>
+
+                        <div class="flex flex-col gap-[10px] text-[14px] font-[400]">
+                            <p>ĐĂNG KÝ NHẬN TIN</p>
+                            <p style="line-height: 23.06px;">Vui lòng nhập email của bạn để được hỗ trợ nhanh nhất!</p>
+                            <div class="flex">
+                                <input type="text"
+                                    class="w-full max-h-[45px] pl-3 pr-10 py-[13px] bg-[#ffff] placeholder:text-[#68C114] text-base border border-slate-200 shadow-sm"
+                                    placeholder="Email của bạn..." />
+                                <button class="w-[50px] h-[45px] bg-[#68C114] flex justify-center items-center">
+                                    <img src="../assets/icons/ti-sumbit.svg" alt="">
+                                </button>
+                            </div>
+                            <div class="h-[40px] flex justify-between w-full mt-[30px]">
+                                <img class="w-[130px] " src="../assets/images/bocongthuong.png" alt="">
+                                <img class="w-[83px]" src="../assets/images/dmca.png" alt="">
+                            </div>
+                            <div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="w-[792px] h-[198px] flex  gap-[61px] max-mb:hidden ">
+
+
+                        <div class="max-w-[248px] ">
+                            <h4 class="text-[#ffff] text-sm uppercase">Liên hệ</h4>
                             <ul class="mt-[15px]">
                                 <li class="flex gap-[12px]">
                                     <img src="../assets/icons/ti-address.svg" class="self-start" alt="">
-                                    <p class="text-sm text-white">Tầng 4-5-6, Tòa nhà Capital Place, số 29 đường Liễu
+                                    <p class="text-sm text-[#ffff]">Tầng 4-5-6, Tòa nhà Capital Place, số 29 đường Liễu
                                         Giai,
                                         P.Ngọc Khánh, Q.Ba
                                         Đình, Hà Nội</p>
                                 </li>
                                 <li class="flex gap-[12px] mt-[12px]">
                                     <img src="../assets/icons/ti-phone.svg" alt="">
-                                    <p class="text-sm text-white">0969.71.6848</p>
+                                    <p class="text-sm text-[#ffff]">0969.71.6848</p>
                                 </li>
                                 <li class="flex gap-[12px] mt-[12px]">
                                     <img src="../assets/icons/ti-email.svg" alt="">
-                                    <p class="text-sm text-white">hotro@nongthao.vn</p>
+                                    <p class="text-sm text-[#ffff]">hotro@nongthao.vn</p>
                                 </li>
                             </ul>
                         </div>
-                        <div>
-                            <h4 class="text-white text-sm uppercase">Thông tin</h4>
+
+
+                        <div class="">
+                            <h4 class="text-[#ffff] text-sm uppercase">Thông tin</h4>
                             <ul class="mt-[15px] list-disc">
-                                <li class="text-white text-sm mb-[10px] leading-5">Giới thiệu Nông Thảo</li>
-                                <li class="text-white text-sm mb-[10px] leading-5">Điều khoản</li>
-                                <li class="text-white text-sm mb-[10px] leading-5">Chính sách bảo mật</li>
-                                <li class="text-white text-sm mb-[10px] leading-5">Hướng dẫn mua hàng</li>
-                                <li class="text-white text-sm mb-[10px] leading-5">Trả hàng & hoàn tiền</li>
-                                <li class="text-white text-sm mb-[10px] leading-5">Nông Thảo Blogs</li>
+                                <li class="text-[#ffff] text-sm mb-[10px] leading-5">Giới thiệu Nông Thảo</li>
+                                <li class="text-[#ffff] text-sm mb-[10px] leading-5">Điều khoản</li>
+                                <li class="text-[#ffff] text-sm mb-[10px] leading-5">Chính sách bảo mật</li>
+                                <li class="text-[#ffff] text-sm mb-[10px] leading-5">Hướng dẫn mua hàng</li>
+                                <li class="text-[#ffff] text-sm mb-[10px] leading-5">Trả hàng & hoàn tiền</li>
+                                <li class="text-[#ffff] text-sm mb-[10px] leading-5">Nông Thảo Blogs</li>
                             </ul>
                         </div>
-                        <div class="max-w-[248px]">
-                            <h4 class="text-white text-sm uppercase">Đăng ký nhận tin</h4>
+
+
+                        <div class="max-w-[248px] ">
+                            <h4 class="text-[#ffff] text-sm uppercase">Đăng ký nhận tin</h4>
                             <ul class="mt-[15px]">
                                 <li class="flex gap-[12px] mt-[12px]">
-                                    <p class="text-sm text-white">Vui lòng nhập email để nhận thêm nhiều ưu đãi từ Nông
+                                    <p class="text-sm text-[#ffff]">Vui lòng nhập email để nhận thêm nhiều ưu đãi từ
+                                        Nông
                                         Thảo</p>
                                 </li>
                                 <li class="mt-[8px]">
@@ -449,7 +653,7 @@
                                         <div class="w-full max-w-sm min-w-[200px]">
                                             <div class="relative">
                                                 <input type="text"
-                                                    class="w-full max-h-[45px] pl-3 pr-10 py-[13px] bg-white placeholder:text-slate-400 text-slate-600 text-base border border-slate-200 shadow-sm"
+                                                    class="w-full max-h-[45px] pl-3 pr-10 py-[13px] bg-[#ffff] placeholder:text-slate-400 text-slate-600 text-base border border-slate-200 shadow-sm"
                                                     placeholder="Email của bạn..." />
 
                                                 <div
@@ -471,13 +675,23 @@
                     </div>
                 </div>
             </div>
+
+
+
             <div
-                class="bg-[#86A76A] min-h-[43px] w-full text-center flex justify-center items-center text-white text-sm">
-                © 2022 - Bản quyền thuộc về Công ty TNHH Nông Thảo
+                class="bg-[#86A76A] min-h-[43px] w-full text-center flex justify-center items-center text-[#ffff] text-sm">
+                <span> © 2022 - Bản quyền thuộc về Công ty TNHH Nông Thảo</span>
+            </div>
+            <div class="max-mb:flex flex-col hidden fixed bottom-[30px] right-[10px]">
+                <img class="w-[48px] h-[48px]" src="../assets/icons/ti-phone-red.svg" alt="">
+                <img class="w-[48px] h-[48px]" src="../assets/icons/ti-mess.svg" alt="">
+                <button class="h-[32px] mt-[100px] w-[32px] bg-[#356C07] flex justify-center items-center text-[#fff]">
+                    <img src="../assets/icons/ti-arrow-up.svg" alt="">
+                </button>
             </div>
         </footer>
     </div>
-
+    <script src="../controllers/index.js"></script>
 </body>
 
 </html>
