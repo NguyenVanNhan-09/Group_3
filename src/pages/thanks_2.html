@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank you page</title>
+    <link rel="stylesheet" href="../output.css">
+</head>
+
+<body>
+    <header class="font-nunito bg-white shadow-md px-[12px]">
+        <div class=" bg-[#ffff] sidebar fixed top-0 bottom-0 left-0 w-[288px] hidden sm:hidden   p-[20px]">
+            <div class="flex justify-between items-center  cursor-pointer">
+                <img class="w-[138px] h-[26px] " src="../assets/images/logo_header.png" alt="">
+
+                <div onclick="openSidebar()">
+                    <img src="../assets/icons/ti-close.svg" alt="">
+                </div>
+            </div>
+            <div class="flex flex-row my-[30px] relative ">
+                <input class="bg-[#EBF0E6] pl-[10px]  w-[252px] h-[42px]  rounded-[30px]" type="text"
+                    placeholder="Bạn muốn tìm...">
+                <button class="absolute right-[5px] top-[2px] text-[#fff] flex items-center justify-center">
+                    <img src="../assets/icons/ti-search.svg" alt="">
+                </button>
+            </div>
+
+            <div class="flex flex-col gap-[20px]">
+                <div>
+                    <div class="flex justify-between " onclick="dropdown()">
+                        <b class="text-primary text-[16px] font-[700] cursor-pointer">SẢN PHẨM</b>
+                        <img class="" src="../assets/icons/ti-arrow-down.svg" alt="">
+                    </div>
+
+                    <div class="border-subTextColor border-b-[1px] my-[2px]"></div>
+                    <div class="ml-[20px] flex flex-col gap-[10px] mt-2 text-[16px] font-[400] text-[#000000] "
+                        id="submenu">
+                        <div>
+                            <p class=" cursor-pointer" >Thảo dược</p>
+                            <div class="border-subTextColor border-b-[1px] my-[2px]"></div>
+                        </div>
+                        <div>
+                            <p class=" cursor-pointer">Nông sản</p>
+                            <div class="border-subTextColor border-b-[1px] my-[2px]"></div>
+                        </div>
+                        <div>
+                            <p class=" cursor-pointer">Hoa quả</p>
+                            <div class="border-subTextColor border-b-[1px] my-[2px]"></div>
+                        </div>
+
+                    </div>
+                </div>
+                <div>
+                    <b class="text-primary text-[16px] font-[700]  cursor-pointer">VỀ NÔNG THẢO</b>
+                    <div class="border-subTextColor border-b-[1px] my-[2px]"></div>
+                </div>
+
+                <div>
+                    <div class="flex justify-between">
+                        <b class="text-primary text-[16px] font-[700]  cursor-pointer">BLOGS</b>
+                        <img src="../assets/icons/ti-arrow-down.svg" alt="">
+                    </div>
+
+                    <div class="border-subTextColor border-b-[1px] my-[2px]"></div>
+
+                </div>
+                <div>
+                    <b class="text-primary text-[16px] font-[700]  cursor-pointer">LIÊN HỆ</b>
+                    <div class="border-subTextColor border-b-[1px] my-[2px]"></div>
+                </div>
+
+            </div>
+            <button class="rounded-[5px] mt-[50px] w-[252px] h-[51px] bg-ctaColor">
+                <span class="text-[#ffff] font-[700] text-[18px] text-center">0988.818.841</span>
+            </button>
+            <p class="text-[13px] font-[400] text-primary text-center mt-[20px]  cursor-pointer">Gọi hỗ trợ ngay!</p>
+        </div>
+
+
+        <div class='py-4 px-2 z-50 w-full max-w-[1174px] mx-auto '>
+            <div class='flex flex-wrap items-center sm:flex justify-between gap-5'>
+                <div class="block sm:hidden  cursor-pointer" onclick="openSidebar()">
+                    <img src="../assets/icons/ti-menu.svg" alt="">
+                </div>
+                <a href="#"><img src="../assets/images/logo_header.png" alt="logo" class='w-36' /></a>
+                <div class="hidden sm:block">
+                    <ul class='flex'>
+                        <li class='border-gray-300 px-3'>
+                            <div class="group relative group-hover:visible">
+                                <a href='#'
+                                    class='group-hover:visible hover:text-[#356C07] text-[#1A1A1A] block font-semibold text-base uppercase'>Sản
+                                    phẩm
+                                </a>
+                                <div class="group-hover:visible invisible hover-product w-[197px] h-[143px] absolute bg-[#FFFFFF] -ml-[9px] mt-[0px]"
+                                    style="box-shadow: 1px 1px 1px 1px #867979;">
+                                    <div class="ground w-[180px] h-[118px] mx-3 my-2.5">
+                                        <ul class="flex-col">
+                                            <li class="mt-[15px]">
+                                                <a href=""
+                                                    class="uppercase text-sm font-semibold leading-[1.31rem] text-left text-[#356C07]">Thảo
+                                                    dược</a>
+                                            </li>
+                                            <div class="border mt-[10px] border-[#0000004D]"></div>
+                                            <li class="mt-[10px]">
+                                                <a href=""
+                                                    class="uppercase text-sm font-semibold leading-[1.31rem] text-left text-[##1A1A1A]">Nông
+                                                    sản</a>
+                                            </li class="mt-[10px] ">
+                                            <div class="border mt-[10px] border-[#0000004D]"></div>
+                                            <li class="mt-[10px]">
+                                                <a href=""
+                                                    class="uppercase text-sm font-semibold leading-[1.31rem] text-left text-[##1A1A1A]">Hoa
+                                                    quả hữu cơ</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </li>
+                        <li class='border-gray-300 px-3'><a href='#'
+                                class='hover:text-[#356C07] text-[#1A1A1A] block font-semibold text-base uppercase'>Về
+                                nông
+                                thảo
+                            </a>
+                        </li>
+                        <li class='border-gray-300 px-3'><a href='#'
+                                class='hover:text-[#356C07] text-[#1A1A1A] block font-semibold text-base uppercase'>Blog
+                            </a>
+                        </li>
+                        <li class='border-gray-300 px-3'><a href='#'
+                                class='hover:text-[#356C07] text-[#1A1A1A] block font-semibold text-base uppercase'>Liên
+                                hệ
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class='flex'>
+                    <button class='pr-[17px] hidden sm:block'>
+                        <img src="../assets/icons/ti-search.svg" alt="ti-search"></button>
+
+
+                    <div class="img-object-base relative">
+                        <img onclick="toggleCart()" id="clickButton" src="../assets/icons/ti-cart.svg" alt="ti-cart"
+                            role="button">
+
+                        <div id="cart"
+                            class="hidden open-cart w-[300px] h-[144px] bg-[#FFFFFF] absolute -right-[10px] sm:-right-[140px] top-[59px]"
+                            style="box-shadow: 1px 1px 1px 1px grey">
+                            <div class=" flex-col my-3 mx-3 justify-center items-center">
+                                <div class="layer flex mt-[20px]">
+                                    <div class="img w-[31px] h-[27px] object-cover">
+                                        <img class="img-object-base" src="../assets/images/lemon.jfif" alt="">
+                                    </div>
+                                    <p class="text text-xs font-normal leading-[1.02rem] text-[#000000] mt-1.5 ml-2">Mứt
+                                        chanh tây sấy lạnh 100% hữu cơ...</p>
+                                    <p
+                                        class="count text-[0.81rem] font-normal leading-[1.11rem] text-[#000000BD] mt-1 ml-1.5">
+                                        x 1</p>
+                                </div>
+                                <div class="layer flex mt-[20px]">
+                                    <div class="img w-[31px] h-[27px] object-cover ">
+                                        <img class="img-object-base" src="../assets/images/lemon.jfif" alt="">
+                                    </div>
+                                    <p class="text text-xs font-normal leading-[1.02rem] text-[#000000] mt-1.5 ml-2">Mứt
+                                        chanh tây sấy lạnh 100% hữu cơ...</p>
+                                    <p
+                                        class="count text-[0.81rem] font-normal leading-[1.11rem] text-[#000000BD] mt-1 ml-1.5">
+                                        x 1</p>
+                                </div>
+                                <button
+                                    class=" mt-[9px] text-center mx-auto w-72 h-8 bg-[#E10000] text-xs font-normal leading-[1.02rem] text-[#FFFFFF] -ml-1.5">ĐẶT
+                                    HÀNG NGAY</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="flex flex-col justify-between w-full max-w-[637px] font-nunito gap-9 p-4 min-mb:mx-auto min-mb:mt-32 min-mb:mb-60">
+        <!-- navigation  -->
+        <div class="min-mb:hidden flex">
+            <p>Trang chủ</p>
+            <img src="../assets/images/Thanks_img/right-arrow.svg" alt="right arrow icon" class="mx-2">
+            <p class="text-[#C4C4C4]">Thank you</p>
+        </div>
+
+        <div class="flex flex-col items-center gap-9 p-16 min-mb:p-0">
+            <div class="relative flex  max-w-[141px]">
+                <img src="../assets/images/Thanks_img/circle.png" alt="circle">
+                <div class="w-full h-full absolute top-0 flex justify-center items-center">
+                    <div class="max-w-[92px]">
+                        <img class="w-full h-full object-cover overflow-hidden" src="../assets/images/Thanks_img/leaf.png" alt="leaf">
+                    </div>
+                </div>
+            </div>
+            <div class="text-[16px] font-[400] text-center">
+                <p>Cảm ơn <span class="text-[#356C07] font-[700]">Anh/Chị</span> đã để lại liên hệ. <span class="text-[#356C07] font-medium text-base">Nông Thảo</span> sẽ nhanh chóng liên hệ lại với anh chị.
+                    Trong trường hợp anh/ chị cần hỗ trợ nhanh chóng. Hãy gọi <span class="text-ctaColor font-[700]">0969.71.6848</span></p>
+            </div>
+            <button class="bg-primary p-[13px] text-white text-[18px] font-[700] w-[269px] h-[51px] text-[#fff]">QUAY LẠI TRANG CHỦ</button>
+        </div>
+    </section>
+
+    <footer class="font-nunito">
+        <div class=" mx-auto flex flex-wrap">
+            <div class="w-full flex max-h-[240px]">
+                <img src="../assets/images/footer_img-1.png" class="img-style" alt="img footer">
+                <img src="../assets/images/footer_img-2.png" class="img-style" alt="img footer">
+                <img src="../assets/images/footer_img-3.png" class="img-style" alt="img footer">
+
+                <img src="../assets/images/footer_img-4.png" class="img-style hidden sm:block" alt="img footer">
+                <img src="../assets/images/footer_img-5.png" class="img-style hidden sm:block" alt="img footer">
+                <img src="../assets/images/footer_img-6.png" class="img-style hidden sm:block" alt="img footer">
+                <img src="../assets/images/footer_img-7.png" class="img-style hidden sm:block" alt="img footer">
+                <img src="../assets/images/footer_img-8.png" class="img-style hidden sm:block" alt="img footer">
+            </div>
+        </div>
+        <div class="bg-[#356C07]  p-[20px]">
+            <div class="max-w-[1174px] mx-auto flex flex-col sm:flex-row justify-between gap-[20px] sm:py-[37px]">
+                <div class="max-w-[305px]">
+                    <div class="max-h-[44px] w-full">
+                        <img src="../assets/images/footer_logo.png" class="mix-blend-color-dodge" alt="logo footer">
+                    </div>
+                    <div class="font-nunito text-[14px] text-[#ffff] mt-[46px] leading-6">
+                        MST: 012345678910 - Ngày cấp: 10/02/2022
+                        Nơi cấp: Sở Kế hoạch & Đầu tư TP Hà Nội
+                    </div>
+                    <div class="mt-[22px] flex items-center">
+                        <span class="text-[#ffff] text-base pr-[15px]">Liên kết</span>
+                        <div class="flex gap-[10px]">
+                            <img src="../assets/icons/ti-shoppe.svg" alt="ti-social">
+                            <img src="../assets/icons/ti-tiki.svg" alt="ti-social">
+                            <img src="../assets/icons/tu-laza.svg" alt="ti-social">
+                            <img src="../assets/icons/ti-fa.svg" alt="ti-social">
+                            <img src="../assets/icons/ti-in.svg" alt="ti-social">
+                            <img src="../assets/icons/ti-tiktok.svg" alt="ti-social">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex flex-col gap-[20px] text-[#fff] text-[14px] font-[600] sm:hidden">
+                    <div class="border-[#EBF0FFB2] border-b-[0.5px]"></div>
+                    <a href="">LIÊN HỆ</a>
+                    <div class="border-[#EBF0FFB2] border-b-[0.5px]"></div>
+                    <a href="">THÔNG TIN</a>
+                    <div class="border-[#EBF0FFB2] border-b-[0.5px]"></div>
+
+                    <div class="flex flex-col gap-[10px] text-[14px] font-[400]">
+                        <p>ĐĂNG KÝ NHẬN TIN</p>
+                        <p style="line-height: 23.06px;">Vui lòng nhập email của bạn để được hỗ trợ nhanh nhất!</p>
+                        <div class="flex">
+                            <input type="text"
+                                class="w-full max-h-[45px] pl-3 pr-10 py-[13px] bg-[#ffff] placeholder:text-[#68C114] text-base border border-slate-200 shadow-sm"
+                                placeholder="Email của bạn..." />
+                            <button class="w-[50px] h-[45px] bg-[#68C114] flex justify-center items-center">
+                                <img src="../assets/icons/ti-sumbit.svg" alt="">
+                            </button>
+                        </div>
+                        <div class="h-[40px] flex justify-between w-full mt-[30px]">
+                            <img class="w-[130px] " src="../assets/images/bocongthuong.png" alt="">
+                            <img class="w-[83px]" src="../assets/images/dmca.png" alt="">
+                        </div>
+                        <div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="w-[792px] h-[198px] sm:flex gap-[61px] hidden ">
+
+
+                    <div class="max-w-[248px] ">
+                        <h4 class="text-[#ffff] text-sm uppercase">Liên hệ</h4>
+                        <ul class="mt-[15px]">
+                            <li class="flex gap-[12px]">
+                                <img src="../assets/icons/ti-address.svg" class="self-start" alt="">
+                                <p class="text-sm text-[#ffff]">Tầng 4-5-6, Tòa nhà Capital Place, số 29 đường Liễu
+                                    Giai,
+                                    P.Ngọc Khánh, Q.Ba
+                                    Đình, Hà Nội</p>
+                            </li>
+                            <li class="flex gap-[12px] mt-[12px]">
+                                <img src="../assets/icons/ti-phone.svg" alt="">
+                                <p class="text-sm text-[#ffff]">0969.71.6848</p>
+                            </li>
+                            <li class="flex gap-[12px] mt-[12px]">
+                                <img src="../assets/icons/ti-email.svg" alt="">
+                                <p class="text-sm text-[#ffff]">hotro@nongthao.vn</p>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                    <div class="">
+                        <h4 class="text-[#ffff] text-sm uppercase">Thông tin</h4>
+                        <ul class="mt-[15px] list-disc">
+                            <li class="text-[#ffff] text-sm mb-[10px] leading-5">Giới thiệu Nông Thảo</li>
+                            <li class="text-[#ffff] text-sm mb-[10px] leading-5">Điều khoản</li>
+                            <li class="text-[#ffff] text-sm mb-[10px] leading-5">Chính sách bảo mật</li>
+                            <li class="text-[#ffff] text-sm mb-[10px] leading-5">Hướng dẫn mua hàng</li>
+                            <li class="text-[#ffff] text-sm mb-[10px] leading-5">Trả hàng & hoàn tiền</li>
+                            <li class="text-[#ffff] text-sm mb-[10px] leading-5">Nông Thảo Blogs</li>
+                        </ul>
+                    </div>
+
+
+                    <div class="max-w-[248px] ">
+                        <h4 class="text-[#ffff] text-sm uppercase">Đăng ký nhận tin</h4>
+                        <ul class="mt-[15px]">
+                            <li class="flex gap-[12px] mt-[12px]">
+                                <p class="text-sm text-[#ffff]">Vui lòng nhập email để nhận thêm nhiều ưu đãi từ Nông
+                                    Thảo</p>
+                            </li>
+                            <li class="mt-[8px]">
+                                <form action="">
+                                    <div class="w-full max-w-sm min-w-[200px]">
+                                        <div class="relative">
+                                            <input type="text"
+                                                class="w-full max-h-[45px] pl-3 pr-10 py-[13px] bg-[#ffff] placeholder:text-slate-400 text-slate-600 text-base border border-slate-200 shadow-sm"
+                                                placeholder="Email của bạn..." />
+
+                                            <div
+                                                class="absolute w-[47px] h-full bg-[#68C114] right-0 top-0 flex justify-center items-center">
+                                                <img src="../assets/icons/ti-pp.svg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </li>
+                            <li class="flex gap-[12px] mt-[12px]">
+                                <div class="max-h-[40px] flex justify-between w-full">
+                                    <img src="../assets/images/bocongthuong.png" alt="">
+                                    <img src="../assets/images/dmca.png" alt="">
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="bg-[#86A76A] min-h-[43px] w-full text-center flex justify-center items-center text-[#ffff] text-sm">
+            <span> © 2022 - Bản quyền thuộc về Công ty TNHH Nông Thảo</span>
+        </div>
+        <div class="flex flex-col sm:hidden fixed bottom-[30px] right-[10px]">
+            <img class="w-[48px] h-[48px]" src="../assets/icons/ti-phone-red.svg" alt="">
+            <img class="w-[48px] h-[48px]" src="../assets/icons/ti-mess.svg" alt="">
+            <button class="h-[32px] mt-[100px] w-[32px] bg-[#356C07] flex justify-center items-center text-[#fff]">
+                <img src="../assets/icons/ti-arrow-up.svg" alt="">
+            </button>
+        </div>
+    </footer>
+</body>
+
+</html> 
