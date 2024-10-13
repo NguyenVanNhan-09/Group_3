@@ -12,4 +12,4 @@ node_modules/
 *.log
 
 #Ignore output
-./src/output.css
+src/output.css
