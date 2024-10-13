@@ -10,7 +10,7 @@
 
 <body>
     <header class="font-nunito bg-white shadow-md px-[12px]">
-        <div class=" bg-[#ffff] sidebar fixed top-0 bottom-0 left-0 w-[288px] hidden sm:hidden   p-[20px]">
+        <div class=" bg-[#ffff] sidebar fixed top-0 bottom-0 left-0 w-[288px] hidden sm:hidden  z-20 p-[20px]">
             <div class="flex justify-between items-center  cursor-pointer">
                 <img class="w-[138px] h-[26px] " src="../assets/images/logo_header.png" alt="">
 
@@ -78,7 +78,7 @@
         </div>
 
 
-        <div class='py-4 px-2 z-50 w-full max-w-[1174px] mx-auto '>
+        <div class='py-4 px-2 w-full max-w-[1174px] mx-auto '>
             <div class='flex flex-wrap items-center sm:flex justify-between gap-5'>
                 <div class="block sm:hidden  cursor-pointer" onclick="openSidebar()">
                     <img src="../assets/icons/ti-menu.svg" alt="">
@@ -189,7 +189,7 @@
             <p class="text-[#C4C4C4]">Thank you</p>
         </div>
 
-        <div class="flex flex-col items-center gap-9 p-16 min-mb:p-0">
+        <div class="flex flex-col items-center gap-9 min-mb:p-0">
             <div class="relative flex  max-w-[141px]">
                 <img src="../assets/images/Thanks_img/circle.png" alt="circle">
                 <div class="w-full h-full absolute top-0 flex justify-center items-center">
@@ -202,10 +202,11 @@
                 <p>Cảm ơn <span class="text-[#356C07] font-[700]">Anh/Chị</span> đã để lại liên hệ. <span class="text-[#356C07] font-medium text-base">Nông Thảo</span> sẽ nhanh chóng liên hệ lại với anh chị.
                     Trong trường hợp anh/ chị cần hỗ trợ nhanh chóng. Hãy gọi <span class="text-ctaColor font-[700]">0969.71.6848</span></p>
             </div>
-            <button class="bg-primary p-[13px] text-white text-[18px] font-[700] w-[269px] h-[51px] text-[#fff]">QUAY LẠI TRANG CHỦ</button>
+            <button class="bg-primary p-[13px] text-[18px] font-[700] w-[269px] h-[51px] text-[#fff]">QUAY LẠI TRANG CHỦ</button>
         </div>
     </section>
-
+    
+    <script src="../controllers/index.js"></script>
     <footer class="font-nunito">
         <div class=" mx-auto flex flex-wrap">
             <div class="w-full flex max-h-[240px]">
