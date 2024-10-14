@@ -15,6 +15,13 @@ module.exports = {
          screens: {
             "max-mb": { max: "375px" },
             "min-mb": { min: "375px" },
+            // config của a kiên
+            "max-sm": { max: "640px" },
+            "max-md": { max: "768px" },
+            "max-lg": { max: "1024px" },
+            "max-xl": { max: "1280px" },
+            "max-1366px": { max: "1366px" },
+            "max-lg-xl": { max: "1550px" },
          },
       },
       fontFamily: {
