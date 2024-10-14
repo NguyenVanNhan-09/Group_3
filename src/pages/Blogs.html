@@ -11,7 +11,7 @@
 <body>
     <div class="wrap max-sm:overflow-x-hidden">
         <header class="relative z-10 font-nunito bg-white shadow-md px-[12px]">
-            <div class="bg-[#ffff] sidebar fixed top-0 bottom-0 left-0 w-[288px] hidden p-[20px]">
+            <div class="bg-[#ffff] sidebar fixed top-0 bottom-0 left-0 w-[288px] hidden p-[20px] z-10">
                 <div class="flex justify-between items-center  cursor-pointer">
                     <img class="w-[138px] h-[26px] " src="../assets/images/logo_header.png" alt="">
                     <div onclick="openSidebar()">
@@ -25,19 +25,19 @@
                         <img src="../assets/icons/ti-search.svg" alt="">
                     </button>
                 </div>
-    
+
                 <div class="flex flex-col gap-[20px]">
                     <div>
                         <div class="flex justify-between " onclick="dropdown()">
                             <b class="text-primary text-[16px] font-[700] cursor-pointer">SẢN PHẨM</b>
                             <img class="" src="../assets/icons/ti-arrow-down.svg" alt="">
                         </div>
-    
+
                         <div class="border-subTextColor border-b-[1px] my-[2px]"></div>
                         <div class="ml-[20px] flex flex-col gap-[10px] mt-2 text-[16px] font-[400] text-[#000000] "
                             id="submenu">
                             <div>
-                                <p class=" cursor-pointer" >Thảo dược</p>
+                                <p class=" cursor-pointer">Thảo dược</p>
                                 <div class="border-subTextColor border-b-[1px] my-[2px]"></div>
                             </div>
                             <div>
@@ -48,36 +48,37 @@
                                 <p class=" cursor-pointer">Hoa quả</p>
                                 <div class="border-subTextColor border-b-[1px] my-[2px]"></div>
                             </div>
-    
+
                         </div>
                     </div>
                     <div>
                         <b class="text-primary text-[16px] font-[700]  cursor-pointer">VỀ NÔNG THẢO</b>
                         <div class="border-subTextColor border-b-[1px] my-[2px]"></div>
                     </div>
-    
+
                     <div>
                         <div class="flex justify-between">
                             <b class="text-primary text-[16px] font-[700]  cursor-pointer">BLOGS</b>
                             <img src="../assets/icons/ti-arrow-down.svg" alt="">
                         </div>
-    
+
                         <div class="border-subTextColor border-b-[1px] my-[2px]"></div>
-    
+
                     </div>
                     <div>
                         <b class="text-primary text-[16px] font-[700]  cursor-pointer">LIÊN HỆ</b>
                         <div class="border-subTextColor border-b-[1px] my-[2px]"></div>
                     </div>
-    
+
                 </div>
                 <button class="rounded-[5px] mt-[50px] w-[252px] h-[51px] bg-ctaColor">
                     <span class="text-[#ffff] font-[700] text-[18px] text-center">0988.818.841</span>
                 </button>
-                <p class="text-[13px] font-[400] text-primary text-center mt-[20px]  cursor-pointer">Gọi hỗ trợ ngay!</p>
+                <p class="text-[13px] font-[400] text-primary text-center mt-[20px]  cursor-pointer">Gọi hỗ trợ ngay!
+                </p>
             </div>
-    
-    
+
+
             <div class='py-4 px-2 z-50 w-full max-w-[1174px] mx-auto '>
                 <div class='flex flex-wrap items-center sm:flex justify-between gap-5'>
                     <div class="block sm:hidden  cursor-pointer" onclick="openSidebar()">
@@ -115,7 +116,7 @@
                                                 </li>
                                             </ul>
                                         </div>
-    
+
                                     </div>
                                 </div>
                             </li>
@@ -136,16 +137,16 @@
                             </li>
                         </ul>
                     </div>
-    
+
                     <div class='flex'>
                         <button class='pr-[17px] hidden sm:block'>
                             <img src="../assets/icons/ti-search.svg" alt="ti-search"></button>
-    
-    
+
+
                         <div class="img-object-base relative">
                             <img onclick="toggleCart()" id="clickButton" src="../assets/icons/ti-cart.svg" alt="ti-cart"
                                 role="button">
-    
+
                             <div id="cart"
                                 class="hidden open-cart w-[300px] h-[144px] bg-[#FFFFFF] absolute -right-[10px] sm:-right-[140px] top-[59px]"
                                 style="box-shadow: 1px 1px 1px 1px grey">
@@ -154,7 +155,9 @@
                                         <div class="img w-[31px] h-[27px] object-cover">
                                             <img class="img-object-base" src="../assets/images/lemon.jfif" alt="">
                                         </div>
-                                        <p class="text text-xs font-normal leading-[1.02rem] text-[#000000] mt-1.5 ml-2">Mứt
+                                        <p
+                                            class="text text-xs font-normal leading-[1.02rem] text-[#000000] mt-1.5 ml-2">
+                                            Mứt
                                             chanh tây sấy lạnh 100% hữu cơ...</p>
                                         <p
                                             class="count text-[0.81rem] font-normal leading-[1.11rem] text-[#000000BD] mt-1 ml-1.5">
@@ -164,7 +167,9 @@
                                         <div class="img w-[31px] h-[27px] object-cover ">
                                             <img class="img-object-base" src="../assets/images/lemon.jfif" alt="">
                                         </div>
-                                        <p class="text text-xs font-normal leading-[1.02rem] text-[#000000] mt-1.5 ml-2">Mứt
+                                        <p
+                                            class="text text-xs font-normal leading-[1.02rem] text-[#000000] mt-1.5 ml-2">
+                                            Mứt
                                             chanh tây sấy lạnh 100% hữu cơ...</p>
                                         <p
                                             class="count text-[0.81rem] font-normal leading-[1.11rem] text-[#000000BD] mt-1 ml-1.5">
@@ -180,54 +185,69 @@
                 </div>
             </div>
         </header>
-    
+
         <section class="container mx-auto mt-5 relative">
             <div class="img-vegetable max-w-full h-[250px] sm:h-[350px] md:h-[490px]">
-                <img class="object-cover w-full h-full" src="./../assets/images/page_home-img/mountain.png" alt="Mountain">
+                <img class="object-cover w-full h-full" src="./../assets/images/page_home-img/mountain.png"
+                    alt="Mountain">
             </div>
-            <div class="text uppercase text-xl sm:text-2xl md:text-4xl font-bold leading-tight md:leading-[3.07rem] absolute w-full top-1/2 transform -translate-y-1/2 text-left text-white flex justify-center items-center">
+            <div
+                class="text uppercase text-xl sm:text-2xl md:text-4xl font-bold leading-tight md:leading-[3.07rem] absolute w-full top-1/2 transform -translate-y-1/2 text-left text-white flex justify-center items-center">
                 tin tức & chia sẻ
             </div>
         </section>
         <section class="">
             <div class="container mx-auto">
                 <div class="ml-48 max-sm:ml-2 max-md:ml-6 max-lg:ml-12 mt-6 max-sm:mt-4">
-                    <span class="text-xs max-sm:text-sm font-normal leading-[1.31rem] text-[#4F4F4F]">Trang Chủ > <span class="text-xs max-sm:text-sm font-normal leading-[1.14rem] text-left text-[#C4C4C4]"> Tin tức</span></span>
+                    <span class="text-xs max-sm:text-sm font-normal leading-[1.31rem] text-[#4F4F4F]">Trang Chủ > <span
+                            class="text-xs max-sm:text-sm font-normal leading-[1.14rem] text-left text-[#C4C4C4]"> Tin
+                            tức</span></span>
                 </div>
                 <div class="container mx-auto link-product flex items-center justify-between">
                     <div class="mt-10 flex ml-[190px] max-xl:ml-0">
                         <div class="max-w-[135.46px] h-[26.03px]">
-                            <img class="img-object-base" src="../assets/icons/page_home-svg/leaf.svg" alt="" class="object-fill">
+                            <img class="img-object-base" src="../assets/icons/page_home-svg/leaf.svg" alt=""
+                                class="object-fill">
                         </div>
                         <p class="text-[1.75rem] font-bold leading-[2.39rem] ml-[3px] uppercase">Nông nghiệp sạch</p>
                     </div>
                     <div class="view-all flex mt-12 ml-80 mr-[190px] max-xl:hidden">
                         <p class="text-sm font-normal leading-[1.19rem] text-[#356C07]">Xem tất cả</p>
                         <div class="icon-direction ml-3">
-                            <img class="img-object-base" src="../assets/icons/page_home-svg/double-direction.svg" alt="">
+                            <img class="img-object-base" src="../assets/icons/page_home-svg/double-direction.svg"
+                                alt="">
                         </div>
                     </div>
                 </div>
                 <div class="news flex justify-center gap-[20px] mt-[20px] max-md:w-[1050px]">
                     <div class="layer w-[370px] h-[465px]" style="box-shadow: 0px 0px 34px 0px #0000001A;">
                         <div class="img-new">
-                            <img src="../assets/images/page_home-img/doing-garden.png" alt="" class="img-object-base w-96 h-64">
+                            <img src="../assets/images/page_home-img/doing-garden.png" alt=""
+                                class="img-object-base w-96 h-64">
                         </div>
                         <div class="text-description-new mx-3 my-3">
-                            <p class="text-xs font-normal leading-[1.02rem] text-left text-[#68C114] uppercase">Nông nghiệp sạch</p>
-                            <p class="text-lg font-bold leading-[1.59rem] text-[#356C07] mt-3.5">Nông Thảo đã trồng và thu hoạch vườn cà chua như thế nào?</p>
-                            <p class="text-base font-normal leading-[1.41rem] text-[#000000BD] mt-3">Mời bạn đọc tìm hiểu thêm về quy trình trồng và thu hoạch cà chua hữu cơ của...</p>
+                            <p class="text-xs font-normal leading-[1.02rem] text-left text-[#68C114] uppercase">Nông
+                                nghiệp sạch</p>
+                            <p class="text-lg font-bold leading-[1.59rem] text-[#356C07] mt-3.5">Nông Thảo đã trồng và
+                                thu hoạch vườn cà chua như thế nào?</p>
+                            <p class="text-base font-normal leading-[1.41rem] text-[#000000BD] mt-3">Mời bạn đọc tìm
+                                hiểu thêm về quy trình trồng và thu hoạch cà chua hữu cơ của...</p>
                             <div class="border border-[#F0F0F0] w-[107%] -ml-3 mt-2"></div>
                             <div class="detail flex justify-between mt-3">
                                 <div class="view-detail flex">
-                                    <p class=" uppercase text-base font-normal leading-[1.36rem] text-[#356C07]">Xem chi tiết</p>
-                                    <div class="img-arrow w-5 h-5 mt-[3px] ml-[5px]" style="margin-top: 2px; margin-left: 4px;">
-                                        <img src="../assets/icons/page_home-svg/arrow-double-2.svg" alt="" class="img-object-base">
+                                    <p class=" uppercase text-base font-normal leading-[1.36rem] text-[#356C07]">Xem chi
+                                        tiết</p>
+                                    <div class="img-arrow w-5 h-5 mt-[3px] ml-[5px]"
+                                        style="margin-top: 2px; margin-left: 4px;">
+                                        <img src="../assets/icons/page_home-svg/arrow-double-2.svg" alt=""
+                                            class="img-object-base">
                                     </div>
                                 </div>
                                 <div class="count-view flex">
-                                    <div class="img-eye-new w-2.5 h-2.5 mt[4px] mr[5px]" style="margin-top: 4px; margin-right: 5px;">
-                                        <img src="../assets/icons/page_home-svg/eye-new.svg" alt="" class="img-object-base">
+                                    <div class="img-eye-new w-2.5 h-2.5 mt[4px] mr[5px]"
+                                        style="margin-top: 4px; margin-right: 5px;">
+                                        <img src="../assets/icons/page_home-svg/eye-new.svg" alt=""
+                                            class="img-object-base">
                                     </div>
                                     <p class="text-sm font-normal leading-[1.19rem]">2.648</p>
                                 </div>
@@ -236,23 +256,32 @@
                     </div>
                     <div class="layer w-[370px] h-[465px]">
                         <div class="img-new">
-                            <img src="../assets/images/page_home-img/doing-garden.png" alt="" class="img-object-base w-96 h-64">
+                            <img src="../assets/images/page_home-img/doing-garden.png" alt=""
+                                class="img-object-base w-96 h-64">
                         </div>
                         <div class="text-description-new mx-3 my-3">
-                            <p class="text-xs font-normal leading-[1.02rem] text-left text-[#68C114] uppercase">Nông nghiệp sạch</p>
-                            <p class="text-lg font-bold leading-[1.59rem] text-[#356C07] mt-3.5">Nông Thảo đã trồng và thu hoạch vườn cà chua như thế nào?</p>
-                            <p class="text-base font-normal leading-[1.41rem] text-[#000000BD] mt-3">Mời bạn đọc tìm hiểu thêm về quy trình trồng và thu hoạch cà chua hữu cơ của...</p>
+                            <p class="text-xs font-normal leading-[1.02rem] text-left text-[#68C114] uppercase">Nông
+                                nghiệp sạch</p>
+                            <p class="text-lg font-bold leading-[1.59rem] text-[#356C07] mt-3.5">Nông Thảo đã trồng và
+                                thu hoạch vườn cà chua như thế nào?</p>
+                            <p class="text-base font-normal leading-[1.41rem] text-[#000000BD] mt-3">Mời bạn đọc tìm
+                                hiểu thêm về quy trình trồng và thu hoạch cà chua hữu cơ của...</p>
                             <div class="border border-[#F0F0F0] w-[107%] -ml-3 mt-2"></div>
                             <div class="detail flex justify-between mt-3">
                                 <div class="view-detail flex">
-                                    <p class=" uppercase text-base font-normal leading-[1.36rem] text-[#356C07]">Xem chi tiết</p>
-                                    <div class="img-arrow w-5 h-5 mt-[3px] ml-[5px]" style="margin-top: 2px; margin-left: 4px;">
-                                        <img src="../assets/icons/page_home-svg/arrow-double-2.svg" alt="" class="img-object-base">
+                                    <p class=" uppercase text-base font-normal leading-[1.36rem] text-[#356C07]">Xem chi
+                                        tiết</p>
+                                    <div class="img-arrow w-5 h-5 mt-[3px] ml-[5px]"
+                                        style="margin-top: 2px; margin-left: 4px;">
+                                        <img src="../assets/icons/page_home-svg/arrow-double-2.svg" alt=""
+                                            class="img-object-base">
                                     </div>
                                 </div>
                                 <div class="count-view flex">
-                                    <div class="img-eye-new w-2.5 h-2.5 mt[4px] mr[5px]" style="margin-top: 4px; margin-right: 5px;">
-                                        <img src="../assets/icons/page_home-svg/eye-new.svg" alt="" class="img-object-base">
+                                    <div class="img-eye-new w-2.5 h-2.5 mt[4px] mr[5px]"
+                                        style="margin-top: 4px; margin-right: 5px;">
+                                        <img src="../assets/icons/page_home-svg/eye-new.svg" alt=""
+                                            class="img-object-base">
                                     </div>
                                     <p class="text-sm font-normal leading-[1.19rem]">2.648</p>
                                 </div>
@@ -261,23 +290,32 @@
                     </div>
                     <div class="layer w-[370px] h-[465px]">
                         <div class="img-new">
-                            <img src="../assets/images/page_home-img/doing-garden.png" alt="" class="img-object-base w-96 h-64">
+                            <img src="../assets/images/page_home-img/doing-garden.png" alt=""
+                                class="img-object-base w-96 h-64">
                         </div>
                         <div class="text-description-new mx-3 my-3">
-                            <p class="text-xs font-normal leading-[1.02rem] text-left text-[#68C114] uppercase">Nông nghiệp sạch</p>
-                            <p class="text-lg font-bold leading-[1.59rem] text-[#356C07] mt-3.5">Nông Thảo đã trồng và thu hoạch vườn cà chua như thế nào?</p>
-                            <p class="text-base font-normal leading-[1.41rem] text-[#000000BD] mt-3">Mời bạn đọc tìm hiểu thêm về quy trình trồng và thu hoạch cà chua hữu cơ của...</p>
+                            <p class="text-xs font-normal leading-[1.02rem] text-left text-[#68C114] uppercase">Nông
+                                nghiệp sạch</p>
+                            <p class="text-lg font-bold leading-[1.59rem] text-[#356C07] mt-3.5">Nông Thảo đã trồng và
+                                thu hoạch vườn cà chua như thế nào?</p>
+                            <p class="text-base font-normal leading-[1.41rem] text-[#000000BD] mt-3">Mời bạn đọc tìm
+                                hiểu thêm về quy trình trồng và thu hoạch cà chua hữu cơ của...</p>
                             <div class="border border-[#F0F0F0] w-[107%] -ml-3 mt-2"></div>
                             <div class="detail flex justify-between mt-3">
                                 <div class="view-detail flex">
-                                    <p class=" uppercase text-base font-normal leading-[1.36rem] text-[#356C07]">Xem chi tiết</p>
-                                    <div class="img-arrow w-5 h-5 mt-[3px] ml-[5px]" style="margin-top: 2px; margin-left: 4px;">
-                                        <img src="../assets/icons/page_home-svg/arrow-double-2.svg" alt="" class="img-object-base">
+                                    <p class=" uppercase text-base font-normal leading-[1.36rem] text-[#356C07]">Xem chi
+                                        tiết</p>
+                                    <div class="img-arrow w-5 h-5 mt-[3px] ml-[5px]"
+                                        style="margin-top: 2px; margin-left: 4px;">
+                                        <img src="../assets/icons/page_home-svg/arrow-double-2.svg" alt=""
+                                            class="img-object-base">
                                     </div>
                                 </div>
                                 <div class="count-view flex">
-                                    <div class="img-eye-new w-2.5 h-2.5 mt[4px] mr[5px]" style="margin-top: 4px; margin-right: 5px;">
-                                        <img src="../assets/icons/page_home-svg/eye-new.svg" alt="" class="img-object-base">
+                                    <div class="img-eye-new w-2.5 h-2.5 mt[4px] mr[5px]"
+                                        style="margin-top: 4px; margin-right: 5px;">
+                                        <img src="../assets/icons/page_home-svg/eye-new.svg" alt=""
+                                            class="img-object-base">
                                     </div>
                                     <p class="text-sm font-normal leading-[1.19rem]">2.648</p>
                                 </div>
@@ -293,44 +331,55 @@
                     </div>
                 </div>
             </div>
-    
+
         </section>
         <section class="bg-[#FAFAFA]">
             <div class="container mx-auto">
                 <div class="container mx-auto link-product flex items-center justify-between">
                     <div class="mt-10 flex ml-[190px] max-xl:ml-0">
                         <div class="max-w-[135.46px] h-[26.03px]">
-                            <img class="img-object-base" src="../assets/icons/page_home-svg/leaf.svg" alt="" class="object-fill">
+                            <img class="img-object-base" src="../assets/icons/page_home-svg/leaf.svg" alt=""
+                                class="object-fill">
                         </div>
                         <p class="text-[1.75rem] font-bold leading-[2.39rem] ml-[3px] uppercase">Nông nghiệp sạch</p>
                     </div>
                     <div class="view-all flex mt-12 ml-80 mr-[190px] max-xl:hidden">
                         <p class="text-sm font-normal leading-[1.19rem] text-[#356C07]">Xem tất cả</p>
                         <div class="icon-direction ml-3">
-                            <img class="img-object-base" src="../assets/icons/page_home-svg/double-direction.svg" alt="">
+                            <img class="img-object-base" src="../assets/icons/page_home-svg/double-direction.svg"
+                                alt="">
                         </div>
                     </div>
                 </div>
                 <div class="news flex justify-center gap-[20px] mt-[20px] max-md:w-[1050px]">
                     <div class="layer w-[370px] h-[465px]" style="box-shadow: 0px 0px 34px 0px #0000001A;">
                         <div class="img-new">
-                            <img src="../assets/images/page_home-img/doing-garden.png" alt="" class="img-object-base w-96 h-64">
+                            <img src="../assets/images/page_home-img/doing-garden.png" alt=""
+                                class="img-object-base w-96 h-64">
                         </div>
                         <div class="text-description-new mx-3 my-3">
-                            <p class="text-xs font-normal leading-[1.02rem] text-left text-[#68C114] uppercase">Nông nghiệp sạch</p>
-                            <p class="text-lg font-bold leading-[1.59rem] text-[#356C07] mt-3.5">Nông Thảo đã trồng và thu hoạch vườn cà chua như thế nào?</p>
-                            <p class="text-base font-normal leading-[1.41rem] text-[#000000BD] mt-3">Mời bạn đọc tìm hiểu thêm về quy trình trồng và thu hoạch cà chua hữu cơ của...</p>
+                            <p class="text-xs font-normal leading-[1.02rem] text-left text-[#68C114] uppercase">Nông
+                                nghiệp sạch</p>
+                            <p class="text-lg font-bold leading-[1.59rem] text-[#356C07] mt-3.5">Nông Thảo đã trồng và
+                                thu hoạch vườn cà chua như thế nào?</p>
+                            <p class="text-base font-normal leading-[1.41rem] text-[#000000BD] mt-3">Mời bạn đọc tìm
+                                hiểu thêm về quy trình trồng và thu hoạch cà chua hữu cơ của...</p>
                             <div class="border border-[#F0F0F0] w-[107%] -ml-3 mt-2"></div>
                             <div class="detail flex justify-between mt-3">
                                 <div class="view-detail flex">
-                                    <p class=" uppercase text-base font-normal leading-[1.36rem] text-[#356C07]">Xem chi tiết</p>
-                                    <div class="img-arrow w-5 h-5 mt-[3px] ml-[5px]" style="margin-top: 2px; margin-left: 4px;">
-                                        <img src="../assets/icons/page_home-svg/arrow-double-2.svg" alt="" class="img-object-base">
+                                    <p class=" uppercase text-base font-normal leading-[1.36rem] text-[#356C07]">Xem chi
+                                        tiết</p>
+                                    <div class="img-arrow w-5 h-5 mt-[3px] ml-[5px]"
+                                        style="margin-top: 2px; margin-left: 4px;">
+                                        <img src="../assets/icons/page_home-svg/arrow-double-2.svg" alt=""
+                                            class="img-object-base">
                                     </div>
                                 </div>
                                 <div class="count-view flex">
-                                    <div class="img-eye-new w-2.5 h-2.5 mt[4px] mr[5px]" style="margin-top: 4px; margin-right: 5px;">
-                                        <img src="../assets/icons/page_home-svg/eye-new.svg" alt="" class="img-object-base">
+                                    <div class="img-eye-new w-2.5 h-2.5 mt[4px] mr[5px]"
+                                        style="margin-top: 4px; margin-right: 5px;">
+                                        <img src="../assets/icons/page_home-svg/eye-new.svg" alt=""
+                                            class="img-object-base">
                                     </div>
                                     <p class="text-sm font-normal leading-[1.19rem]">2.648</p>
                                 </div>
@@ -339,23 +388,32 @@
                     </div>
                     <div class="layer w-[370px] h-[465px]">
                         <div class="img-new">
-                            <img src="../assets/images/page_home-img/doing-garden.png" alt="" class="img-object-base w-96 h-64">
+                            <img src="../assets/images/page_home-img/doing-garden.png" alt=""
+                                class="img-object-base w-96 h-64">
                         </div>
                         <div class="text-description-new mx-3 my-3">
-                            <p class="text-xs font-normal leading-[1.02rem] text-left text-[#68C114] uppercase">Nông nghiệp sạch</p>
-                            <p class="text-lg font-bold leading-[1.59rem] text-[#356C07] mt-3.5">Nông Thảo đã trồng và thu hoạch vườn cà chua như thế nào?</p>
-                            <p class="text-base font-normal leading-[1.41rem] text-[#000000BD] mt-3">Mời bạn đọc tìm hiểu thêm về quy trình trồng và thu hoạch cà chua hữu cơ của...</p>
+                            <p class="text-xs font-normal leading-[1.02rem] text-left text-[#68C114] uppercase">Nông
+                                nghiệp sạch</p>
+                            <p class="text-lg font-bold leading-[1.59rem] text-[#356C07] mt-3.5">Nông Thảo đã trồng và
+                                thu hoạch vườn cà chua như thế nào?</p>
+                            <p class="text-base font-normal leading-[1.41rem] text-[#000000BD] mt-3">Mời bạn đọc tìm
+                                hiểu thêm về quy trình trồng và thu hoạch cà chua hữu cơ của...</p>
                             <div class="border border-[#F0F0F0] w-[107%] -ml-3 mt-2"></div>
                             <div class="detail flex justify-between mt-3">
                                 <div class="view-detail flex">
-                                    <p class=" uppercase text-base font-normal leading-[1.36rem] text-[#356C07]">Xem chi tiết</p>
-                                    <div class="img-arrow w-5 h-5 mt-[3px] ml-[5px]" style="margin-top: 2px; margin-left: 4px;">
-                                        <img src="../assets/icons/page_home-svg/arrow-double-2.svg" alt="" class="img-object-base">
+                                    <p class=" uppercase text-base font-normal leading-[1.36rem] text-[#356C07]">Xem chi
+                                        tiết</p>
+                                    <div class="img-arrow w-5 h-5 mt-[3px] ml-[5px]"
+                                        style="margin-top: 2px; margin-left: 4px;">
+                                        <img src="../assets/icons/page_home-svg/arrow-double-2.svg" alt=""
+                                            class="img-object-base">
                                     </div>
                                 </div>
                                 <div class="count-view flex">
-                                    <div class="img-eye-new w-2.5 h-2.5 mt[4px] mr[5px]" style="margin-top: 4px; margin-right: 5px;">
-                                        <img src="../assets/icons/page_home-svg/eye-new.svg" alt="" class="img-object-base">
+                                    <div class="img-eye-new w-2.5 h-2.5 mt[4px] mr[5px]"
+                                        style="margin-top: 4px; margin-right: 5px;">
+                                        <img src="../assets/icons/page_home-svg/eye-new.svg" alt=""
+                                            class="img-object-base">
                                     </div>
                                     <p class="text-sm font-normal leading-[1.19rem]">2.648</p>
                                 </div>
@@ -364,23 +422,32 @@
                     </div>
                     <div class="layer w-[370px] h-[465px]">
                         <div class="img-new">
-                            <img src="../assets/images/page_home-img/doing-garden.png" alt="" class="img-object-base w-96 h-64">
+                            <img src="../assets/images/page_home-img/doing-garden.png" alt=""
+                                class="img-object-base w-96 h-64">
                         </div>
                         <div class="text-description-new mx-3 my-3">
-                            <p class="text-xs font-normal leading-[1.02rem] text-left text-[#68C114] uppercase">Nông nghiệp sạch</p>
-                            <p class="text-lg font-bold leading-[1.59rem] text-[#356C07] mt-3.5">Nông Thảo đã trồng và thu hoạch vườn cà chua như thế nào?</p>
-                            <p class="text-base font-normal leading-[1.41rem] text-[#000000BD] mt-3">Mời bạn đọc tìm hiểu thêm về quy trình trồng và thu hoạch cà chua hữu cơ của...</p>
+                            <p class="text-xs font-normal leading-[1.02rem] text-left text-[#68C114] uppercase">Nông
+                                nghiệp sạch</p>
+                            <p class="text-lg font-bold leading-[1.59rem] text-[#356C07] mt-3.5">Nông Thảo đã trồng và
+                                thu hoạch vườn cà chua như thế nào?</p>
+                            <p class="text-base font-normal leading-[1.41rem] text-[#000000BD] mt-3">Mời bạn đọc tìm
+                                hiểu thêm về quy trình trồng và thu hoạch cà chua hữu cơ của...</p>
                             <div class="border border-[#F0F0F0] w-[107%] -ml-3 mt-2"></div>
                             <div class="detail flex justify-between mt-3">
                                 <div class="view-detail flex">
-                                    <p class=" uppercase text-base font-normal leading-[1.36rem] text-[#356C07]">Xem chi tiết</p>
-                                    <div class="img-arrow w-5 h-5 mt-[3px] ml-[5px]" style="margin-top: 2px; margin-left: 4px;">
-                                        <img src="../assets/icons/page_home-svg/arrow-double-2.svg" alt="" class="img-object-base">
+                                    <p class=" uppercase text-base font-normal leading-[1.36rem] text-[#356C07]">Xem chi
+                                        tiết</p>
+                                    <div class="img-arrow w-5 h-5 mt-[3px] ml-[5px]"
+                                        style="margin-top: 2px; margin-left: 4px;">
+                                        <img src="../assets/icons/page_home-svg/arrow-double-2.svg" alt=""
+                                            class="img-object-base">
                                     </div>
                                 </div>
                                 <div class="count-view flex">
-                                    <div class="img-eye-new w-2.5 h-2.5 mt[4px] mr[5px]" style="margin-top: 4px; margin-right: 5px;">
-                                        <img src="../assets/icons/page_home-svg/eye-new.svg" alt="" class="img-object-base">
+                                    <div class="img-eye-new w-2.5 h-2.5 mt[4px] mr[5px]"
+                                        style="margin-top: 4px; margin-right: 5px;">
+                                        <img src="../assets/icons/page_home-svg/eye-new.svg" alt=""
+                                            class="img-object-base">
                                     </div>
                                     <p class="text-sm font-normal leading-[1.19rem]">2.648</p>
                                 </div>
@@ -396,44 +463,55 @@
                     </div>
                 </div>
             </div>
-    
+
         </section>
         <section class="">
             <div class="container mx-auto">
                 <div class="container mx-auto link-product flex items-center justify-between">
                     <div class="mt-10 flex ml-[190px] max-xl:ml-0">
                         <div class="max-w-[135.46px] h-[26.03px]">
-                            <img class="img-object-base" src="../assets/icons/page_home-svg/leaf.svg" alt="" class="object-fill">
+                            <img class="img-object-base" src="../assets/icons/page_home-svg/leaf.svg" alt=""
+                                class="object-fill">
                         </div>
                         <p class="text-[1.75rem] font-bold leading-[2.39rem] ml-[3px] uppercase">Nông nghiệp sạch</p>
                     </div>
                     <div class="view-all flex mt-12 ml-80 mr-[190px] max-xl:hidden">
                         <p class="text-sm font-normal leading-[1.19rem] text-[#356C07]">Xem tất cả</p>
                         <div class="icon-direction ml-3">
-                            <img class="img-object-base" src="../assets/icons/page_home-svg/double-direction.svg" alt="">
+                            <img class="img-object-base" src="../assets/icons/page_home-svg/double-direction.svg"
+                                alt="">
                         </div>
                     </div>
                 </div>
                 <div class="news flex justify-center gap-[20px] mt-[20px] max-md:w-[1050px]">
                     <div class="layer w-[370px] h-[465px]" style="box-shadow: 0px 0px 34px 0px #0000001A;">
                         <div class="img-new">
-                            <img src="../assets/images/page_home-img/doing-garden.png" alt="" class="img-object-base w-96 h-64">
+                            <img src="../assets/images/page_home-img/doing-garden.png" alt=""
+                                class="img-object-base w-96 h-64">
                         </div>
                         <div class="text-description-new mx-3 my-3">
-                            <p class="text-xs font-normal leading-[1.02rem] text-left text-[#68C114] uppercase">Nông nghiệp sạch</p>
-                            <p class="text-lg font-bold leading-[1.59rem] text-[#356C07] mt-3.5">Nông Thảo đã trồng và thu hoạch vườn cà chua như thế nào?</p>
-                            <p class="text-base font-normal leading-[1.41rem] text-[#000000BD] mt-3">Mời bạn đọc tìm hiểu thêm về quy trình trồng và thu hoạch cà chua hữu cơ của...</p>
+                            <p class="text-xs font-normal leading-[1.02rem] text-left text-[#68C114] uppercase">Nông
+                                nghiệp sạch</p>
+                            <p class="text-lg font-bold leading-[1.59rem] text-[#356C07] mt-3.5">Nông Thảo đã trồng và
+                                thu hoạch vườn cà chua như thế nào?</p>
+                            <p class="text-base font-normal leading-[1.41rem] text-[#000000BD] mt-3">Mời bạn đọc tìm
+                                hiểu thêm về quy trình trồng và thu hoạch cà chua hữu cơ của...</p>
                             <div class="border border-[#F0F0F0] w-[107%] -ml-3 mt-2"></div>
                             <div class="detail flex justify-between mt-3">
                                 <div class="view-detail flex">
-                                    <p class=" uppercase text-base font-normal leading-[1.36rem] text-[#356C07]">Xem chi tiết</p>
-                                    <div class="img-arrow w-5 h-5 mt-[3px] ml-[5px]" style="margin-top: 2px; margin-left: 4px;">
-                                        <img src="../assets/icons/page_home-svg/arrow-double-2.svg" alt="" class="img-object-base">
+                                    <p class=" uppercase text-base font-normal leading-[1.36rem] text-[#356C07]">Xem chi
+                                        tiết</p>
+                                    <div class="img-arrow w-5 h-5 mt-[3px] ml-[5px]"
+                                        style="margin-top: 2px; margin-left: 4px;">
+                                        <img src="../assets/icons/page_home-svg/arrow-double-2.svg" alt=""
+                                            class="img-object-base">
                                     </div>
                                 </div>
                                 <div class="count-view flex">
-                                    <div class="img-eye-new w-2.5 h-2.5 mt[4px] mr[5px]" style="margin-top: 4px; margin-right: 5px;">
-                                        <img src="../assets/icons/page_home-svg/eye-new.svg" alt="" class="img-object-base">
+                                    <div class="img-eye-new w-2.5 h-2.5 mt[4px] mr[5px]"
+                                        style="margin-top: 4px; margin-right: 5px;">
+                                        <img src="../assets/icons/page_home-svg/eye-new.svg" alt=""
+                                            class="img-object-base">
                                     </div>
                                     <p class="text-sm font-normal leading-[1.19rem]">2.648</p>
                                 </div>
@@ -442,23 +520,32 @@
                     </div>
                     <div class="layer w-[370px] h-[465px]">
                         <div class="img-new">
-                            <img src="../assets/images/page_home-img/doing-garden.png" alt="" class="img-object-base w-96 h-64">
+                            <img src="../assets/images/page_home-img/doing-garden.png" alt=""
+                                class="img-object-base w-96 h-64">
                         </div>
                         <div class="text-description-new mx-3 my-3">
-                            <p class="text-xs font-normal leading-[1.02rem] text-left text-[#68C114] uppercase">Nông nghiệp sạch</p>
-                            <p class="text-lg font-bold leading-[1.59rem] text-[#356C07] mt-3.5">Nông Thảo đã trồng và thu hoạch vườn cà chua như thế nào?</p>
-                            <p class="text-base font-normal leading-[1.41rem] text-[#000000BD] mt-3">Mời bạn đọc tìm hiểu thêm về quy trình trồng và thu hoạch cà chua hữu cơ của...</p>
+                            <p class="text-xs font-normal leading-[1.02rem] text-left text-[#68C114] uppercase">Nông
+                                nghiệp sạch</p>
+                            <p class="text-lg font-bold leading-[1.59rem] text-[#356C07] mt-3.5">Nông Thảo đã trồng và
+                                thu hoạch vườn cà chua như thế nào?</p>
+                            <p class="text-base font-normal leading-[1.41rem] text-[#000000BD] mt-3">Mời bạn đọc tìm
+                                hiểu thêm về quy trình trồng và thu hoạch cà chua hữu cơ của...</p>
                             <div class="border border-[#F0F0F0] w-[107%] -ml-3 mt-2"></div>
                             <div class="detail flex justify-between mt-3">
                                 <div class="view-detail flex">
-                                    <p class=" uppercase text-base font-normal leading-[1.36rem] text-[#356C07]">Xem chi tiết</p>
-                                    <div class="img-arrow w-5 h-5 mt-[3px] ml-[5px]" style="margin-top: 2px; margin-left: 4px;">
-                                        <img src="../assets/icons/page_home-svg/arrow-double-2.svg" alt="" class="img-object-base">
+                                    <p class=" uppercase text-base font-normal leading-[1.36rem] text-[#356C07]">Xem chi
+                                        tiết</p>
+                                    <div class="img-arrow w-5 h-5 mt-[3px] ml-[5px]"
+                                        style="margin-top: 2px; margin-left: 4px;">
+                                        <img src="../assets/icons/page_home-svg/arrow-double-2.svg" alt=""
+                                            class="img-object-base">
                                     </div>
                                 </div>
                                 <div class="count-view flex">
-                                    <div class="img-eye-new w-2.5 h-2.5 mt[4px] mr[5px]" style="margin-top: 4px; margin-right: 5px;">
-                                        <img src="../assets/icons/page_home-svg/eye-new.svg" alt="" class="img-object-base">
+                                    <div class="img-eye-new w-2.5 h-2.5 mt[4px] mr[5px]"
+                                        style="margin-top: 4px; margin-right: 5px;">
+                                        <img src="../assets/icons/page_home-svg/eye-new.svg" alt=""
+                                            class="img-object-base">
                                     </div>
                                     <p class="text-sm font-normal leading-[1.19rem]">2.648</p>
                                 </div>
@@ -467,23 +554,32 @@
                     </div>
                     <div class="layer w-[370px] h-[465px]">
                         <div class="img-new">
-                            <img src="../assets/images/page_home-img/doing-garden.png" alt="" class="img-object-base w-96 h-64">
+                            <img src="../assets/images/page_home-img/doing-garden.png" alt=""
+                                class="img-object-base w-96 h-64">
                         </div>
                         <div class="text-description-new mx-3 my-3">
-                            <p class="text-xs font-normal leading-[1.02rem] text-left text-[#68C114] uppercase">Nông nghiệp sạch</p>
-                            <p class="text-lg font-bold leading-[1.59rem] text-[#356C07] mt-3.5">Nông Thảo đã trồng và thu hoạch vườn cà chua như thế nào?</p>
-                            <p class="text-base font-normal leading-[1.41rem] text-[#000000BD] mt-3">Mời bạn đọc tìm hiểu thêm về quy trình trồng và thu hoạch cà chua hữu cơ của...</p>
+                            <p class="text-xs font-normal leading-[1.02rem] text-left text-[#68C114] uppercase">Nông
+                                nghiệp sạch</p>
+                            <p class="text-lg font-bold leading-[1.59rem] text-[#356C07] mt-3.5">Nông Thảo đã trồng và
+                                thu hoạch vườn cà chua như thế nào?</p>
+                            <p class="text-base font-normal leading-[1.41rem] text-[#000000BD] mt-3">Mời bạn đọc tìm
+                                hiểu thêm về quy trình trồng và thu hoạch cà chua hữu cơ của...</p>
                             <div class="border border-[#F0F0F0] w-[107%] -ml-3 mt-2"></div>
                             <div class="detail flex justify-between mt-3">
                                 <div class="view-detail flex">
-                                    <p class=" uppercase text-base font-normal leading-[1.36rem] text-[#356C07]">Xem chi tiết</p>
-                                    <div class="img-arrow w-5 h-5 mt-[3px] ml-[5px]" style="margin-top: 2px; margin-left: 4px;">
-                                        <img src="../assets/icons/page_home-svg/arrow-double-2.svg" alt="" class="img-object-base">
+                                    <p class=" uppercase text-base font-normal leading-[1.36rem] text-[#356C07]">Xem chi
+                                        tiết</p>
+                                    <div class="img-arrow w-5 h-5 mt-[3px] ml-[5px]"
+                                        style="margin-top: 2px; margin-left: 4px;">
+                                        <img src="../assets/icons/page_home-svg/arrow-double-2.svg" alt=""
+                                            class="img-object-base">
                                     </div>
                                 </div>
                                 <div class="count-view flex">
-                                    <div class="img-eye-new w-2.5 h-2.5 mt[4px] mr[5px]" style="margin-top: 4px; margin-right: 5px;">
-                                        <img src="../assets/icons/page_home-svg/eye-new.svg" alt="" class="img-object-base">
+                                    <div class="img-eye-new w-2.5 h-2.5 mt[4px] mr[5px]"
+                                        style="margin-top: 4px; margin-right: 5px;">
+                                        <img src="../assets/icons/page_home-svg/eye-new.svg" alt=""
+                                            class="img-object-base">
                                     </div>
                                     <p class="text-sm font-normal leading-[1.19rem]">2.648</p>
                                 </div>
@@ -499,44 +595,55 @@
                     </div>
                 </div>
             </div>
-    
+
         </section>
         <section class="bg-[#FAFAFA]">
             <div class="container mx-auto">
                 <div class="container mx-auto link-product flex items-center justify-between">
                     <div class="mt-10 flex ml-[190px] max-xl:ml-0">
                         <div class="max-w-[135.46px] h-[26.03px]">
-                            <img class="img-object-base" src="../assets/icons/page_home-svg/leaf.svg" alt="" class="object-fill">
+                            <img class="img-object-base" src="../assets/icons/page_home-svg/leaf.svg" alt=""
+                                class="object-fill">
                         </div>
                         <p class="text-[1.75rem] font-bold leading-[2.39rem] ml-[3px] uppercase">Nông nghiệp sạch</p>
                     </div>
                     <div class="view-all flex mt-12 ml-80 mr-[190px] max-xl:hidden">
                         <p class="text-sm font-normal leading-[1.19rem] text-[#356C07]">Xem tất cả</p>
                         <div class="icon-direction ml-3">
-                            <img class="img-object-base" src="../assets/icons/page_home-svg/double-direction.svg" alt="">
+                            <img class="img-object-base" src="../assets/icons/page_home-svg/double-direction.svg"
+                                alt="">
                         </div>
                     </div>
                 </div>
                 <div class="news flex justify-center gap-[20px] mt-[20px] max-md:w-[1050px]">
                     <div class="layer w-[370px] h-[465px]" style="box-shadow: 0px 0px 34px 0px #0000001A;">
                         <div class="img-new">
-                            <img src="../assets/images/page_home-img/doing-garden.png" alt="" class="img-object-base w-96 h-64">
+                            <img src="../assets/images/page_home-img/doing-garden.png" alt=""
+                                class="img-object-base w-96 h-64">
                         </div>
                         <div class="text-description-new mx-3 my-3">
-                            <p class="text-xs font-normal leading-[1.02rem] text-left text-[#68C114] uppercase">Nông nghiệp sạch</p>
-                            <p class="text-lg font-bold leading-[1.59rem] text-[#356C07] mt-3.5">Nông Thảo đã trồng và thu hoạch vườn cà chua như thế nào?</p>
-                            <p class="text-base font-normal leading-[1.41rem] text-[#000000BD] mt-3">Mời bạn đọc tìm hiểu thêm về quy trình trồng và thu hoạch cà chua hữu cơ của...</p>
+                            <p class="text-xs font-normal leading-[1.02rem] text-left text-[#68C114] uppercase">Nông
+                                nghiệp sạch</p>
+                            <p class="text-lg font-bold leading-[1.59rem] text-[#356C07] mt-3.5">Nông Thảo đã trồng và
+                                thu hoạch vườn cà chua như thế nào?</p>
+                            <p class="text-base font-normal leading-[1.41rem] text-[#000000BD] mt-3">Mời bạn đọc tìm
+                                hiểu thêm về quy trình trồng và thu hoạch cà chua hữu cơ của...</p>
                             <div class="border border-[#F0F0F0] w-[107%] -ml-3 mt-2"></div>
                             <div class="detail flex justify-between mt-3">
                                 <div class="view-detail flex">
-                                    <p class=" uppercase text-base font-normal leading-[1.36rem] text-[#356C07]">Xem chi tiết</p>
-                                    <div class="img-arrow w-5 h-5 mt-[3px] ml-[5px]" style="margin-top: 2px; margin-left: 4px;">
-                                        <img src="../assets/icons/page_home-svg/arrow-double-2.svg" alt="" class="img-object-base">
+                                    <p class=" uppercase text-base font-normal leading-[1.36rem] text-[#356C07]">Xem chi
+                                        tiết</p>
+                                    <div class="img-arrow w-5 h-5 mt-[3px] ml-[5px]"
+                                        style="margin-top: 2px; margin-left: 4px;">
+                                        <img src="../assets/icons/page_home-svg/arrow-double-2.svg" alt=""
+                                            class="img-object-base">
                                     </div>
                                 </div>
                                 <div class="count-view flex">
-                                    <div class="img-eye-new w-2.5 h-2.5 mt[4px] mr[5px]" style="margin-top: 4px; margin-right: 5px;">
-                                        <img src="../assets/icons/page_home-svg/eye-new.svg" alt="" class="img-object-base">
+                                    <div class="img-eye-new w-2.5 h-2.5 mt[4px] mr[5px]"
+                                        style="margin-top: 4px; margin-right: 5px;">
+                                        <img src="../assets/icons/page_home-svg/eye-new.svg" alt=""
+                                            class="img-object-base">
                                     </div>
                                     <p class="text-sm font-normal leading-[1.19rem]">2.648</p>
                                 </div>
@@ -545,23 +652,32 @@
                     </div>
                     <div class="layer w-[370px] h-[465px]">
                         <div class="img-new">
-                            <img src="../assets/images/page_home-img/doing-garden.png" alt="" class="img-object-base w-96 h-64">
+                            <img src="../assets/images/page_home-img/doing-garden.png" alt=""
+                                class="img-object-base w-96 h-64">
                         </div>
                         <div class="text-description-new mx-3 my-3">
-                            <p class="text-xs font-normal leading-[1.02rem] text-left text-[#68C114] uppercase">Nông nghiệp sạch</p>
-                            <p class="text-lg font-bold leading-[1.59rem] text-[#356C07] mt-3.5">Nông Thảo đã trồng và thu hoạch vườn cà chua như thế nào?</p>
-                            <p class="text-base font-normal leading-[1.41rem] text-[#000000BD] mt-3">Mời bạn đọc tìm hiểu thêm về quy trình trồng và thu hoạch cà chua hữu cơ của...</p>
+                            <p class="text-xs font-normal leading-[1.02rem] text-left text-[#68C114] uppercase">Nông
+                                nghiệp sạch</p>
+                            <p class="text-lg font-bold leading-[1.59rem] text-[#356C07] mt-3.5">Nông Thảo đã trồng và
+                                thu hoạch vườn cà chua như thế nào?</p>
+                            <p class="text-base font-normal leading-[1.41rem] text-[#000000BD] mt-3">Mời bạn đọc tìm
+                                hiểu thêm về quy trình trồng và thu hoạch cà chua hữu cơ của...</p>
                             <div class="border border-[#F0F0F0] w-[107%] -ml-3 mt-2"></div>
                             <div class="detail flex justify-between mt-3">
                                 <div class="view-detail flex">
-                                    <p class=" uppercase text-base font-normal leading-[1.36rem] text-[#356C07]">Xem chi tiết</p>
-                                    <div class="img-arrow w-5 h-5 mt-[3px] ml-[5px]" style="margin-top: 2px; margin-left: 4px;">
-                                        <img src="../assets/icons/page_home-svg/arrow-double-2.svg" alt="" class="img-object-base">
+                                    <p class=" uppercase text-base font-normal leading-[1.36rem] text-[#356C07]">Xem chi
+                                        tiết</p>
+                                    <div class="img-arrow w-5 h-5 mt-[3px] ml-[5px]"
+                                        style="margin-top: 2px; margin-left: 4px;">
+                                        <img src="../assets/icons/page_home-svg/arrow-double-2.svg" alt=""
+                                            class="img-object-base">
                                     </div>
                                 </div>
                                 <div class="count-view flex">
-                                    <div class="img-eye-new w-2.5 h-2.5 mt[4px] mr[5px]" style="margin-top: 4px; margin-right: 5px;">
-                                        <img src="../assets/icons/page_home-svg/eye-new.svg" alt="" class="img-object-base">
+                                    <div class="img-eye-new w-2.5 h-2.5 mt[4px] mr[5px]"
+                                        style="margin-top: 4px; margin-right: 5px;">
+                                        <img src="../assets/icons/page_home-svg/eye-new.svg" alt=""
+                                            class="img-object-base">
                                     </div>
                                     <p class="text-sm font-normal leading-[1.19rem]">2.648</p>
                                 </div>
@@ -570,23 +686,32 @@
                     </div>
                     <div class="layer w-[370px] h-[465px]">
                         <div class="img-new">
-                            <img src="../assets/images/page_home-img/doing-garden.png" alt="" class="img-object-base w-96 h-64">
+                            <img src="../assets/images/page_home-img/doing-garden.png" alt=""
+                                class="img-object-base w-96 h-64">
                         </div>
                         <div class="text-description-new mx-3 my-3">
-                            <p class="text-xs font-normal leading-[1.02rem] text-left text-[#68C114] uppercase">Nông nghiệp sạch</p>
-                            <p class="text-lg font-bold leading-[1.59rem] text-[#356C07] mt-3.5">Nông Thảo đã trồng và thu hoạch vườn cà chua như thế nào?</p>
-                            <p class="text-base font-normal leading-[1.41rem] text-[#000000BD] mt-3">Mời bạn đọc tìm hiểu thêm về quy trình trồng và thu hoạch cà chua hữu cơ của...</p>
+                            <p class="text-xs font-normal leading-[1.02rem] text-left text-[#68C114] uppercase">Nông
+                                nghiệp sạch</p>
+                            <p class="text-lg font-bold leading-[1.59rem] text-[#356C07] mt-3.5">Nông Thảo đã trồng và
+                                thu hoạch vườn cà chua như thế nào?</p>
+                            <p class="text-base font-normal leading-[1.41rem] text-[#000000BD] mt-3">Mời bạn đọc tìm
+                                hiểu thêm về quy trình trồng và thu hoạch cà chua hữu cơ của...</p>
                             <div class="border border-[#F0F0F0] w-[107%] -ml-3 mt-2"></div>
                             <div class="detail flex justify-between mt-3">
                                 <div class="view-detail flex">
-                                    <p class=" uppercase text-base font-normal leading-[1.36rem] text-[#356C07]">Xem chi tiết</p>
-                                    <div class="img-arrow w-5 h-5 mt-[3px] ml-[5px]" style="margin-top: 2px; margin-left: 4px;">
-                                        <img src="../assets/icons/page_home-svg/arrow-double-2.svg" alt="" class="img-object-base">
+                                    <p class=" uppercase text-base font-normal leading-[1.36rem] text-[#356C07]">Xem chi
+                                        tiết</p>
+                                    <div class="img-arrow w-5 h-5 mt-[3px] ml-[5px]"
+                                        style="margin-top: 2px; margin-left: 4px;">
+                                        <img src="../assets/icons/page_home-svg/arrow-double-2.svg" alt=""
+                                            class="img-object-base">
                                     </div>
                                 </div>
                                 <div class="count-view flex">
-                                    <div class="img-eye-new w-2.5 h-2.5 mt[4px] mr[5px]" style="margin-top: 4px; margin-right: 5px;">
-                                        <img src="../assets/icons/page_home-svg/eye-new.svg" alt="" class="img-object-base">
+                                    <div class="img-eye-new w-2.5 h-2.5 mt[4px] mr[5px]"
+                                        style="margin-top: 4px; margin-right: 5px;">
+                                        <img src="../assets/icons/page_home-svg/eye-new.svg" alt=""
+                                            class="img-object-base">
                                     </div>
                                     <p class="text-sm font-normal leading-[1.19rem]">2.648</p>
                                 </div>
@@ -602,7 +727,7 @@
                     </div>
                 </div>
             </div>
-    
+
         </section>
         <footer class="font-nunito">
             <div class=" mx-auto flex flex-wrap">
@@ -610,7 +735,7 @@
                     <img src="../assets/images/footer_img-1.png" class="img-style" alt="img footer">
                     <img src="../assets/images/footer_img-2.png" class="img-style" alt="img footer">
                     <img src="../assets/images/footer_img-3.png" class="img-style" alt="img footer">
-    
+
                     <img src="../assets/images/footer_img-4.png" class="img-style hidden sm:block" alt="img footer">
                     <img src="../assets/images/footer_img-5.png" class="img-style hidden sm:block" alt="img footer">
                     <img src="../assets/images/footer_img-6.png" class="img-style hidden sm:block" alt="img footer">
@@ -640,14 +765,14 @@
                             </div>
                         </div>
                     </div>
-    
+
                     <div class="flex flex-col gap-[20px] text-[#fff] text-[14px] font-[600] sm:hidden">
                         <div class="border-[#EBF0FFB2] border-b-[0.5px]"></div>
                         <a href="">LIÊN HỆ</a>
                         <div class="border-[#EBF0FFB2] border-b-[0.5px]"></div>
                         <a href="">THÔNG TIN</a>
                         <div class="border-[#EBF0FFB2] border-b-[0.5px]"></div>
-    
+
                         <div class="flex flex-col gap-[10px] text-[14px] font-[400]">
                             <p>ĐĂNG KÝ NHẬN TIN</p>
                             <p style="line-height: 23.06px;">Vui lòng nhập email của bạn để được hỗ trợ nhanh nhất!</p>
@@ -664,15 +789,15 @@
                                 <img class="w-[83px]" src="../assets/images/dmca.png" alt="">
                             </div>
                             <div>
-    
+
                             </div>
-    
+
                         </div>
                     </div>
-    
+
                     <div class="w-[792px] h-[198px] sm:flex gap-[61px] hidden ">
-    
-    
+
+
                         <div class="max-w-[248px] ">
                             <h4 class="text-[#ffff] text-sm uppercase">Liên hệ</h4>
                             <ul class="mt-[15px]">
@@ -693,8 +818,8 @@
                                 </li>
                             </ul>
                         </div>
-    
-    
+
+
                         <div class="">
                             <h4 class="text-[#ffff] text-sm uppercase">Thông tin</h4>
                             <ul class="mt-[15px] list-disc">
@@ -706,13 +831,14 @@
                                 <li class="text-[#ffff] text-sm mb-[10px] leading-5">Nông Thảo Blogs</li>
                             </ul>
                         </div>
-    
-    
+
+
                         <div class="max-w-[248px] ">
                             <h4 class="text-[#ffff] text-sm uppercase">Đăng ký nhận tin</h4>
                             <ul class="mt-[15px]">
                                 <li class="flex gap-[12px] mt-[12px]">
-                                    <p class="text-sm text-[#ffff]">Vui lòng nhập email để nhận thêm nhiều ưu đãi từ Nông
+                                    <p class="text-sm text-[#ffff]">Vui lòng nhập email để nhận thêm nhiều ưu đãi từ
+                                        Nông
                                         Thảo</p>
                                 </li>
                                 <li class="mt-[8px]">
@@ -722,7 +848,7 @@
                                                 <input type="text"
                                                     class="w-full max-h-[45px] pl-3 pr-10 py-[13px] bg-[#ffff] placeholder:text-slate-400 text-slate-600 text-base border border-slate-200 shadow-sm"
                                                     placeholder="Email của bạn..." />
-    
+
                                                 <div
                                                     class="absolute w-[47px] h-full bg-[#68C114] right-0 top-0 flex justify-center items-center">
                                                     <img src="../assets/icons/ti-pp.svg" alt="">
@@ -740,22 +866,22 @@
                             </ul>
                         </div>
                     </div>
-                    </div>
                 </div>
-                
             </div>
-    
-            <div class="bg-[#86A76A] min-h-[43px] w-full text-center flex justify-center items-center text-[#ffff] text-sm">
-                <span> © 2022 - Bản quyền thuộc về Công ty TNHH Nông Thảo</span>
-            </div>
-            <div class="flex flex-col sm:hidden fixed bottom-[30px] right-[10px]">
-                <img class="w-[48px] h-[48px]" src="../assets/icons/ti-phone-red.svg" alt="">
-                <img class="w-[48px] h-[48px]" src="../assets/icons/ti-mess.svg" alt="">
-                <button class="h-[32px] mt-[100px] w-[32px] bg-[#356C07] flex justify-center items-center text-[#fff]">
-                    <img src="../assets/icons/ti-arrow-up.svg" alt="">
-                </button>
-            </div>
-        </footer>
+
+    </div>
+
+    <div class="bg-[#86A76A] min-h-[43px] w-full text-center flex justify-center items-center text-[#ffff] text-sm">
+        <span> © 2022 - Bản quyền thuộc về Công ty TNHH Nông Thảo</span>
+    </div>
+    <div class="flex flex-col sm:hidden fixed bottom-[30px] right-[10px]">
+        <img class="w-[48px] h-[48px]" src="../assets/icons/ti-phone-red.svg" alt="">
+        <img class="w-[48px] h-[48px]" src="../assets/icons/ti-mess.svg" alt="">
+        <button class="h-[32px] mt-[100px] w-[32px] bg-[#356C07] flex justify-center items-center text-[#fff]">
+            <img src="../assets/icons/ti-arrow-up.svg" alt="">
+        </button>
+    </div>
+    </footer>
     </div>
     <script src="../controllers/index.js"></script>
 </body>
