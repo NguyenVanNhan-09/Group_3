@@ -558,9 +558,9 @@ video {
   width: 100%;
 }
 
-@media (min-width: 375px) {
+@media (min-width: 376px) {
   .container {
-    max-width: 375px;
+    max-width: 376px;
   }
 }
 
@@ -1054,10 +1054,6 @@ video {
   height: 2.75rem;
 }
 
-.h-12 {
-  height: 3rem;
-}
-
 .h-14 {
   height: 3.5rem;
 }
@@ -1120,10 +1116,6 @@ video {
 
 .h-\[198px\] {
   height: 198px;
-}
-
-.h-\[20px\] {
-  height: 20px;
 }
 
 .h-\[21\.4\] {
@@ -1591,10 +1583,6 @@ video {
   max-width: 120px;
 }
 
-.max-w-\[12px\] {
-  max-width: 12px;
-}
-
 .max-w-\[135\.46px\] {
   max-width: 135.46px;
 }
@@ -1619,10 +1607,6 @@ video {
   max-width: 270px;
 }
 
-.max-w-\[3\.00rem\] {
-  max-width: 3.00rem;
-}
-
 .max-w-\[300px\] {
   max-width: 300px;
 }
@@ -1637,10 +1621,6 @@ video {
 
 .max-w-\[470px\] {
   max-width: 470px;
-}
-
-.max-w-\[48px\] {
-  max-width: 48px;
 }
 
 .max-w-\[54\.38rem\] {
@@ -2865,6 +2845,76 @@ img.object-fill {
   }
 }
 
+@media (max-width: 376px) {
+  .max-mb\:visible {
+    visibility: visible;
+  }
+
+  .max-mb\:ml-\[181px\] {
+    margin-left: 181px;
+  }
+
+  .max-mb\:mt-\[181px\] {
+    margin-top: 181px;
+  }
+
+  .max-mb\:-ml-\[9px\] {
+    margin-left: -9px;
+  }
+
+  .max-mb\:ml-0 {
+    margin-left: 0px;
+  }
+
+  .max-mb\:hidden {
+    display: none;
+  }
+
+  .max-mb\:h-\[200px\] {
+    height: 200px;
+  }
+
+  .max-mb\:h-\[300px\] {
+    height: 300px;
+  }
+
+  .max-mb\:h-\[360px\] {
+    height: 360px;
+  }
+
+  .max-mb\:h-\[259px\] {
+    height: 259px;
+  }
+
+  .max-mb\:w-\[500px\] {
+    width: 500px;
+  }
+
+  .max-mb\:w-\[1000px\] {
+    width: 1000px;
+  }
+
+  .max-mb\:w-\[164px\] {
+    width: 164px;
+  }
+
+  .max-mb\:flex-col {
+    flex-direction: column;
+  }
+
+  .max-mb\:flex-wrap {
+    flex-wrap: wrap;
+  }
+
+  .max-mb\:text-\[14px\] {
+    font-size: 14px;
+  }
+
+  .max-mb\:text-\[12px\] {
+    font-size: 12px;
+  }
+}
+
 @media (max-width: 640px) {
   .max-sm\:ml-2 {
     margin-left: 0.5rem;
@@ -2927,6 +2977,16 @@ img.object-fill {
 
   .max-xl\:hidden {
     display: none;
+  }
+}
+
+@media (max-width: 1366px) {
+  .max-1366px\:ml-0 {
+    margin-left: 0px;
+  }
+
+  .max-1366px\:w-\[1200px\] {
+    width: 1200px;
   }
 }
 
