@@ -21,7 +21,7 @@ module.exports = {
             "max-lg": { max: "1024px" },
             "max-xl": { max: "1280px" },
             "max-1366px": { max: "1366px" },
-            "max-lg-xl": { max: "1550px" },
+            "max-lg-xl": { max: "1500px" },
          },
       },
       fontFamily: {
